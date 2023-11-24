@@ -1,13 +1,18 @@
 package org.game;
 
+import org.insects.Insect;
+import org.insects.Queen;
 import org.junit.*;
 import org.junit.Assert;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+//todo: egy insect hozzáadása a hibák elcsitításához
 public class GameBoardTest {
     private GameBoard board;
+
+    private final Insect defaultInsect = new Queen(new Player());
 
     @Before
     public void init(){
@@ -43,7 +48,7 @@ public class GameBoardTest {
     @Test
     public void initialize_NoNullNeighbours(){
         GameTile tile = new GameTile(board, new Coordinate(0,0));
-        tile.initialize();
+        tile.initialize(defaultInsect);
         int nullneighbours=0;
         for (int i=0; i<6; i++){
             if(tile.getNeigbour(i)==null){
@@ -56,7 +61,7 @@ public class GameBoardTest {
     @Test
     public void initialize_ConsistentLinks(){
         GameTile tile = new GameTile(board, new Coordinate(0,0));
-        tile.initialize();
+        tile.initialize(defaultInsect);
         int inconsistentLinks=0;
         for (int i=0; i<6; i++){
             if(!tile.equals(tile.getNeigbour(i).getNeigbour(GameBoard.invertDirection(i)))){
@@ -75,7 +80,7 @@ public class GameBoardTest {
     @Test
     public void removeGameTileCheck(){
         GameTile tile = new GameTile(board, new Coordinate(0.5, 0.5));
-        tile.initialize();
+        tile.initialize(defaultInsect);
         GameTile[] neighbours= new GameTile[6];
         for(int i=0; i<6; i++){
             neighbours[i]=tile.getNeigbour(i);

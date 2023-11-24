@@ -75,7 +75,7 @@ public class GameTile {
         neighbours[direction] = neighbour;
     }
 
-    boolean isInitialized() {
+    public boolean isInitialized() {
         return initialized;
     }
 

@@ -3,14 +3,20 @@ package org.game;
 public class Coordinate {
     private double x;
     private double y;
-    private static final double DELTA = 0.001; // Define the acceptable delta
+    private static final double DELTA = 0.01; // Define the acceptable delta
 
     public Coordinate(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    // Getter and Setter methods...
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
 
     @Override
     public boolean equals(Object obj) {

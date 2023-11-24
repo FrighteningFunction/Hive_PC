@@ -10,7 +10,7 @@ public class GameBoard {
     private GameBoard(){}
     private static HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
 
-    private static GameBoard getInstance(){
+    public static GameBoard getInstance(){
         if(instance==null){
             instance = new GameBoard();
         }
@@ -31,6 +31,14 @@ public class GameBoard {
         }else{
             HiveLogger.getLogger().warn("Requested removable GameTile not found!");
         }
+    }
+
+    public boolean hasGameTile(GameTile tile){
+        return boardMap.containsKey(tile.getCoordinate());
+    }
+
+    public void clear(){
+        boardMap.clear();
     }
 
     /**
@@ -61,7 +69,7 @@ public class GameBoard {
             caller.setNeighbour(linkable,atDirection);
             linkable.setNeighbour(caller, invertDirection(atDirection));
         }else{
-            HiveLogger.getLogger().info(String.valueOf(atDirection)+"-nél nem talált a linkTile szomszédot.");
+            HiveLogger.getLogger().info("Egy irányban talált a linkTile szomszédot.");
         }
     }
 }

@@ -1,13 +1,9 @@
 package org.game;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 import static java.lang.System.exit;
 
 public class GameTile {
-    private boolean initialized = false;
+    private boolean initialized;
 
     private GameBoard board = null;
 
@@ -20,10 +16,12 @@ public class GameTile {
      * Ez a konstruktor intézi az új GameTile felvételt.
      * Mind a 6 oldalon csekkolja, hogy össze kell-e kötni más Tile-okkal, és
      * ha kell, össze is köti velük
+     * Ekkor a GameTile nem inicializált!
      * @param b a játéktábla.
      * @param c a létrehozandó GameTile koordinátája.
      */
     public GameTile(GameBoard b, Coordinate c){
+        initialized=false;
         this.board = b;
         this.coordinate = c;
         for(int i=0; i<6; i++){
@@ -64,7 +62,12 @@ public class GameTile {
         return initialized;
     }
 
-    private Coordinate getCoordinateOfNeighbourAt(int direction){
+    protected void setInitialized(boolean val){
+        initialized=val;
+        HiveLogger.getLogger().warn("GameTile setInitialized metódusa meghívva!");
+    }
+
+    public Coordinate getCoordinateOfNeighbourAt(int direction){
         double x1 = coordinate.getX();
         double y1 = coordinate.getY();
         double x2 = 0;
@@ -77,7 +80,7 @@ public class GameTile {
                 break;
             case 1:
                 x2=x1+0.5;
-                y2=x2+0.5;
+                y2=y1+0.5;
                 break;
             case 2:
                 x2=x1+0.5;
@@ -96,7 +99,7 @@ public class GameTile {
                 y2=y1+0.5;
                 break;
             default:
-                HiveLogger.getLogger().error("Fatal: invalid direction got at coordinate calculation");
+                HiveLogger.getLogger().fatal("Fatal: invalid direction got at coordinate calculation");
                 exit(1);
         }
         return new Coordinate(x2, y2);
@@ -108,14 +111,16 @@ public class GameTile {
      */
     void initialize() {
         if (initialized) {
-            HiveLogger.getLogger().error("FATAL: GameTile already initialized.");
+            HiveLogger.getLogger().fatal("GameTile already initialized.");
             exit(1);
         } else {
+            initialized=true;
             for(int i=0; i<6; i++){
                 if(neighbours[i]==null){
                     neighbours[i]=new GameTile(board, getCoordinateOfNeighbourAt(i));
+                    board.linkTile(this, neighbours[i].getCoordinate(), i);
                 }else{
-                    HiveLogger.getLogger().info("At direction "+i+" there already was a Tile.");
+                    HiveLogger.getLogger().info("At a direction there already was a Tile.");
                 }
             }
         }

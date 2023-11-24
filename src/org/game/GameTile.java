@@ -1,13 +1,15 @@
 package org.game;
 
+import org.insects.Insect;
+
 import static java.lang.System.exit;
 
 public class GameTile {
     private boolean initialized;
 
-    private GameBoard board = null;
+    private GameBoard board;
 
-    private Insect insect = null;
+    private Insect insect;
 
     private Coordinate coordinate;
     private GameTile[] neighbours = new GameTile[6];
@@ -22,6 +24,7 @@ public class GameTile {
      */
     public GameTile(GameBoard b, Coordinate c){
         initialized=false;
+        insect = null;
         this.board = b;
         this.coordinate = c;
         for(int i=0; i<6; i++){
@@ -34,10 +37,20 @@ public class GameTile {
         }
     }
 
+    /**
+     * Kitöröl a játékból egy tile-t.
+     * Kizárólag inicializálatlan (ak. üres) tile-ok törölhetők ki. Egyébként fatális veszély lép fel.
+     * Az összes rá mutató szomszéd-linket is kitörli.
+     */
     public void deleteGameTile(){
-        board.removeGameTile(this);
-        for(int i=0; i<6; i++){
-            neighbours[i].removeNeighbour(GameBoard.invertDirection(i));
+        if(initialized){
+            HiveLogger.getLogger().fatal("deleteGameTile call to an initialized GameTile!");
+        }else {
+
+            board.removeGameTile(this);
+            for (int i = 0; i < 6; i++) {
+                neighbours[i].removeNeighbour(GameBoard.invertDirection(i));
+            }
         }
     }
 
@@ -47,6 +60,10 @@ public class GameTile {
 
     public GameTile getNeigbour(int direction) {
         return neighbours[direction];
+    }
+
+    public Insect getInsect(){
+        return insect;
     }
 
     public void removeNeighbour(int direction){
@@ -109,18 +126,35 @@ public class GameTile {
      * Inicializálja a GameTile-t, vagyis ezen a ponton minden szomszédja létezni fog,
      * benne magában pedig bogárnak kell lennie.
      */
-    void initialize() {
+    public void initialize(Insect insect) {
         if (initialized) {
             HiveLogger.getLogger().fatal("GameTile already initialized.");
             exit(1);
         } else {
             initialized=true;
+            this.insect=insect;
             for(int i=0; i<6; i++){
                 if(neighbours[i]==null){
                     neighbours[i]=new GameTile(board, getCoordinateOfNeighbourAt(i));
                     board.linkTile(this, neighbours[i].getCoordinate(), i);
                 }else{
                     HiveLogger.getLogger().info("At a direction there already was a Tile.");
+                }
+            }
+        }
+    }
+
+    public void uninitialize(){
+        if(!initialized){
+            HiveLogger.getLogger().fatal("An already unitialized tile was to be uninitialized!");
+        }else {
+            initialized=false;
+            insect = null;
+            for (int i = 0; i < 6; i++) {
+                if (!this.getNeigbour(i).isInitialized()) {
+                    this.getNeigbour(i).deleteGameTile();
+                } else {
+                    HiveLogger.getLogger().info("A neighbour was initialized while unitialize(), so was not deleted");
                 }
             }
         }

@@ -165,7 +165,7 @@ public class GameTile {
 
     /**
      * Uninicializálja a tile-t: vagyis a rovart eltávolítja belőle, valamint az összes olyan szomszédját kitörli,
-     * amely nem volt inicializálva.
+     * amely így árvává vált.
      */
     public void uninitialize(){
         if(!initialized){
@@ -177,7 +177,7 @@ public class GameTile {
                 if (!this.getNeigbour(i).isInitialized() && this.getNeigbour(i).isOrphan()) {
                     this.getNeigbour(i).deleteGameTile();
                 } else {
-                    HiveLogger.getLogger().info("A neighbour was initialized while unitialize(), so was not deleted");
+                    HiveLogger.getLogger().info("A neighbour was not an orphan while uninitialize, so was not deleted");
                 }
             }
         }

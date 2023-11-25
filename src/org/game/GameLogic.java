@@ -55,7 +55,7 @@ public class GameLogic {
         return newState.equals(reachables);
     }
 
-    public Set<GameTile> pingAvailableTilesForPlacing(Player p){
+    public static Set<GameTile> pingAvailableTilesForPlacing(Player p){
         HiveColor playerColor = p.color;
 
         GameBoard board = GameBoard.getInstance();

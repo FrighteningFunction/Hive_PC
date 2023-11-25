@@ -51,9 +51,14 @@ public abstract class Insect {
         if (initialized) {
             HiveLogger.getLogger().fatal("Already initialized insect was to be placed!");
         } else {
-
-            initialized = true;
-            tile.initialize(this);
+            Set<GameTile> availableTiles = GameLogic.pingAvailableTilesForPlacing(this.player);
+            if(availableTiles.contains(tile)){
+                initialized = true;
+                tile.initialize(this);
+                HiveLogger.getLogger().info("An insect was sucessfully placed.");
+            }else{
+                HiveLogger.getLogger().info("Player wanted to place an insect to an invalid place");
+            }
         }
     }
 

@@ -8,11 +8,12 @@ import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-//todo: egy insect hozzáadása a hibák elcsitításához
 public class GameBoardTest {
     private GameBoard board;
 
-    private final Insect defaultInsect = new Queen(new Player(HiveColor.WHITE));
+    private Insect getInsect(){
+        return new Queen(new Player(HiveColor.WHITE));
+    }
 
     @Before
     public void init(){
@@ -48,7 +49,7 @@ public class GameBoardTest {
     @Test
     public void initialize_NoNullNeighbours(){
         GameTile tile = new GameTile(board, new Coordinate(0,0));
-        tile.initialize(defaultInsect);
+        tile.initialize(getInsect());
         int nullneighbours=0;
         for (int i=0; i<6; i++){
             if(tile.getNeigbour(i)==null){
@@ -61,7 +62,7 @@ public class GameBoardTest {
     @Test
     public void initialize_ConsistentLinks(){
         GameTile tile = new GameTile(board, new Coordinate(0,0));
-        tile.initialize(defaultInsect);
+        tile.initialize(getInsect());
         int inconsistentLinks=0;
         for (int i=0; i<6; i++){
             if(!tile.equals(tile.getNeigbour(i).getNeigbour(GameBoard.invertDirection(i)))){
@@ -80,11 +81,12 @@ public class GameBoardTest {
     @Test
     public void removeGameTileCheck(){
         GameTile tile = new GameTile(board, new Coordinate(0.5, 0.5));
-        tile.initialize(defaultInsect);
+        tile.initialize(getInsect());
         GameTile[] neighbours= new GameTile[6];
         for(int i=0; i<6; i++){
             neighbours[i]=tile.getNeigbour(i);
         }
+        tile.setInitialized(false);
         tile.deleteGameTile();
         boolean referenceDeleted = true;
         int wrongreferences = 0;

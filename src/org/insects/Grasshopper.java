@@ -14,7 +14,7 @@ public class Grasshopper extends Insect{
     }
 
     /**
-     *
+     * A Grasshopper pahtfindere.
      * @param destinations azon tile-ok halmaza, ahová a rovar léphet. Ezt építgetjük.
      * @param root         az aktuális kiindulópont.
      * @param from         ahonnan jött

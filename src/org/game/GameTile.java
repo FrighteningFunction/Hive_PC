@@ -66,6 +66,10 @@ public class GameTile {
         return insect;
     }
 
+    public void setInsect(Insect insect){
+        this.insect=insect;
+    }
+
     public void removeNeighbour(int direction){
         neighbours[direction] = null;
     }

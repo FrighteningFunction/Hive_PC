@@ -1,74 +1,119 @@
 package org.game;
 
-import java.util.HashMap;
+import java.util.*;
 
 import static java.lang.System.exit;
 
 public class GameBoard {
-    private static GameBoard  instance;
+    private static GameBoard instance;
 
-    private GameBoard(){}
+    private GameBoard() {
+    }
+
     private static HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
 
-    public static GameBoard getInstance(){
-        if(instance==null){
+    public static GameBoard getInstance() {
+        HiveLogger.getLogger().info("GameBoard getInstance called!");
+        if (instance == null) {
             instance = new GameBoard();
         }
         return instance;
     }
 
-    public void addGameTile(GameTile tile) throws DoubleTileException{
-        if(boardMap.containsKey(tile.getCoordinate())){
-            throw  new DoubleTileException();
-        }else{
+    public void addGameTile(GameTile tile) throws DoubleTileException {
+        if (boardMap.containsKey(tile.getCoordinate())) {
+            throw new DoubleTileException();
+        } else {
             boardMap.put(tile.getCoordinate(), tile);
         }
     }
 
-    public void removeGameTile(GameTile tile){
+    /**
+     * Visszaadja a játéktábla összes Inicializált Tile-jét egy halmazként.
+     * @return a tile-ok halmaza.
+     */
+    public Set<GameTile> getInitializedTileSet(){
+       Set<GameTile> initializedTiles = new HashSet<>();
+       for(GameTile tile : boardMap.values()){
+           if(tile.isInitialized()){
+               initializedTiles.add(tile);
+           }
+       }
+       if(initializedTiles.isEmpty()){
+           HiveLogger.getLogger().error("A getInitializedTileSet() nem talált egyetlen inicializált Tile-t sem!");
+       }
+
+       return initializedTiles;
+    }
+
+    /**
+     * Kiad egy inicializált tile-t a GameBoard-ból.
+     *
+     * @return null ha a tábla üres; vagy nem az, csak nincs inicializált tile (ez utóbbi fatális hiba)
+     * chosenOne ha a tábla tartalmaz legalább egy inicializált tile-t
+     */
+    public GameTile getInitializedTile() {
+        if (boardMap.isEmpty()) {
+            HiveLogger.getLogger().warn("getRandomTile was called for an empty board!");
+            return null;
+        }
+        GameTile chosenOne = null;
+        for (GameTile tile : boardMap.values()) {
+            if (tile.isInitialized()) {
+                chosenOne = tile;
+                break;
+            }
+        }
+        if (chosenOne == null) HiveLogger.getLogger().fatal("There are only uninitialized tiles on the GameBoard!");
+        return chosenOne;
+    }
+
+    public void removeGameTile(GameTile tile) {
         if (boardMap.containsKey(tile.getCoordinate())) {
             boardMap.remove(tile.getCoordinate());
-        }else{
+        } else {
             HiveLogger.getLogger().warn("Requested removable GameTile not found!");
         }
     }
 
-    public boolean hasGameTile(GameTile tile){
+    public boolean hasGameTile(GameTile tile) {
         return boardMap.containsKey(tile.getCoordinate());
     }
 
-    public void clear(){
+    public void clear() {
         boardMap.clear();
     }
 
     /**
      * Visszatér az irány invertáltjával.
      * Ez a hexatile túlsó oldalát jelenti.
+     *
      * @param direction Egy irány: 0,1,2,3,4,5
      * @return az irány invertáltja
      */
-    public static int invertDirection(int direction){
-        return (direction+3)%6;
+    public static int invertDirection(int direction) {
+        return (direction + 3) % 6;
     }
 
     /**
      * Összeköti a hívó játékmezőt a megadott koordinátáknál elhelyezkedő gametile-al a megadott irányban.
      * Ha nincs mit összekötni (ak. az adott koordinátánál nincs GameTile) akkor nem csinál semmit).
      * Vigyázat: az irány a hívó irányát jelöli!
-     * @param caller a hívó GameTile
+     *
+     * @param caller       a hívó GameTile
      * @param atCoordinate az összekötendő GameTile
-     * @param atDirection milyen irányban található a koordináta a hívóhoz képest? (0,1,2,3,4,5)
+     * @param atDirection  milyen irányban található a koordináta a hívóhoz képest? (0,1,2,3,4,5)
      */
-    public void linkTile(GameTile caller, Coordinate atCoordinate, int atDirection){
-        if(atDirection<0 || atDirection>5) {
+    public void linkTile(GameTile caller, Coordinate atCoordinate, int atDirection) {
+        if (atDirection < 0 || atDirection > 5) {
             HiveLogger.getLogger().error("FATAL: invalid direction at linkTile");
             exit(1);
         }
-        if(boardMap.containsKey(atCoordinate)){
+        if (boardMap.containsKey(atCoordinate)) {
             GameTile linkable = boardMap.get(atCoordinate);
-            caller.setNeighbour(linkable,atDirection);
+            caller.setNeighbour(linkable, atDirection);
             linkable.setNeighbour(caller, invertDirection(atDirection));
-        }else{
+        } else {
             HiveLogger.getLogger().info("Egy irányban talált a linkTile szomszédot.");
         }
     }

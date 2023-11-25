@@ -98,7 +98,7 @@ public abstract class Insect {
      * A rovar mozgási szabályai szerint visszaadja azon tile-ok listáját, ahová
      * a szabályok szerint léphet.
      *
-     * @return a támogatott tile-ok listája.
+     * @return a támogatott tile-ok halmaza.
      */
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();

@@ -88,6 +88,21 @@ public class GameTile {
         HiveLogger.getLogger().warn("GameTile setInitialized metódusa meghívva!");
     }
 
+    /**
+     * Visszaadja, hogy az adott tile árva-e.
+     * Egy tile akkor árva, ha nem létezik inicializált szomszédja.
+     * Működés szerint a játékban ilyen nem létezhet.
+     * @return true, ha árva, hamis, ha nem az.
+     */
+    public boolean isOrphan(){
+        for (int i=0; i<6; i++){
+            if(neighbours[i]!=null && neighbours[i].isInitialized()){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public Coordinate getCoordinateOfNeighbourAt(int direction){
         double x1 = coordinate.getX();
         double y1 = coordinate.getY();
@@ -148,6 +163,10 @@ public class GameTile {
         }
     }
 
+    /**
+     * Uninicializálja a tile-t: vagyis a rovart eltávolítja belőle, valamint az összes olyan szomszédját kitörli,
+     * amely nem volt inicializálva.
+     */
     public void uninitialize(){
         if(!initialized){
             HiveLogger.getLogger().fatal("An already unitialized tile was to be uninitialized!");
@@ -155,7 +174,7 @@ public class GameTile {
             initialized=false;
             insect = null;
             for (int i = 0; i < 6; i++) {
-                if (!this.getNeigbour(i).isInitialized()) {
+                if (!this.getNeigbour(i).isInitialized() && this.getNeigbour(i).isOrphan()) {
                     this.getNeigbour(i).deleteGameTile();
                 } else {
                     HiveLogger.getLogger().info("A neighbour was initialized while unitialize(), so was not deleted");

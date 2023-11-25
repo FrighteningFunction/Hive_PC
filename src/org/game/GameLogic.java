@@ -4,12 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class GameLogic {
-    private static GameBoard board;
 
     private GameLogic() {
     }
-
-    private int turns;
 
     /**
      * DFS algoritmussal bejárjuk a játéktáblát a megadott tile-tól kezdve.
@@ -35,6 +32,8 @@ public class GameLogic {
      * hamis, ha legalább 2 részre szétszakadna.
      */
     public static boolean wouldHiveBeConnected(GameTile moveStart) {
+        GameBoard board = GameBoard.getInstance();
+
         Set<GameTile> newState = board.getInitializedTileSet();
         newState.remove(moveStart);
         GameTile checkOrigo;
@@ -54,5 +53,30 @@ public class GameLogic {
         Set<GameTile> reachables = new HashSet<>();
         pathFinder(reachables, checkOrigo);
         return newState.equals(reachables);
+    }
+
+    public Set<GameTile> pingAvailableTilesForPlacing(Player p){
+        HiveColor playerColor = p.color;
+
+        GameBoard board = GameBoard.getInstance();
+        Set<GameTile> unInitializedTiles = board.getUnInitializedTileSet();
+        Set<GameTile> availableTiles = new HashSet<>();
+
+        for(GameTile tile : unInitializedTiles){
+            boolean noOpponentNeighbour = true;
+            for(int i=0; i<6; i++){
+                GameTile neighbour = tile.getNeigbour(i);
+                if(neighbour.isInitialized() && !neighbour.getInsect().color.equals(playerColor)){
+                    noOpponentNeighbour = false;
+                    break;
+                }
+            }
+            if(noOpponentNeighbour){
+                availableTiles.add(tile);
+            }
+        }
+
+        return availableTiles;
+
     }
 }

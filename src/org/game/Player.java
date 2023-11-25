@@ -1,10 +1,10 @@
 package org.game;
 
 public class Player {
-    enum Color{
-        BLACK,
-        WHITE
-    }
 
-    Color color;
+    public final HiveColor color;
+
+    Player(HiveColor color){
+        this.color=color;
+    }
 }

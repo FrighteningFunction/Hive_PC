@@ -1,8 +1,6 @@
 package org.insects;
 
-import org.game.GameTile;
-import org.game.HiveLogger;
-import org.game.Player;
+import org.game.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,15 +8,18 @@ import java.util.Set;
 public abstract class Insect {
     protected int maxstep;
 
-    boolean initialized;
-    Player player;
+    private boolean initialized;
+    private final Player player;
 
-    GameTile location;
+    public final HiveColor color;
+
+    protected GameTile location;
 
     protected Insect(Player p) {
         initialized = false;
         player = p;
         location = null;
+        color = p.color;
     }
 
     public boolean isInitialized() {
@@ -34,11 +35,15 @@ public abstract class Insect {
     }
 
     public void move(GameTile chosenTile, Set<GameTile> availableTiles) {
-        if (availableTiles.contains(chosenTile)) {
-            chosenTile.initialize(this);
-            location.uninitialize();
-        } else {
-            HiveLogger.getLogger().info("The player wanted to step to an incorrect Tile");
+        if(GameLogic.wouldHiveBeConnected(location)) {
+            if (availableTiles.contains(chosenTile)) {
+                chosenTile.initialize(this);
+                location.uninitialize();
+            } else {
+                HiveLogger.getLogger().info("The player wanted to step to an incorrect Tile");
+            }
+        }else{
+            HiveLogger.getLogger().info("Player would have disconnected the hive.");
         }
     }
 
@@ -46,6 +51,7 @@ public abstract class Insect {
         if (initialized) {
             HiveLogger.getLogger().fatal("Already initialized insect was to be placed!");
         } else {
+
             initialized = true;
             tile.initialize(this);
         }

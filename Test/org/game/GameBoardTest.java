@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 public class GameBoardTest {
     private GameBoard board;
 
-    private final Insect defaultInsect = new Queen(new Player());
+    private final Insect defaultInsect = new Queen(new Player(HiveColor.WHITE));
 
     @Before
     public void init(){

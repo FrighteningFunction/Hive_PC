@@ -13,7 +13,7 @@ public class GameBoard {
     private static HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
 
     public static GameBoard getInstance() {
-        HiveLogger.getLogger().info("GameBoard getInstance called!");
+        HiveLogger.getLogger().debug("GameBoard getInstance called!");
         if (instance == null) {
             instance = new GameBoard();
         }
@@ -44,6 +44,24 @@ public class GameBoard {
        }
 
        return initializedTiles;
+    }
+
+    /**
+     * Visszaadja a játéktábla összes Nem inicializált Tile-jét egy halmazként.
+     * @return a tile-ok halmaza.
+     */
+    public Set<GameTile> getUnInitializedTileSet(){
+        Set<GameTile> uninitializedTiles = new HashSet<>();
+        for(GameTile tile : boardMap.values()){
+            if(!tile.isInitialized()){
+                uninitializedTiles.add(tile);
+            }
+        }
+        if(uninitializedTiles.isEmpty()){
+            HiveLogger.getLogger().error("A getUnInitializedTileSet() nem talált egyetlen nem inicializált Tile-t sem!");
+        }
+
+        return uninitializedTiles;
     }
 
     /**

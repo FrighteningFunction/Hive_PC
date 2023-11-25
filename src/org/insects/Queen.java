@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class Queen extends Insect{
     public Queen(Player p){
-        super(p, 1);
+        super(p);
+        maxstep=1;
     }
 }

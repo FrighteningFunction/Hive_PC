@@ -12,12 +12,15 @@ public class GameLogic {
 
     private Player blackPlayer;
 
+    private Player nextPlayer;
+
     private GameBoard board;
 
     private GameLogic() {
         turns = 1;
         whitePlayer = new Player(HiveColor.WHITE);
         blackPlayer = new Player(HiveColor.BLACK);
+        nextPlayer=whitePlayer;
         board = GameBoard.getInstance();
         board.clear();
     }
@@ -56,6 +59,11 @@ public class GameLogic {
 
     public void incrementTurns() {
         turns++;
+        if(nextPlayer==whitePlayer){
+            nextPlayer=blackPlayer;
+        }else{
+            nextPlayer=whitePlayer;
+        }
     }
 
     public Player getWhitePlayer() {

@@ -1,5 +1,6 @@
 package org.insects;
 
+import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.HiveLogger;
 import org.game.Player;
@@ -11,8 +12,8 @@ public class Beetle extends Insect {
 
     private Insect controlledInsect;
 
-    public Beetle(Player p) {
-        super(p);
+    public Beetle(Player p, GameLogic gameLogic) {
+        super(p, gameLogic);
         maxstep = 1;
         controlledInsect = null;
     }

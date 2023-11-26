@@ -13,8 +13,10 @@ public class GameBoardTest {
     private static final double YGRID = Coordinate.getYGRID();
     private GameBoard board;
 
+    private GameLogic gameLogic;
+
     private Insect getInsect() {
-        return new Queen(new Player(HiveColor.WHITE));
+        return new Queen(new Player(HiveColor.WHITE), gameLogic);
     }
 
     @Before

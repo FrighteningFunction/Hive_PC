@@ -10,8 +10,13 @@ public class GameBoard {
     private GameBoard() {
     }
 
-    private static HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
+    private HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
 
+    /**
+     * Visszaadja az egyetlen létező GameBoard példányt.
+     * Ha a program futása alatt egy sem lett kész, akkor létrehoz egyet.
+     * @return a GameBoard singleton példány.
+     */
     public static GameBoard getInstance() {
         HiveLogger.getLogger().debug("GameBoard getInstance called!");
         if (instance == null) {
@@ -110,7 +115,12 @@ public class GameBoard {
         return boardMap.containsKey(c);
     }
 
+    /**
+     * Válogatás nélkül kitöröl minden tile-t.
+     * Felér egy új játék kezdésével.
+     */
     public void clear() {
+        HiveLogger.getLogger().debug("Board was cleared.");
         boardMap.clear();
     }
 

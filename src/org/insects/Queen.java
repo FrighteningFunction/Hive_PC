@@ -1,5 +1,6 @@
 package org.insects;
 
+import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.Player;
 
@@ -7,8 +8,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Queen extends Insect{
-    public Queen(Player p){
-        super(p);
+    public Queen(Player p, GameLogic gameLogic){
+        super(p, gameLogic);
         maxstep=1;
     }
 }

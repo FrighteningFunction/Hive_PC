@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public abstract class Insect {
+    protected GameLogic gameLogic;
     protected int maxstep;
 
     private boolean initialized;
@@ -15,7 +16,8 @@ public abstract class Insect {
 
     protected GameTile location;
 
-    protected Insect(Player p) {
+    protected Insect(Player p, GameLogic gameLogic) {
+        this.gameLogic = gameLogic;
         initialized = false;
         player = p;
         location = null;
@@ -35,7 +37,7 @@ public abstract class Insect {
     }
 
     public void move(GameTile chosenTile, Set<GameTile> availableTiles) {
-        if(GameLogic.wouldHiveBeConnected(location)) {
+        if(gameLogic.wouldHiveBeConnected(location)) {
             if (availableTiles.contains(chosenTile)) {
                 chosenTile.initialize(this);
                 location.uninitialize();
@@ -51,7 +53,7 @@ public abstract class Insect {
         if (initialized) {
             HiveLogger.getLogger().fatal("Already initialized insect was to be placed!");
         } else {
-            Set<GameTile> availableTiles = GameLogic.pingAvailableTilesForPlacing(this.player);
+            Set<GameTile> availableTiles = gameLogic.pingAvailableTilesForPlacing(this.player);
             if(availableTiles.contains(tile)){
                 initialized = true;
                 tile.initialize(this);

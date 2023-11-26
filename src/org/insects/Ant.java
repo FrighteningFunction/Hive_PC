@@ -1,5 +1,6 @@
 package org.insects;
 
+import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.Player;
 
@@ -8,8 +9,8 @@ import java.util.Set;
 
 public class Ant extends Insect{
 
-    public Ant(Player p){
-        super(p);
+    public Ant(Player p, GameLogic gameLogic){
+        super(p, gameLogic);
     }
 
     /**

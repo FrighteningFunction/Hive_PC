@@ -1,6 +1,7 @@
 package org.insects;
 
 import org.game.GameBoard;
+import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.Player;
 
@@ -9,8 +10,8 @@ import java.util.Set;
 
 public class Grasshopper extends Insect{
 
-    public Grasshopper(Player p){
-        super(p);
+    public Grasshopper(Player p, GameLogic gameLogic){
+        super(p, gameLogic);
     }
 
     /**
@@ -41,6 +42,7 @@ public class Grasshopper extends Insect{
      *
      * @return a támogatott tile-ok listája.
      */
+    @Override
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
         for(int i=0; i<6; i++){

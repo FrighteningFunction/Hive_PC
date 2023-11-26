@@ -16,14 +16,11 @@ public class InsectTest {
     private GameBoard board;
     private GameLogic gameLogic;
 
-    private static final Player whiteP = new Player(HiveColor.WHITE);
-    private static final Player blackP = new Player(HiveColor.BLACK);
-
     private GameTile origoTile;
 
     private GameTile starterTile;
 
-    private Insect whiteQueen = new Queen(whiteP);
+    private Insect whiteQueen;
 
     /**
      * A teszteléshez felállítunk 1 inicializált tile-t,
@@ -33,7 +30,9 @@ public class InsectTest {
     @Before
     public void init(){
         board=GameBoard.getInstance();
+        GameLogic.newGame();
         gameLogic = GameLogic.getInstance();
+        whiteQueen=new Queen(gameLogic.getWhitePlayer(), gameLogic);
 
         origoTile = new GameTile(board, new Coordinate(0,0));
         whiteQueen.place(origoTile);
@@ -46,12 +45,11 @@ public class InsectTest {
 
     @Test
     public void insectPlaceTest(){
-        Insect queen = new
     }
 
     @Test
     public void grasshopperTest(){
-        Insect grasshopper = new Grasshopper(blackP);
+        Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
         grasshopper.place(starterTile);
         Set<GameTile> expected = new HashSet<>();
         expected.add(origoTile.getNeigbour(0));

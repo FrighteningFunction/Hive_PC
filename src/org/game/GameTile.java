@@ -2,9 +2,18 @@ package org.game;
 
 import org.insects.Insect;
 
+import static java.lang.Math.*;
 import static java.lang.System.exit;
 
 public class GameTile {
+
+    //the height of the tile
+    private static final double HEIGHT = 1;
+
+    //the degree of the directions of the neighbouring hexatiles
+    //in degrees
+    private static final double DIR = PI/6;
+
     private boolean initialized;
 
     private GameBoard board;
@@ -19,22 +28,31 @@ public class GameTile {
      * Mind a 6 oldalon csekkolja, hogy össze kell-e kötni más Tile-okkal, és
      * ha kell, össze is köti velük
      * Ekkor a GameTile nem inicializált!
+     *
      * @param b a játéktábla.
      * @param c a létrehozandó GameTile koordinátája.
      */
-    public GameTile(GameBoard b, Coordinate c){
-        initialized=false;
+    public GameTile(GameBoard b, Coordinate c) {
+        initialized = false;
         insect = null;
         this.board = b;
         this.coordinate = c;
-        for(int i=0; i<6; i++){
+        for (int i = 0; i < 6; i++) {
             board.linkTile(this, getCoordinateOfNeighbourAt(i), i);
         }
         try {
             board.addGameTile(this);
-        }catch(DoubleTileException e){
+        } catch (DoubleTileException e) {
             HiveLogger.getLogger().error("A new tile was created at an existing coordinate.");
         }
+    }
+
+    public static double getHeight() {
+        return HEIGHT;
+    }
+
+    public static double getDir(){
+        return DIR;
     }
 
     /**
@@ -42,19 +60,23 @@ public class GameTile {
      * Kizárólag inicializálatlan (ak. üres) tile-ok törölhetők ki. Egyébként fatális veszély lép fel.
      * Az összes rá mutató szomszéd-linket is kitörli.
      */
-    public void deleteGameTile(){
-        if(initialized){
+    public void deleteGameTile() {
+        if (initialized) {
             HiveLogger.getLogger().fatal("deleteGameTile call to an initialized GameTile!");
-        }else {
+        } else {
 
             board.removeGameTile(this);
             for (int i = 0; i < 6; i++) {
-                neighbours[i].removeNeighbour(GameBoard.invertDirection(i));
+                if(neighbours[i]==null){
+                    HiveLogger.getLogger().info("At a direction the blank tile found no neighbour.");
+                }else {
+                    neighbours[i].removeNeighbour(GameBoard.invertDirection(i));
+                }
             }
         }
     }
 
-    public Coordinate getCoordinate(){
+    public Coordinate getCoordinate() {
         return coordinate;
     }
 
@@ -62,20 +84,22 @@ public class GameTile {
         return neighbours[direction];
     }
 
-    public Insect getInsect(){
+    public Insect getInsect() {
         return insect;
     }
 
-    public void setInsect(Insect insect){
-        this.insect=insect;
+    public void setInsect(Insect insect) {
+        this.insect = insect;
     }
 
-    public void removeNeighbour(int direction){
+    public void removeNeighbour(int direction) {
         neighbours[direction] = null;
     }
 
-    public void setNeighbour(GameTile neighbour, int direction){
-        if(neighbour==null){HiveLogger.getLogger().warn("null GameTile-t kapott a setNeighbour");}
+    public void setNeighbour(GameTile neighbour, int direction) {
+        if (neighbour == null) {
+            HiveLogger.getLogger().warn("null GameTile-t kapott a setNeighbour");
+        }
         neighbours[direction] = neighbour;
     }
 
@@ -83,8 +107,8 @@ public class GameTile {
         return initialized;
     }
 
-    protected void setInitialized(boolean val){
-        initialized=val;
+    protected void setInitialized(boolean val) {
+        initialized = val;
         HiveLogger.getLogger().warn("GameTile setInitialized metódusa meghívva!");
     }
 
@@ -92,47 +116,48 @@ public class GameTile {
      * Visszaadja, hogy az adott tile árva-e.
      * Egy tile akkor árva, ha nem létezik inicializált szomszédja.
      * Működés szerint a játékban ilyen nem létezhet.
+     *
      * @return true, ha árva, hamis, ha nem az.
      */
-    public boolean isOrphan(){
-        for (int i=0; i<6; i++){
-            if(neighbours[i]!=null && neighbours[i].isInitialized()){
+    public boolean isOrphan() {
+        for (int i = 0; i < 6; i++) {
+            if (neighbours[i] != null && neighbours[i].isInitialized()) {
                 return false;
             }
         }
         return true;
     }
 
-    public Coordinate getCoordinateOfNeighbourAt(int direction){
+    public Coordinate getCoordinateOfNeighbourAt(int direction) {
         double x1 = coordinate.getX();
         double y1 = coordinate.getY();
         double x2 = 0;
         double y2 = 0;
 
-        switch(direction){
+        switch (direction) {
             case 0:
-                x2=x1;
-                y2=y1+1;
+                x2 = x1;
+                y2 = y1 + HEIGHT;
                 break;
             case 1:
-                x2=x1+0.5;
-                y2=y1+0.5;
+                x2 = x1 + HEIGHT * cos(DIR);
+                y2 = y1 + HEIGHT * sin(DIR);
                 break;
             case 2:
-                x2=x1+0.5;
-                y2=y1-0.5;
+                x2 = x1 + HEIGHT * cos(DIR);
+                y2 = y1 - HEIGHT * sin(DIR);
                 break;
             case 3:
-                x2=x1;
-                y2=y1-1;
+                x2 = x1;
+                y2 = y1 - HEIGHT;
                 break;
             case 4:
-                x2=x1-0.5;
-                y2=y1-0.5;
+                x2 = x1 - HEIGHT * cos(DIR);
+                y2 = y1 - HEIGHT * sin(DIR);
                 break;
             case 5:
-                x2=x1-0.5;
-                y2=y1+0.5;
+                x2 = x1 - HEIGHT * cos(DIR);
+                y2 = y1 + HEIGHT * sin(DIR);
                 break;
             default:
                 HiveLogger.getLogger().fatal("Fatal: invalid direction got at coordinate calculation");
@@ -150,13 +175,13 @@ public class GameTile {
             HiveLogger.getLogger().fatal("GameTile already initialized.");
             exit(1);
         } else {
-            initialized=true;
-            this.insect=insect;
-            for(int i=0; i<6; i++){
-                if(neighbours[i]==null){
-                    neighbours[i]=new GameTile(board, getCoordinateOfNeighbourAt(i));
+            initialized = true;
+            this.insect = insect;
+            for (int i = 0; i < 6; i++) {
+                if (neighbours[i] == null) {
+                    neighbours[i] = new GameTile(board, getCoordinateOfNeighbourAt(i));
                     board.linkTile(this, neighbours[i].getCoordinate(), i);
-                }else{
+                } else {
                     HiveLogger.getLogger().info("At a direction there already was a Tile.");
                 }
             }
@@ -167,11 +192,11 @@ public class GameTile {
      * Uninicializálja a tile-t: vagyis a rovart eltávolítja belőle, valamint az összes olyan szomszédját kitörli,
      * amely így árvává vált.
      */
-    public void uninitialize(){
-        if(!initialized){
+    public void uninitialize() {
+        if (!initialized) {
             HiveLogger.getLogger().fatal("An already unitialized tile was to be uninitialized!");
-        }else {
-            initialized=false;
+        } else {
+            initialized = false;
             insect = null;
             for (int i = 0; i < 6; i++) {
                 if (!this.getNeigbour(i).isInitialized() && this.getNeigbour(i).isOrphan()) {

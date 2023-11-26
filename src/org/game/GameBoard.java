@@ -29,6 +29,14 @@ public class GameBoard {
     }
 
     /**
+     * The total amount of tiles on the board.
+     * @return the amount of tiles on the board.
+     */
+    public int getSize(){
+        return boardMap.size();
+    }
+
+    /**
      * Visszaadja a játéktábla összes Inicializált Tile-jét egy halmazként.
      * @return a tile-ok halmaza.
      */
@@ -98,6 +106,10 @@ public class GameBoard {
         return boardMap.containsKey(tile.getCoordinate());
     }
 
+    public boolean hasGameTile(Coordinate c) {
+        return boardMap.containsKey(c);
+    }
+
     public void clear() {
         boardMap.clear();
     }
@@ -124,15 +136,13 @@ public class GameBoard {
      */
     public void linkTile(GameTile caller, Coordinate atCoordinate, int atDirection) {
         if (atDirection < 0 || atDirection > 5) {
-            HiveLogger.getLogger().error("FATAL: invalid direction at linkTile");
+            HiveLogger.getLogger().fatal("invalid direction at linkTile");
             exit(1);
         }
         if (boardMap.containsKey(atCoordinate)) {
             GameTile linkable = boardMap.get(atCoordinate);
             caller.setNeighbour(linkable, atDirection);
             linkable.setNeighbour(caller, invertDirection(atDirection));
-        } else {
-            HiveLogger.getLogger().info("Egy irányban talált a linkTile szomszédot.");
         }
     }
 }

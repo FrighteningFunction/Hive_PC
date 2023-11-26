@@ -29,8 +29,6 @@ K
 src/org/game/GameLogic.java,0\7\079d5203dcce4e3bf55fb1b28687c4861f270c7a
 H
 src/org/game/Player.java,3\e\3edcaabfc78d972124161048bc139a969917df3d
-G
-src/org/game/Color.java,b\1\b1ffb5976c5fc340a94d892a9f911497994a7ec3
 K
 src/org/game/HiveColor.java,6\7\6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c
 Å
@@ -73,3 +71,10 @@ w
 G.idea/sonarlint/issuestore/4/0/4054654ba59dcf6266f18ba81cc248f283152b56,f\c\fcd182276360aeb1a00e501a9ae9443b66f347fb
 Å
 Q.idea/sonarlint/securityhotspotstore/4/0/4054654ba59dcf6266f18ba81cc248f283152b56,3\e\3ed5162da22de8f3019c423e6b9d0945f22e4885
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+L
+src/org/game/Coordinate.java,f\9\f9d1926cc7b6c10e3d0187cef04e376148e391b9
+;
+Hive_PC.iml,b\5\b56928c11ac56b56d806e8f665b5a07692d14d4f

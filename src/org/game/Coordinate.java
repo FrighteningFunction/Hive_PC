@@ -1,9 +1,12 @@
 package org.game;
 
+import static java.lang.Math.*;
+
 public class Coordinate {
-    private double x;
-    private double y;
-    private static final double DELTA = 0.01; // Define the acceptable delta
+    private final double x;
+    private final double y;
+    private static final double XGRID = GameTile.getHeight() * cos(GameTile.getDir());
+    private static final double YGRID = GameTile.getHeight() * sin(GameTile.getDir());
 
     public Coordinate(double x, double y) {
         this.x = x;
@@ -18,6 +21,14 @@ public class Coordinate {
         return y;
     }
 
+    public static double getXDELTA() {
+        return XGRID;
+    }
+
+    public static double getYDELTA() {
+        return YGRID;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -25,14 +36,13 @@ public class Coordinate {
 
         Coordinate that = (Coordinate) obj;
 
-        return Math.abs(x - that.x) < DELTA && Math.abs(y - that.y) < DELTA;
+        return Math.round(x / XGRID) == Math.round(that.x / XGRID) && Math.round(y / YGRID) == Math.round(that.y / YGRID);
     }
 
     @Override
     public int hashCode() {
-        // Implement a suitable hash function considering DELTA
-        long hashX = Double.doubleToLongBits(x);
-        long hashY = Double.doubleToLongBits(y);
-        return 31 * Long.hashCode(hashX) + Long.hashCode(hashY);
+        int hashX = (int) Math.round(x / XGRID);
+        int hashY = (int) Math.round(y / YGRID);
+        return 31 * hashX + hashY;
     }
 }

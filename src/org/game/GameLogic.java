@@ -4,8 +4,33 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class GameLogic {
+    private static GameLogic instance;
+
+    private int turns;
 
     private GameLogic() {
+        turns = 1;
+    }
+
+    public static GameLogic getInstance(){
+        HiveLogger.getLogger().debug("GameLogic getInstance called!");
+        if(instance == null){
+            instance=new GameLogic();
+        }
+        return instance;
+    }
+
+    public int getTurns(){
+        return turns;
+    }
+
+    public void setTurns(int val){
+        HiveLogger.getLogger().info("GameLogic setTurns called!");
+        turns = val;
+    }
+
+    public void incrementTurns(){
+        turns++;
     }
 
     /**

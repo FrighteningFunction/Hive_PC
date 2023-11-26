@@ -21,11 +21,11 @@ public class Coordinate {
         return y;
     }
 
-    public static double getXDELTA() {
+    public static double getXGRID() {
         return XGRID;
     }
 
-    public static double getYDELTA() {
+    public static double getYGRID() {
         return YGRID;
     }
 

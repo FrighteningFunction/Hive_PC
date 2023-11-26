@@ -9,8 +9,8 @@ import static org.junit.Assert.*;
 public class GameBoardTest {
     private final double HEIGHT = GameTile.getHeight();
 
-    private static final double XGRID = Coordinate.getXDELTA(); // assuming these are accessible
-    private static final double YGRID = Coordinate.getYDELTA();
+    private static final double XGRID = Coordinate.getXGRID(); // assuming these are accessible
+    private static final double YGRID = Coordinate.getYGRID();
     private GameBoard board;
 
     private Insect getInsect() {
@@ -56,8 +56,8 @@ public class GameBoardTest {
     public void testHashingAtDeltaBoundaries() {
         new GameTile(board, new Coordinate(0, 0));
 
-        double xDelta = Coordinate.getXDELTA() / 2; //Ez pont a kerekítés határa
-        double yDelta = Coordinate.getYDELTA() / 2;
+        double xDelta = Coordinate.getXGRID() / 2; //Ez pont a kerekítés határa
+        double yDelta = Coordinate.getYGRID() / 2;
 
         // Test coordinates just within the delta
         assertTrue("Tile should exist just within XDELTA", board.hasGameTile(new Coordinate(xDelta - 0.001, 0)));

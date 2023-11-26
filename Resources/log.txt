@@ -1,0 +1,67 @@
+2023-11-26T12:47:07,724 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T12:47:07,730 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:47:07,731 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:47:07,731 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:47:07,732 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:47:07,745 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T12:49:45,035 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T12:49:47,542 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:49:47,543 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:49:47,544 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:49:47,545 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:49:48,744 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T12:51:03,880 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T12:51:03,899 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T12:51:03,901 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:51:03,902 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:51:03,902 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T12:51:03,903 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:02:34,213 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T13:02:34,225 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T13:02:34,227 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:02:34,228 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:02:34,228 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:02:34,229 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:06:55,568 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T13:06:55,579 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T13:06:55,581 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:06:55,582 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:06:55,582 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:06:55,583 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:17:45,975 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:17:45,982 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:17:45,982 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:17:45,983 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:17:45,994 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T13:17:46,001 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T13:18:20,204 [main] WARN  org.game.HiveLogger setInitialized - GameTile setInitialized metódusa meghívva!
+2023-11-26T13:18:20,213 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:18:20,214 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:18:20,215 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:18:20,215 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:18:20,229 [main] ERROR org.game.HiveLogger <init> - A new tile was created at an existing coordinate.
+2023-11-26T13:19:07,695 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:19:07,700 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:19:07,700 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:19:07,700 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:23:12,469 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:23:12,473 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:23:12,474 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:23:12,474 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T13:23:12,475 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,475 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,476 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,476 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,476 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,477 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,477 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,478 [main] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-11-26T13:23:12,478 [main] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-11-26T13:23:12,478 [main] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-11-26T13:23:12,479 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,479 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,479 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T13:23:12,479 [main] INFO  org.game.HiveLogger deleteGameTile - At a direction the blank tile found no neighbour.
+2023-11-26T14:43:02,632 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T14:43:02,637 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-11-26T14:43:02,637 [main] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.

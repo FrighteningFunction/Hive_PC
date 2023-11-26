@@ -78,24 +78,40 @@ public class GameBoard {
     }
 
     /**
-     * Kiad egy inicializált tile-t a GameBoard-ból.
+     * Kiad egy inicializált tile-t a GameBoard-ból, egy kivételével.
+     * A GameLogic wouldHiveBeConnected() metódusa miatt kell elsősorban.
+     * <p></p>
+     * Megjegyzés:
+     * A visszatért érték mindig null lesz, ha a táblán egy rovar van, vagy ha játékban nincs
+     * (aktív) rovar.
      *
-     * @return null ha a tábla üres; vagy nem az, csak nincs inicializált tile (ez utóbbi fatális hiba)
-     * chosenOne ha a tábla tartalmaz legalább egy inicializált tile-t
+     * @return null ha a tábla üres; vagy nem az, csak nincs inicializált tile a kivételen kívül
+     * <br>chosenOne ha a tábla tartalmaz legalább egy inicializált tile-t, ami nem a kivétel
      */
-    public GameTile getInitializedTile() {
+    public GameTile getInitializedTile(GameTile exception) {
         if (boardMap.isEmpty()) {
-            HiveLogger.getLogger().warn("getRandomTile was called for an empty board!");
+            HiveLogger.getLogger().warn("getInitializedTile was called for an empty board!");
+            return null;
+        }else if(!hasGameTile(exception)){
+            HiveLogger.getLogger().warn("getInitializedTile was called with a non-existant exception!");
+        }
+        Set<GameTile> initializedTiles = getInitializedTileSet();
+        if(initializedTiles.isEmpty()) {
+            HiveLogger.getLogger().warn("getInitializedTile did not find any initialized tiles in a non-empty board!");
+            return null;
+        }
+        initializedTiles.remove(exception);
+        if(initializedTiles.isEmpty()){
+            HiveLogger.getLogger().debug("getInitializedTile did not find any init. tiles besides the exception.");
             return null;
         }
         GameTile chosenOne = null;
-        for (GameTile tile : boardMap.values()) {
+        for (GameTile tile : initializedTiles) {
             if (tile.isInitialized()) {
                 chosenOne = tile;
                 break;
             }
         }
-        if (chosenOne == null) HiveLogger.getLogger().fatal("There are only uninitialized tiles on the GameBoard!");
         return chosenOne;
     }
 

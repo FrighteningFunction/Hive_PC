@@ -1,4 +1,8 @@
-package org.game;
+package org.insects;
+import org.game.Coordinate;
+import org.game.GameBoard;
+import org.game.GameLogic;
+import org.game.GameTile;
 import org.insects.*;
 
 import org.junit.After;
@@ -32,27 +36,48 @@ public class InsectTest {
         board=GameBoard.getInstance();
         GameLogic.newGame();
         gameLogic = GameLogic.getInstance();
+        gameLogic.setTurns(2);
         whiteQueen=new Queen(gameLogic.getWhitePlayer(), gameLogic);
 
         origoTile = new GameTile(board, new Coordinate(0,0));
         whiteQueen.place(origoTile);
         starterTile = origoTile.getNeigbour(3);
     }
-    @After
-    public void cleanUp(){
-        board.clear();
-    }
 
     @Test
     public void insectPlaceTest(){
+        Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
+        Set<GameTile> expected = new HashSet<>(board.getUnInitializedTileSet());
+        assertEquals("Incorrect gametiles pinged available for placing", expected, gameLogic.pingAvailableTilesForPlacing(gameLogic.getBlackPlayer()));
+
+        GameTile chosenTile = origoTile.getNeigbour(3);
+        grasshopper.place(chosenTile);
+        assertTrue("Insect was not placed as it should have been", chosenTile.isInitialized());
     }
 
     @Test
-    public void grasshopperTest(){
+    public void InsectMoveTest1(){
         Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
         grasshopper.place(starterTile);
         Set<GameTile> expected = new HashSet<>();
         expected.add(origoTile.getNeigbour(0));
+
         assertEquals("Incorrect availableTiles!", expected, grasshopper.pingAvailableTiles());
+
+        GameTile chosenTile = origoTile.getNeigbour(0);
+        grasshopper.move(chosenTile);
+        assertTrue("Insect was not moved as it should have been", chosenTile.isInitialized());
+        assertFalse("Starter Tile was not uninitialized", starterTile.isInitialized());
+    }
+
+    @Test
+    public void InsectMoveTest2(){
+        Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
+        grasshopper.place(starterTile);
+
+        GameTile chosenTile = origoTile.getNeigbour(2);
+        grasshopper.move(chosenTile);
+        assertFalse("Insect should not have been moved!", chosenTile.isInitialized());
+        assertTrue("Starter Tile was uninitialized even though insect did not move", starterTile.isInitialized());
     }
 }

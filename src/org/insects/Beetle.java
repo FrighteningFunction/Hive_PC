@@ -19,7 +19,8 @@ public class Beetle extends Insect {
     }
 
     @Override
-    public void move(GameTile chosenTile, Set<GameTile> availableTiles) {
+    public void move(GameTile chosenTile) {
+        Set<GameTile> availableTiles=pingAvailableTiles();
         if (availableTiles.contains(chosenTile)) {
             if (controlledInsect != null) {
                 location.setInsect(controlledInsect);

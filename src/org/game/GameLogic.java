@@ -72,13 +72,14 @@ public class GameLogic {
      *
      * @param visited a meglátogatott tile-ok halmaza.
      * @param root    a gyökér, ahonnan éppen indulunk
+     * @param exception a tile, ami nélküli adathalmazt vizsgálunk
      */
-    private static void pathFinder(Set<GameTile> visited, GameTile root) {
+    private static void pathFinder(Set<GameTile> visited, GameTile root, final GameTile exception) {
         visited.add(root);
         for (int i = 0; i < 6; i++) {
             GameTile to = root.getNeigbour(i);
-            if (to.isInitialized() && !visited.contains(to)) {
-                pathFinder(visited, to);
+            if (to.isInitialized() && !visited.contains(to) && to!=exception) {
+                pathFinder(visited, to, exception);
             }
         }
     }
@@ -86,30 +87,30 @@ public class GameLogic {
     /**
      * DFS-t segítségül hívva megállapítja, hogy a játéktábla összefüggő lenne-e,
      * ha az adott rovart elmozdítanánk (ak. a tile-ját uninicializálnánk)
+     * <p></p>
+     * <b>Megjegyzés:</b>
+     * Minden esetben, ha a tábla üres, összefüggő. Az üres gráf is az. Egyetlen
+     * rovar esetén is az, azt akárhogy "mozgathatnánk". 2 rovart definíció szerint
+     * nem lehet úgy mozgatni, hogy elszakadjanak, ezért azt az esetet sem nézzük.
      *
      * @param moveStart a tile, ahonnan a rovar mozogna.
-     * @return true, ha összefüggő maradna vagy a tábla a tábla legfeljebb egy inicializált tile-t tartalmaz,
-     * hamis, ha legalább 2 részre szétszakadna.
+     * @return true, ha összefüggő maradna vagy a tábla a tábla legfeljebb 2 inicializált tile-t tartalmaz,
+     * <br>hamis, ha size>2 és legalább 2 részre szétszakadna a mozgás miatt.
      */
-    public boolean wouldHiveBeConnected(GameTile moveStart) {
+    public boolean wouldHiveBeConnected(final GameTile moveStart) {
         Set<GameTile> newState = board.getInitializedTileSet();
+        if(newState.size()<=2){
+            return true;
+        }
         newState.remove(moveStart);
-        GameTile checkOrigo;
-
-        while (true) {
-            GameTile assign = board.getInitializedTile();
-            if (assign == null) {
-                HiveLogger.getLogger().error("a wouldHiveBeConnected() was called for an either empty or 1-insect board.");
-                return true;
-            }
-            if (!assign.equals(moveStart)) {
-                checkOrigo = assign;
-                break;
-            }
+        GameTile checkOrigo = board.getInitializedTile(moveStart);
+        if(checkOrigo==null){
+            HiveLogger.getLogger().fatal("getInitializedTile returned null, even though board had more than 2 initialized tiles!");
+            return false;
         }
 
         Set<GameTile> reachables = new HashSet<>();
-        pathFinder(reachables, checkOrigo);
+        pathFinder(reachables, checkOrigo, moveStart);
         return newState.equals(reachables);
     }
 

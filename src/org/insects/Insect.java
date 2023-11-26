@@ -36,7 +36,8 @@ public abstract class Insect {
         return player;
     }
 
-    public void move(GameTile chosenTile, Set<GameTile> availableTiles) {
+    public void move(GameTile chosenTile) {
+        Set<GameTile> availableTiles = pingAvailableTiles();
         if(gameLogic.wouldHiveBeConnected(location)) {
             if (availableTiles.contains(chosenTile)) {
                 chosenTile.initialize(this);
@@ -57,6 +58,7 @@ public abstract class Insect {
             if(availableTiles.contains(tile)){
                 initialized = true;
                 tile.initialize(this);
+                location=tile;
                 HiveLogger.getLogger().info("An insect was sucessfully placed.");
             }else{
                 HiveLogger.getLogger().info("Player wanted to place an insect to an invalid place");
@@ -113,7 +115,7 @@ public abstract class Insect {
      *
      * @return a támogatott tile-ok halmaza.
      */
-    public Set<GameTile> pingAvailableTiles() {
+    protected Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
         availableTiles = pathFinder(availableTiles, 0, location, null);
         return availableTiles;

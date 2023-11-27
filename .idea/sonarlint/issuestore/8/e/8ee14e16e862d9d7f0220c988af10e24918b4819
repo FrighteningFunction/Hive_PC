@@ -1,3 +1,5 @@
 
 »
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(€Òäúÿÿÿÿ8ÔÇ¥çÀ1
+java:S6548	"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(€Òäúÿÿÿÿ8Ÿè„òÀ1
+S
+java:S1068"1Remove this unused "boardGraphics" private field.(Äıñøÿÿÿÿ8®è„òÀ1

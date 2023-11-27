@@ -7,7 +7,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class GameBoardTest {
-    private final double HEIGHT = GameTile.getHeight();
+    private final double HEIGHT = GameTile.getHexaTileHeight();
 
     private static final double XGRID = Coordinate.getXGRID(); // assuming these are accessible
     private static final double YGRID = Coordinate.getYGRID();
@@ -16,7 +16,7 @@ public class GameBoardTest {
     private GameLogic gameLogic;
 
     private Insect getInsect() {
-        return new Queen(new Player(HiveColor.WHITE), gameLogic);
+        return new Queen(new Player(HiveColor.WHITE, gameLogic), gameLogic);
     }
 
     @Before

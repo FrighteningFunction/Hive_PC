@@ -5,8 +5,8 @@ import static java.lang.Math.*;
 public class Coordinate {
     private final double x;
     private final double y;
-    private static final double XGRID = GameTile.getHeight() * cos(GameTile.getDir());
-    private static final double YGRID = GameTile.getHeight() * sin(GameTile.getDir());
+    private static final double XGRID = GameTile.getHexaTileHeight() * cos(GameTile.getDir());
+    private static final double YGRID = GameTile.getHexaTileHeight() * sin(GameTile.getDir());
 
     public Coordinate(double x, double y) {
         this.x = x;

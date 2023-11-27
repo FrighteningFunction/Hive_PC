@@ -1,5 +1,7 @@
 package org.game;
 
+import org.graphics.BoardGraphics;
+
 import java.util.*;
 
 import static java.lang.System.exit;
@@ -12,9 +14,12 @@ public class GameBoard {
 
     private HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
 
+    private BoardGraphics boardGraphics = BoardGraphics.getInstance();
+
     /**
      * Visszaadja az egyetlen létező GameBoard példányt.
      * Ha a program futása alatt egy sem lett kész, akkor létrehoz egyet.
+     *
      * @return a GameBoard singleton példány.
      */
     public static GameBoard getInstance() {
@@ -35,42 +40,53 @@ public class GameBoard {
 
     /**
      * The total amount of tiles on the board.
+     *
      * @return the amount of tiles on the board.
      */
-    public int getSize(){
+    public int getSize() {
         return boardMap.size();
     }
 
     /**
+     * Visszaadja válogatás nélkül az összes GameTile-t egy halmazként.
+     * @return a Tile-ok halmaza.
+     */
+    public Set<GameTile> getTileSet(){
+        return new HashSet<>(boardMap.values());
+    }
+
+    /**
      * Visszaadja a játéktábla összes Inicializált Tile-jét egy halmazként.
+     *
      * @return a tile-ok halmaza.
      */
-    public Set<GameTile> getInitializedTileSet(){
-       Set<GameTile> initializedTiles = new HashSet<>();
-       for(GameTile tile : boardMap.values()){
-           if(tile.isInitialized()){
-               initializedTiles.add(tile);
-           }
-       }
-       if(initializedTiles.isEmpty()){
-           HiveLogger.getLogger().error("A getInitializedTileSet() nem talált egyetlen inicializált Tile-t sem!");
-       }
+    public Set<GameTile> getInitializedTileSet() {
+        Set<GameTile> initializedTiles = new HashSet<>();
+        for (GameTile tile : boardMap.values()) {
+            if (tile.isInitialized()) {
+                initializedTiles.add(tile);
+            }
+        }
+        if (initializedTiles.isEmpty()) {
+            HiveLogger.getLogger().error("A getInitializedTileSet() nem talált egyetlen inicializált Tile-t sem!");
+        }
 
-       return initializedTiles;
+        return initializedTiles;
     }
 
     /**
      * Visszaadja a játéktábla összes Nem inicializált Tile-jét egy halmazként.
+     *
      * @return a tile-ok halmaza.
      */
-    public Set<GameTile> getUnInitializedTileSet(){
+    public Set<GameTile> getUnInitializedTileSet() {
         Set<GameTile> uninitializedTiles = new HashSet<>();
-        for(GameTile tile : boardMap.values()){
-            if(!tile.isInitialized()){
+        for (GameTile tile : boardMap.values()) {
+            if (!tile.isInitialized()) {
                 uninitializedTiles.add(tile);
             }
         }
-        if(uninitializedTiles.isEmpty()){
+        if (uninitializedTiles.isEmpty()) {
             HiveLogger.getLogger().error("A getUnInitializedTileSet() nem talált egyetlen nem inicializált Tile-t sem!");
         }
 
@@ -92,16 +108,16 @@ public class GameBoard {
         if (boardMap.isEmpty()) {
             HiveLogger.getLogger().warn("getInitializedTile was called for an empty board!");
             return null;
-        }else if(!hasGameTile(exception)){
+        } else if (!hasGameTile(exception)) {
             HiveLogger.getLogger().warn("getInitializedTile was called with a non-existant exception!");
         }
         Set<GameTile> initializedTiles = getInitializedTileSet();
-        if(initializedTiles.isEmpty()) {
+        if (initializedTiles.isEmpty()) {
             HiveLogger.getLogger().warn("getInitializedTile did not find any initialized tiles in a non-empty board!");
             return null;
         }
         initializedTiles.remove(exception);
-        if(initializedTiles.isEmpty()){
+        if (initializedTiles.isEmpty()) {
             HiveLogger.getLogger().debug("getInitializedTile did not find any init. tiles besides the exception.");
             return null;
         }

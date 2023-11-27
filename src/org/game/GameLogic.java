@@ -6,6 +6,14 @@ import java.util.Set;
 public class GameLogic {
     private static GameLogic instance = null;
 
+    enum SelectionState{
+        TILESELECT,
+
+        ACTIONSELECT;
+    }
+
+    private SelectionState selectionState = null;
+
     private int turns;
 
     private Player whitePlayer;
@@ -18,8 +26,8 @@ public class GameLogic {
 
     private GameLogic() {
         turns = 1;
-        whitePlayer = new Player(HiveColor.WHITE);
-        blackPlayer = new Player(HiveColor.BLACK);
+        whitePlayer = new Player(HiveColor.WHITE, this);
+        blackPlayer = new Player(HiveColor.BLACK, this);
         nextPlayer=whitePlayer;
         board = GameBoard.getInstance();
         board.clear();
@@ -145,5 +153,9 @@ public class GameLogic {
         }
 
         return availableTiles;
+    }
+
+    public void gameloop(){
+
     }
 }

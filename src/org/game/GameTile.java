@@ -1,14 +1,20 @@
 package org.game;
 
+import org.graphics.BoardGraphics;
 import org.insects.Insect;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.geom.Path2D;
 
 import static java.lang.Math.*;
 import static java.lang.System.exit;
 
-public class GameTile {
+public class GameTile extends JComponent {
 
     //the height of the tile
-    private static final double HEIGHT = 1;
+    private static final double HEIGHT = 50;
 
     //the degree of the directions of the neighbouring hexatiles
     //in degrees
@@ -16,7 +22,11 @@ public class GameTile {
 
     private boolean initialized;
 
+    private boolean pinged;
+
     private GameBoard board;
+
+    private BoardGraphics boardGraphics;
 
     private Insect insect;
 
@@ -33,7 +43,9 @@ public class GameTile {
      * @param c a létrehozandó GameTile koordinátája.
      */
     public GameTile(GameBoard b, Coordinate c) {
+        boardGraphics = BoardGraphics.getInstance();
         initialized = false;
+        pinged = false;
         insect = null;
         this.board = b;
         this.coordinate = c;
@@ -42,12 +54,14 @@ public class GameTile {
         }
         try {
             board.addGameTile(this);
+            boardGraphics.add(this);
+            setVisible(false);
         } catch (DoubleTileException e) {
             HiveLogger.getLogger().error("A new tile was created at an existing coordinate.");
         }
     }
 
-    public static double getHeight() {
+    public static double getHexaTileHeight() {
         return HEIGHT;
     }
 
@@ -94,6 +108,7 @@ public class GameTile {
 
     public void removeNeighbour(int direction) {
         neighbours[direction] = null;
+        insect.decrementNeighbours();
     }
 
     public void setNeighbour(GameTile neighbour, int direction) {
@@ -101,6 +116,7 @@ public class GameTile {
             HiveLogger.getLogger().warn("null GameTile-t kapott a setNeighbour");
         }
         neighbours[direction] = neighbour;
+        insect.incrementNeighbours();
     }
 
     public boolean isInitialized() {
@@ -109,7 +125,12 @@ public class GameTile {
 
     protected void setInitialized(boolean val) {
         initialized = val;
+        setVisible(true);
         HiveLogger.getLogger().warn("GameTile setInitialized metódusa meghívva!");
+    }
+
+    public void setPinged(boolean val){
+        pinged=val;
     }
 
     /**
@@ -207,4 +228,37 @@ public class GameTile {
             }
         }
     }
+
+    //todo: esetkezelés
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.setColor(Color.BLACK); // Set hexagon color
+
+        // Draw hexagon
+        Shape hexagon = createHexagon();
+        g2d.draw(hexagon);
+    }
+
+    //todo: átírni, hogy különböző méretekre is jó legyen
+    private Shape createHexagon() {
+        Coordinate c = boardGraphics.refactorCoordinate(this.getCoordinate());
+        double x = c.getX();
+        double y = c.getY();
+        //size = a hatszög sugara
+        double size = HEIGHT/2*cos(DIR);
+
+        Path2D path = new Path2D.Double();
+        double angleStep = Math.PI / 3; // Hexagon angle step
+        path.moveTo(x + size * Math.cos(0), y + size * Math.sin(0));
+
+        for (int i = 1; i <= 6; i++) {
+            path.lineTo(x + size * Math.cos(i * angleStep), y + size * Math.sin(i * angleStep));
+        }
+
+        path.closePath();
+        return path;
+    }
+
 }

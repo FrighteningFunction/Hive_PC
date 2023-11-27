@@ -7,6 +7,8 @@ import java.util.Set;
 
 public abstract class Insect {
     protected GameLogic gameLogic;
+
+    protected int totalNeighbours;
     protected int maxstep;
 
     private boolean initialized;
@@ -119,6 +121,18 @@ public abstract class Insect {
         Set<GameTile> availableTiles = new HashSet<>();
         availableTiles = pathFinder(availableTiles, 0, location, null);
         return availableTiles;
+    }
+
+    public void incrementNeighbours(){
+        totalNeighbours++;
+    }
+
+    public void decrementNeighbours(){
+        totalNeighbours--;
+    }
+
+    public int getTotalNeighbours(){
+        return totalNeighbours;
     }
 
 }

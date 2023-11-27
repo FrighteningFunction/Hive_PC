@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Queen extends Insect{
+
     public Queen(Player p, GameLogic gameLogic){
         super(p, gameLogic);
         maxstep=1;

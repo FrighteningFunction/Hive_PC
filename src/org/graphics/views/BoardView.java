@@ -1,34 +1,24 @@
-package org.graphics;
+package org.graphics.views;
 
 import org.game.Coordinate;
 import org.game.GameBoard;
-import org.game.GameTile;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class BoardGraphics extends JPanel {
+public class BoardView extends JPanel {
 
-    private static BoardGraphics instance;
+    private static BoardView instance;
     private GameBoard board = GameBoard.getInstance();
 
-    private BoardGraphics() {
+    private BoardView() {
         this.setLayout(null);
     }
 
-    public static BoardGraphics getInstance(){
+    public static BoardView getInstance(){
         if(instance==null){
-            instance = new BoardGraphics();
+            instance = new BoardView();
         }
         return instance;
-    }
-
-    @Override
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        for (GameTile tile : board.getInitializedTileSet()) {
-            tile.repaint();
-        }
     }
 
     public Coordinate refactorCoordinate(Coordinate c) {
@@ -40,6 +30,4 @@ public class BoardGraphics extends JPanel {
 
         return new Coordinate(x, y);
     }
-
-
 }

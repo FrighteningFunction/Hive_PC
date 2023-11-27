@@ -1,17 +1,15 @@
 package org.game;
 
-import org.graphics.BoardGraphics;
+import org.graphics.controllers.GameTileController;
 import org.insects.Insect;
-
-import javax.swing.*;
-
-import java.awt.*;
-import java.awt.geom.Path2D;
 
 import static java.lang.Math.*;
 import static java.lang.System.exit;
 
-public class GameTile extends JComponent {
+public class GameTile {
+    private GameTileController gameTileController;
+
+    private TileStates state;
 
     //the height of the tile
     private static final double HEIGHT = 50;
@@ -22,11 +20,7 @@ public class GameTile extends JComponent {
 
     private boolean initialized;
 
-    private boolean pinged;
-
     private GameBoard board;
-
-    private BoardGraphics boardGraphics;
 
     private Insect insect;
 
@@ -43,10 +37,9 @@ public class GameTile extends JComponent {
      * @param c a létrehozandó GameTile koordinátája.
      */
     public GameTile(GameBoard b, Coordinate c) {
-        boardGraphics = BoardGraphics.getInstance();
         initialized = false;
-        pinged = false;
         insect = null;
+        state=TileStates.UNSELECTED;
         this.board = b;
         this.coordinate = c;
         for (int i = 0; i < 6; i++) {
@@ -54,11 +47,10 @@ public class GameTile extends JComponent {
         }
         try {
             board.addGameTile(this);
-            boardGraphics.add(this);
-            setVisible(false);
         } catch (DoubleTileException e) {
             HiveLogger.getLogger().error("A new tile was created at an existing coordinate.");
         }
+        notifyListeners();
     }
 
     public static double getHexaTileHeight() {
@@ -67,6 +59,19 @@ public class GameTile extends JComponent {
 
     public static double getDir(){
         return DIR;
+    }
+
+    public GameTileController getGameTileController(){
+        return gameTileController;
+    }
+
+    public TileStates getState(){
+        return state;
+    }
+
+    public void setState(TileStates val){
+        state=val;
+        notifyListeners();
     }
 
     /**
@@ -104,11 +109,11 @@ public class GameTile extends JComponent {
 
     public void setInsect(Insect insect) {
         this.insect = insect;
+        notifyListeners();
     }
 
     public void removeNeighbour(int direction) {
         neighbours[direction] = null;
-        insect.decrementNeighbours();
     }
 
     public void setNeighbour(GameTile neighbour, int direction) {
@@ -116,7 +121,6 @@ public class GameTile extends JComponent {
             HiveLogger.getLogger().warn("null GameTile-t kapott a setNeighbour");
         }
         neighbours[direction] = neighbour;
-        insect.incrementNeighbours();
     }
 
     public boolean isInitialized() {
@@ -125,12 +129,8 @@ public class GameTile extends JComponent {
 
     protected void setInitialized(boolean val) {
         initialized = val;
-        setVisible(true);
         HiveLogger.getLogger().warn("GameTile setInitialized metódusa meghívva!");
-    }
-
-    public void setPinged(boolean val){
-        pinged=val;
+        notifyListeners();
     }
 
     /**
@@ -229,36 +229,17 @@ public class GameTile extends JComponent {
         }
     }
 
-    //todo: esetkezelés
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        Graphics2D g2d = (Graphics2D) g;
-        g2d.setColor(Color.BLACK); // Set hexagon color
-
-        // Draw hexagon
-        Shape hexagon = createHexagon();
-        g2d.draw(hexagon);
+    public void gotClicked(){
+        GameLogic.getInstance().clickedTile(this);
     }
 
-    //todo: átírni, hogy különböző méretekre is jó legyen
-    private Shape createHexagon() {
-        Coordinate c = boardGraphics.refactorCoordinate(this.getCoordinate());
-        double x = c.getX();
-        double y = c.getY();
-        //size = a hatszög sugara
-        double size = HEIGHT/2*cos(DIR);
+    public void addGameTileController(GameTileController listener){
+        this.gameTileController=listener;
+    }
 
-        Path2D path = new Path2D.Double();
-        double angleStep = Math.PI / 3; // Hexagon angle step
-        path.moveTo(x + size * Math.cos(0), y + size * Math.sin(0));
-
-        for (int i = 1; i <= 6; i++) {
-            path.lineTo(x + size * Math.cos(i * angleStep), y + size * Math.sin(i * angleStep));
+    public void notifyListeners(){
+        if(gameTileController!=null) {
+            gameTileController.onModelChange();
         }
-
-        path.closePath();
-        return path;
     }
-
 }

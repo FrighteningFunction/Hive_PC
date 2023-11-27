@@ -1,4 +1,4 @@
-package org.graphics;
+package org.graphics.views;
 
 import javax.swing.*;
 import java.awt.*;

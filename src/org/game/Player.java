@@ -14,8 +14,8 @@ public class Player {
 
     private List<Insect> insects = new ArrayList<>();
 
-    Player(HiveColor color, GameLogic gameLogic){
-        this.color=color;
+    Player(HiveColor color, GameLogic gameLogic) {
+        this.color = color;
 
         queen = new Queen(this, gameLogic);
 
@@ -36,15 +36,25 @@ public class Player {
         insects.add(new Spider(this, gameLogic));
     }
 
-    public void removeInsect(Insect insect){
-        if(!insects.remove(insect)){
+    public void removeInsect(Insect insect) {
+        if (!insects.remove(insect)) {
             HiveLogger.getLogger().error("A nonexistent insect was to be removed from Player");
         }
     }
 
-    public int getNeighboursOfQueen(){
+    public int getNeighboursOfQueen() {
         return queen.getTotalNeighbours();
     }
 
+    public boolean isQueenDown() {
+        return !insects.contains(queen);
+    }
 
+    public Queen getQueen(){
+        return queen;
+    }
+
+    public HiveColor getColor(){
+        return color;
+    }
 }

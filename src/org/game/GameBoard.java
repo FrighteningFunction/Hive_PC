@@ -1,6 +1,6 @@
 package org.game;
 
-import org.graphics.BoardGraphics;
+import org.graphics.controllers.BoardController;
 
 import java.util.*;
 
@@ -9,12 +9,12 @@ import static java.lang.System.exit;
 public class GameBoard {
     private static GameBoard instance;
 
+    private BoardController listener;
+
     private GameBoard() {
     }
 
     private HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
-
-    private BoardGraphics boardGraphics = BoardGraphics.getInstance();
 
     /**
      * Visszaadja az egyetlen létező GameBoard példányt.
@@ -35,6 +35,7 @@ public class GameBoard {
             throw new DoubleTileException();
         } else {
             boardMap.put(tile.getCoordinate(), tile);
+            notifyOnGameTileAdded(tile);
         }
     }
 
@@ -49,9 +50,10 @@ public class GameBoard {
 
     /**
      * Visszaadja válogatás nélkül az összes GameTile-t egy halmazként.
+     *
      * @return a Tile-ok halmaza.
      */
-    public Set<GameTile> getTileSet(){
+    public Set<GameTile> getTileSet() {
         return new HashSet<>(boardMap.values());
     }
 
@@ -134,6 +136,7 @@ public class GameBoard {
     public void removeGameTile(GameTile tile) {
         if (boardMap.containsKey(tile.getCoordinate())) {
             boardMap.remove(tile.getCoordinate());
+            notifyOnGameTileRemoved(tile);
         } else {
             HiveLogger.getLogger().warn("Requested removable GameTile not found!");
         }
@@ -152,8 +155,10 @@ public class GameBoard {
      * Felér egy új játék kezdésével.
      */
     public void clear() {
+        for(GameTile tile : boardMap.values()){
+            tile.deleteGameTile();
+        }
         HiveLogger.getLogger().debug("Board was cleared.");
-        boardMap.clear();
     }
 
     /**
@@ -186,5 +191,23 @@ public class GameBoard {
             caller.setNeighbour(linkable, atDirection);
             linkable.setNeighbour(caller, invertDirection(atDirection));
         }
+    }
+
+    public void notifyOnGameTileAdded(GameTile tile) {
+        if(listener!=null) {
+            GraphicLogger.getLogger().info("GameBoard did not notify controller: null instance");
+            listener.onGameTileAdded(tile);
+        }
+    }
+
+    public void notifyOnGameTileRemoved(GameTile tile){
+        if(listener!=null){
+            GraphicLogger.getLogger().info("GameBoard did not notify controller: null instance");
+            listener.onGameTileRemoved(tile);
+        }
+    }
+
+    public void addListener(BoardController listener){
+        this.listener=listener;
     }
 }

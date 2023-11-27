@@ -1,5 +1,7 @@
 package org.graphics;
 
+import org.graphics.views.MainMenu;
+
 import javax.swing.*;
 import java.awt.*;
 

@@ -60,8 +60,6 @@ Q.idea/sonarlint/securityhotspotstore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c
 w
 G.idea/sonarlint/issuestore/6/7/6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c,a\5\a57784b90965f6982f0fee197964cb610823d6cf
 Å
-Q.idea/sonarlint/securityhotspotstore/b/1/b1ffb5976c5fc340a94d892a9f911497994a7ec3,8\8\88d76a6291c3238cb7e4d3234d308bef30cf0b95
-Å
 Q.idea/sonarlint/securityhotspotstore/f/7/f7e394678d3250b2b11c78c13c6a1f04e1802270,a\8\a80e6eb5fe51eae9e920c29d1623da9c5ab1b468
 Å
 Q.idea/sonarlint/securityhotspotstore/8/3/8326fcf38acc35c617202cf976f437b891baca6c,f\4\f4d3d6e90ddb420cc46ac8a0f9cc5adc9e7f036c
@@ -78,12 +76,6 @@ L
 src/org/game/Coordinate.java,f\9\f9d1926cc7b6c10e3d0187cef04e376148e391b9
 ;
 Hive_PC.iml,b\5\b56928c11ac56b56d806e8f665b5a07692d14d4f
-M
-Test/org/game/InsectTest.java,f\a\fa7cb313a60caa93f09cf3baf1edc587b3fd8684
-O
-Test/org/org/GameBoardTest.java,2\6\2654ceee4f56c0751c075bef1281d3a790c693a6
-L
-Test/org/org/InsectTest.java,1\d\1d03426e751789526bb1c0978a59598b1b72e047
 P
  Test/org/insects/InsectTest.java,6\a\6ac360ebd27a6c87c06dfc0513c0d8347dea8465
 P
@@ -98,7 +90,45 @@ J
 src/org/graphics/Game.java,2\0\20b9b5faef6d98052391daf71b504d4f0d085672
 S
 #src/org/graphics/BoardGraphics.java,1\3\13adc0345b6ee189a09f88a9352e51154f38d9d2
-N
-src/org/graphics/HexaTile.java,6\f\6fdccc2697e5909ca0ea70fc71170f10ab85ec8a
 Q
 !src/org/graphics/PlayerPanel.java,f\3\f3e468d315c84bc565d92631613ae04b9e7fa9f0
+R
+"src/org/graphics/GameTileView.java,8\6\86840e5fb3a4e30b332d1d409ba4a0e4c07654dd
+S
+#src/org/graphics/ModelListener.java,9\0\9089bdf0513bdb2954e921fbfe28eaba9e7c99c0
+X
+(src/org/graphics/GameTileController.java,3\7\37f2b0024f391ac7a7e066af579d324e4ff145cf
+V
+&src/org/graphics/GameTileListener.java,b\7\b7b203b7ec781c4f40503adfcd410c7dda6268ad
+O
+src/org/graphics/BoardView.java,0\e\0e775c3e7d85e616dda91adaa20d369f8af6b8a7
+U
+%src/org/graphics/BoardController.java,0\4\042120063c7d6b022577fc4ce36c9a1ec5a4c246
+R
+"src/org/graphics/HiveListener.java,1\1\11523ad9a5afb79865b06d72f4db5f7a692ebffa
+L
+src/org/game/TileStates.java,b\b\bbb860a765ffc3722ff29f12f7f764e28e8166ef
+Y
+)src/org/graphics/GameLogicController.java,4\3\4339fa8f3c2d52fb2c9d1d702bab71d2dfd35eab
+S
+#Logging/org/game/GraphicLogger.java,e\3\e34b1869ff1eafef103e1dc35ba4a6aa4368eb84
+T
+$src/org/graphics/GameController.java,0\c\0c2703dc1f0d755d27ff98957cb024e3aaaed615
+d
+4src/org/graphics/controllers/GameTileController.java,7\c\7cd0f2a0755fe098ff170faa064eb25e0e5351ae
+a
+1src/org/graphics/controllers/BoardController.java,7\2\72b1e12499df9d3a0db7318632fe45340d6fa2fc
+`
+0src/org/graphics/controllers/GameController.java,3\e\3e755adb46028814093802cdbc2dbc5496de5838
+K
+src/org/graphics/views.java,1\3\13e51b0d3e57d0ce21e59f4853b069c7aecf1925
+T
+$src/org/graphics/views/MainMenu.java,b\7\b7170ba20d2f94c9383c57d313a40a41e982464b
+X
+(src/org/graphics/views/GameTileView.java,1\4\14d3c98e086c19c093a9e29bdf0e83fff878aa8d
+U
+%src/org/graphics/views/BoardView.java,2\e\2ef6c608dcba24a37c589f92e46a33edb98c0f60
+W
+'src/org/graphics/views/PlayerPanel.java,e\1\e17052103ec36c11ad62383cdbb78689dd3c1447
+P
+ src/org/graphics/views/Game.java,6\7\674bee27858545e24b5c657ee04ac5c75734bab4

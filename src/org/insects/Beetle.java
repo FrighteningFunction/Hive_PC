@@ -19,7 +19,7 @@ public class Beetle extends Insect {
     }
 
     @Override
-    public void move(GameTile chosenTile) {
+    public boolean move(GameTile chosenTile) {
         Set<GameTile> availableTiles=pingAvailableTiles();
         if (availableTiles.contains(chosenTile)) {
             if (controlledInsect != null) {
@@ -35,9 +35,11 @@ public class Beetle extends Insect {
             }else {
                 chosenTile.initialize(this);
             }
+            return true;
         } else {
             HiveLogger.getLogger().info("Beetle : the player wanted to step to an incorrect Tile");
         }
+        return false;
     }
 
     @Override

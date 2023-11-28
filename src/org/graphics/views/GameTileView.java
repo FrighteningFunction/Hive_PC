@@ -16,21 +16,21 @@ import org.apache.logging.log4j.Logger;
 import static java.lang.Math.cos;
 
 public class GameTileView extends JComponent {
-    private Logger logger = LogManager.getLogger();
+    private final transient Logger logger = LogManager.getLogger();
 
-    private TileStates states = TileStates.UNSELECTED;
+    private transient TileStates states = TileStates.UNSELECTED;
 
     private boolean initialized = false;
 
-    private Coordinate c;
+    private transient Coordinate c;
 
-    private Insect insect = null;
+    private transient Insect insect = null;
 
-    private final double HEIGHT = GameTile.getHexaTileHeight();
+    private static final double TILE_HEIGHT = GameTile.getHexaTileHeight();
 
-    private final double DIR = GameTile.getDir();
+    private static final double DIR = GameTile.getDir();
 
-    private final double RADIUS = HEIGHT / 2 * cos(DIR);
+    private static final double TILE_RADIUS = TILE_HEIGHT / 2 * cos(DIR);
 
     public GameTileView(Coordinate c) {
         this.c = c;
@@ -86,6 +86,12 @@ public class GameTileView extends JComponent {
                 }
                 hexagonDrawn = true;
                 break;
+            case UNSELECTED:
+                //Nem rajzolunk, nem loggolunk semmit.
+                break;
+            case TERMINATED:
+                logger.fatal("Terminated tile was to be drawn!");
+                break;
         }
 
         if (!hexagonDrawn) {
@@ -102,7 +108,7 @@ public class GameTileView extends JComponent {
     }
 
     private void drawHexagonBorder(Graphics2D g2d, Color borderColor) {
-        double borderSize = RADIUS + 3; // Adjust the border size as needed
+        double borderSize = TILE_RADIUS + 3; // Adjust the border size as needed
         g2d.setColor(borderColor);
         Shape borderHexagon = createHexagonWithSize(borderSize);
         g2d.draw(borderHexagon); // Draw border hexagon
@@ -110,7 +116,7 @@ public class GameTileView extends JComponent {
 
     private void drawHexagon(Graphics2D g2d, Color color) {
         g2d.setColor(color);
-        Shape hexagon = createHexagonWithSize(RADIUS);
+        Shape hexagon = createHexagonWithSize(TILE_RADIUS);
         g2d.fill(hexagon); // Fill hexagon for solid color
     }
 
@@ -128,14 +134,15 @@ public class GameTileView extends JComponent {
     }
 
     private Image resizeImageToFitTile(Image originalImage) {
-        int maxSize = (int) (RADIUS * 2);
+        int maxSize = (int) (TILE_RADIUS * 2);
 
         int originalWidth = originalImage.getWidth(this);
         int originalHeight = originalImage.getHeight(this);
 
         // Maintain aspect ratio
         double aspectRatio = (double) originalWidth / originalHeight;
-        int newWidth, newHeight;
+        int newWidth;
+        int newHeight;
 
         if (originalWidth > originalHeight) {
             // Width is the limiting dimension

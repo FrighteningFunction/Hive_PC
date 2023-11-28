@@ -13,8 +13,16 @@ public class HiveMain {
 
     static GamePanel gamePanel = new GamePanel();
 
+    static CardLayout mainCardLayout = new CardLayout();
+
+    private HiveMain(){}
+
     public static JPanel getMainPanel(){
         return mainPanel;
+    }
+
+    public static CardLayout getCardLayout(){
+        return mainCardLayout;
     }
 
     public static void main(String[] args) {
@@ -23,18 +31,20 @@ public class HiveMain {
         frame.setSize(800, 800);
         frame.setResizable(false);
 
-        // CardLayout to switch between panels
-        CardLayout cardLayout = new CardLayout();
-        mainPanel = new JPanel(cardLayout);
+        mainPanel = new JPanel(mainCardLayout);
 
         mainPanel.add(mainMenu, "Menu");
         mainPanel.add(gamePanel, "Game");
-        // ... add more panels
+
 
         // Switching panels
         // cardLayout.show(mainPanel, "Game"); to show the game panel
 
         frame.add(mainPanel);
         frame.setVisible(true);
+    }
+
+    public static GamePanel getGamePanel() {
+        return gamePanel;
     }
 }

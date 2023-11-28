@@ -23,6 +23,7 @@ public class GameTile {
 
     private boolean initialized;
 
+    //todo: ezt megnézni
     private final boolean isPlaceHolder;
 
     private GameBoard board;

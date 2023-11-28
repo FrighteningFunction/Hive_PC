@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.IOException;
 
 public class ImageLoader {
+    private ImageLoader(){}
+
     public static Image loadImage(String path) {
         try {
             return ImageIO.read(new File(path));

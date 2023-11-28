@@ -1,17 +1,21 @@
 package org.graphics.controllers;
 
-import jdk.dynalink.linker.GuardedInvocationTransformer;
 import org.game.Coordinate;
+import org.game.GameBoard;
 import org.game.GameTile;
 import org.game.GraphicLogger;
 import org.graphics.views.BoardView;
 import org.graphics.views.GameTileView;
 
 public class BoardController implements ModelListener{
-    BoardView boardView;
+    private BoardView boardView;
 
-    public BoardController(){
-        boardView=BoardView.getInstance();
+    private GameBoard board;
+
+    public BoardController(BoardView boardView, GameBoard board){
+        this.boardView=boardView;
+        this.board=board;
+        board.addListener(this);
         GraphicLogger.getLogger().info("BoardController was created successfully.");
     }
 

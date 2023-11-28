@@ -25,6 +25,7 @@ public class GameLogicTest {
     public void init(){
         board = GameBoard.getInstance();
         gameLogic = GameLogic.getInstance();
+        gameLogic.newGameforTesting();
         origoTile = new GameTile(board, new Coordinate(0,0));
         queen = new Queen(gameLogic.getBlackPlayer(), gameLogic);
         queen.place(origoTile);

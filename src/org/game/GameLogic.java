@@ -46,6 +46,35 @@ public class GameLogic {
     private GameBoard board;
 
     private GameLogic() {
+        gameState = GameState.TERMINATED;
+        turns = 1;
+        whitePlayer = new Player(HiveColor.WHITE, this);
+        blackPlayer = new Player(HiveColor.BLACK, this);
+        nextPlayer = whitePlayer;
+        board = GameBoard.getInstance();
+        winner = null;
+    }
+
+    /**
+     * Visszaadja az éppen aktuális GameLogic példányt.
+     * Ha még nem létezik, generál egyet.
+     *
+     * @return aktuális játékpéldány (GameLogic)
+     */
+    public static GameLogic getInstance() {
+        HiveLogger.getLogger().debug("GameLogic getInstance called!");
+        if (instance == null) {
+            instance = new GameLogic();
+        }
+        return instance;
+    }
+
+    /**
+     * Az új játékhoz reseteli a GameLogic attribútumait.
+     * Ezzel minden attribútuma újragenerálódik.
+     * (pl. a tábla is kitörlődik).
+     */
+    public void newGame() {
         gameState = GameState.RUNNING;
         turns = 1;
         whitePlayer = new Player(HiveColor.WHITE, this);
@@ -54,38 +83,34 @@ public class GameLogic {
         nextPlayer = whitePlayer;
         board = GameBoard.getInstance();
         board.clear();
-        new GameTile(board, new Coordinate(0,0));
-        winner=null;
+        new GameTile(board, new Coordinate(0, 0));
+        winner = null;
+        HiveLogger.getLogger().info("GameLogic: New Game was started successfully.");
     }
 
     /**
-     * Visszaadja az éppen aktuális GameLogic példányt.
-     * Vigyázat, első alkalommal nem generál példányt:
-     * először a newGame() statikus metódust kell ehhez meghívni.
+     * Tesztelési célokra létrehozott NewGame.
+     * Ugyanaz, mint a NewGame, csak itt az első anonim tile az origóban
+     * nincs lerakva automatikusan.
      *
-     * @return aktuális játékpéldány (GameLogic)
      */
-    public static GameLogic getInstance() {
-        HiveLogger.getLogger().debug("GameLogic getInstance called!");
-        if (instance == null) HiveLogger.getLogger().fatal("GameLogic getInstance called without starting newGame!");
-        return instance;
-    }
+    public void newGameforTesting(){
+        gameState = GameState.RUNNING;
+        turns = 1;
+        whitePlayer = new Player(HiveColor.WHITE, this);
+        blackPlayer = new Player(HiveColor.BLACK, this);
 
-    /**
-     * Létrehoz egy új GameLogic példányt.
-     * Ezzel minden attribútuma újragenerálódik.
-     * (pl. a tábla is kitörlődik).
-     */
-    public static void newGame() {
-        HiveLogger.getLogger().debug("GameLogic newGame called!");
-        instance = new GameLogic();
+        nextPlayer = whitePlayer;
+        board = GameBoard.getInstance();
+        board.clear();
+        winner = null;
     }
 
     public int getTurns() {
         return turns;
     }
 
-    public Player getWinner(){
+    public Player getWinner() {
         return winner;
     }
 
@@ -117,6 +142,10 @@ public class GameLogic {
 
     public Player getBlackPlayer() {
         return blackPlayer;
+    }
+
+    public GameBoard getBoard() {
+        return board;
     }
 
     /**
@@ -199,12 +228,11 @@ public class GameLogic {
             pingAvailableTilesForPlacing(nextPlayer);
 
             selectionState = SelectionState.PLACESELECT;
-            HiveLogger.getLogger().debug("{} player has to place its queen now!", nextPlayer.getColor().toString());
+            HiveLogger.getLogger().debug("{} player has to place its queen now!", nextPlayer.getColor());
         }
     }
 
     private void checkEndGameCondition() {
-        //todo: felugró ablak generálása (nem itt)
         if (whitePlayer.getNeighboursOfQueen() == 6) {
             HiveLogger.getLogger().debug("The black Player won!");
             gameState = GameState.TERMINATED;

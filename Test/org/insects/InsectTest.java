@@ -34,8 +34,8 @@ public class InsectTest {
     @Before
     public void init(){
         board=GameBoard.getInstance();
-        GameLogic.newGame();
         gameLogic = GameLogic.getInstance();
+        gameLogic.newGameforTesting();
         gameLogic.setTurns(2);
         whiteQueen=new Queen(gameLogic.getWhitePlayer(), gameLogic);
 

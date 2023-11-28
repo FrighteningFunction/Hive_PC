@@ -2,7 +2,6 @@ package org.graphics.views;
 
 import org.game.Coordinate;
 import org.game.GraphicLogger;
-import org.game.Player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,12 +11,6 @@ public class PlayerPanelView extends JPanel implements NullPanel{
     public PlayerPanelView(){
         this.setLayout(null);
         GraphicLogger.getLogger().info("PlayerPanelView created successfully.");
-    }
-
-    //todo: megvalósítás
-    @Override
-    protected void paintComponent(Graphics g){
-        throw new UnsupportedOperationException();
     }
 
     @Override

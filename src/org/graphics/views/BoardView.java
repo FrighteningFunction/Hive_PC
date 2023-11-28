@@ -6,22 +6,12 @@ import org.game.GraphicLogger;
 
 import javax.swing.*;
 
-//todo: Ez biztos Singleton legyen?
 public class BoardView extends JPanel implements NullPanel{
+    private transient GameBoard board = GameBoard.getInstance();
 
-    private static BoardView instance;
-    private GameBoard board = GameBoard.getInstance();
-
-    private BoardView() {
+    public BoardView() {
         this.setLayout(null);
         GraphicLogger.getLogger().info("BoardView was successfully created.");
-    }
-
-    public static BoardView getInstance(){
-        if(instance==null){
-            instance = new BoardView();
-        }
-        return instance;
     }
 
     @Override

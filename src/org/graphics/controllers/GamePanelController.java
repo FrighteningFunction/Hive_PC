@@ -3,6 +3,7 @@ package org.graphics.controllers;
 import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.GraphicLogger;
+import org.graphics.HiveMain;
 import org.graphics.views.GamePanel;
 
 public class GamePanelController implements ModelListener{
@@ -14,16 +15,14 @@ public class GamePanelController implements ModelListener{
         this.gameLogic = gameLogic;
         this.gamePanel = gamePanel;
 
-        new PlayerPanelController(gamePanel.getBlackPlayerPanelView(), gameLogic.getBlackPlayer());
-        new PlayerPanelController(gamePanel.getWhitePlayerPanelView(), gameLogic.getWhitePlayer());
-        new BoardController();
-
         GraphicLogger.getLogger().info("GamePanelController created successfully.");
     }
 
     public void onModelChange() {
         if (gameLogic.getGameState() == GameLogic.GameState.TERMINATED) {
             gamePanel.spawnVictoryDialog(gameLogic.getWinner());
+
+            HiveMain.getCardLayout().show(HiveMain.getMainPanel(), "Menu");
         }
     }
 

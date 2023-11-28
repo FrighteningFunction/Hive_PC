@@ -1,6 +1,5 @@
 package org.graphics.views;
 
-import org.game.GameLogic;
 import org.game.GraphicLogger;
 import org.game.Player;
 
@@ -15,7 +14,7 @@ public class GamePanel extends JPanel {
 
     public GamePanel() {
         this.setLayout(new GridLayout(3, 1));
-        boardView = BoardView.getInstance();
+        boardView = new BoardView();
         whitePlayerPanelView = new PlayerPanelView();
         blackPlayerPanelView = new PlayerPanelView();
 

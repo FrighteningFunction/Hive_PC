@@ -21,7 +21,7 @@ public class Player {
 
     private ModelListener listener;
 
-    private final double SPACE_BETWEEN_TILES=10;
+    private static final double SPACE_BETWEEN_TILES = 10;
 
     Player(HiveColor color, GameLogic gameLogic) {
         this.color = color;
@@ -44,13 +44,13 @@ public class Player {
         insects.add(new Spider(this, gameLogic));
         insects.add(new Spider(this, gameLogic));
 
-        final double HEIGHT=GameTile.getHexaTileHeight();
-        final double WIDTH=(HEIGHT/2 * cos(GameTile.getDir()) )*2;
+        final double HEIGHT = GameTile.getHexaTileHeight();
+        final double WIDTH = (HEIGHT / 2 * cos(GameTile.getDir())) * 2;
 
         int i = 0;
-        for(Insect insect : insects){
+        for (Insect insect : insects) {
             GameTile gameTile = new GameTile(insect);
-            Coordinate c = new Coordinate(i*WIDTH+SPACE_BETWEEN_TILES, 0);
+            Coordinate c = new Coordinate(i * WIDTH + SPACE_BETWEEN_TILES, 0);
             i++;
             gameTile.setCoordinate(c);
 
@@ -59,11 +59,11 @@ public class Player {
         HiveLogger.getLogger().info("{} Player created successfully", color);
     }
 
-    public void removeGameTile(GameTile tile){
-        if(insectHolders.remove(tile)){
+    public void removeGameTile(GameTile tile) {
+        if (insectHolders.remove(tile)) {
             HiveLogger.getLogger().info("placeholder tile from {} was successfully deleted.", color);
             notifyOnRemove(tile);
-        }else{
+        } else {
             HiveLogger.getLogger().fatal("placeholder tile specified was not found for {} player", color);
         }
     }
@@ -82,16 +82,16 @@ public class Player {
         return !insects.contains(queen);
     }
 
-    public Queen getQueen(){
+    public Queen getQueen() {
         return queen;
     }
 
-    public HiveColor getColor(){
+    public HiveColor getColor() {
         return color;
     }
 
-    public void addListener(ModelListener listener){
-        this.listener=listener;
+    public void addListener(ModelListener listener) {
+        this.listener = listener;
     }
 
     public List<Insect> getInsects() {
@@ -102,20 +102,20 @@ public class Player {
         return insectHolders;
     }
 
-    public void notifyListeners(){
-        if(listener!=null) {
+    public void notifyListeners() {
+        if (listener != null) {
             listener.onModelChange();
         }
     }
 
-    public void notifyOnRemove(GameTile tile){
-        if(listener!=null) {
+    public void notifyOnRemove(GameTile tile) {
+        if (listener != null) {
             listener.onGameTileRemoved(tile);
         }
     }
 
-    private void notifyOnAdd(GameTile tile){
-        if(listener!=null){
+    private void notifyOnAdd(GameTile tile) {
+        if (listener != null) {
             listener.onGameTileAdded(tile);
         }
     }

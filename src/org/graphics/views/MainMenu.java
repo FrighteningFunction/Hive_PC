@@ -2,18 +2,25 @@ package org.graphics.views;
 
 import org.game.GameLogic;
 import org.game.GraphicLogger;
+import org.game.HiveLogger;
+import org.graphics.HiveMain;
+import org.graphics.controllers.BoardController;
+import org.graphics.controllers.GamePanelController;
+import org.graphics.controllers.PlayerPanelController;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static java.lang.System.exit;
+
 public class MainMenu extends JPanel {
-    JButton newGame = new JButton("New game");
+    private transient JButton newGame = new JButton("New game");
 
-    JButton exit = new JButton ("exit");
+    private transient JButton exit = new JButton ("exit");
 
-    MenuButtonsPressed menuListener = new MenuButtonsPressed();
+    private transient MenuButtonsPressed menuListener = new MenuButtonsPressed();
 
     JPanel mainPanel = new JPanel();
 
@@ -41,16 +48,27 @@ public class MainMenu extends JPanel {
             String c = e.getActionCommand();
             switch (c){
                 case "newGame":
-                    throw new UnsupportedOperationException();
+                    startNewGame();
+                    break;
                 case "exit":
-                    System.exit(0);
+                    exit(0);
+                    break;
+                default:
+                    GraphicLogger.getLogger().fatal("Unknown MainMenu Command issued!");
+                    exit(1);
+                    break;
             }
         }
     }
 
-    //todo: implementálni
+    //todo: nem kellene másképp összekötni őket? Vagy a kontrollereket tényleg hozzuk létre itt így?
     public void startNewGame(){
-        GameLogic.newGame();
-
+        GameLogic gameLogic = GameLogic.getInstance();
+        GamePanel gamePanel = HiveMain.getGamePanel();
+        gameLogic.newGame();
+        new PlayerPanelController(gamePanel.getBlackPlayerPanelView(), gameLogic.getBlackPlayer());
+        new PlayerPanelController(gamePanel.getWhitePlayerPanelView(), gameLogic.getWhitePlayer());
+        new BoardController(gamePanel.getBoardView(), gameLogic.getBoard());
+        new GamePanelController(gameLogic, gamePanel);
     }
 }

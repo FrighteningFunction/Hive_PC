@@ -132,3 +132,17 @@ W
 'src/org/graphics/views/PlayerPanel.java,e\1\e17052103ec36c11ad62383cdbb78689dd3c1447
 P
  src/org/graphics/views/Game.java,6\7\674bee27858545e24b5c657ee04ac5c75734bab4
+[
++src/org/graphics/views/PlayerPanelView.java,1\7\178a00693a8d0b7674efa98151697d7fbc31bdfe
+g
+7src/org/graphics/controllers/PlayerPanelController.java,0\9\093b4acae5352ebfbe0de62cf1d858154a26aa85
+_
+/src/org/graphics/controllers/ModelListener.java,6\2\62e2f2d8be9682e866a65d2478bdd4df1f02bfd0
+U
+%src/org/graphics/views/NullPanel.java,5\a\5a9ef0f2fdcc71555280efd273e262b9f60ed55e
+U
+%src/org/graphics/views/GamePanel.java,a\e\ae98e90ad595988626a59dd8b7fee838beee86d9
+e
+5src/org/graphics/controllers/GamePanelController.java,5\7\5765af404f0539f8b1a867b6da6f65d0488aaafd
+Q
+!src/org/graphics/ImageLoader.java,3\e\3ea2d905a9d7f976fd2860900a287e3240f5bd16

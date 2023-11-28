@@ -1,5 +1,9 @@
 
+G
+java:S2629Ê"$Invoke method(s) only conditionally.(ª× ıÿÿÿÿ8·„Ë›Á1
+„
+java:S3457Ê"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ª× ıÿÿÿÿ8…Ë›Á1
 U
-java:S1135Î"2Complete the task associated to this TODO comment.(„µ¢‹úÿÿÿÿ8ÕÁ1
+java:S1135Ï"2Complete the task associated to this TODO comment.(„µ¢‹úÿÿÿÿ8ÕÁ1
 u
-java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ŞÏÉúÿÿÿÿ8×Á1
+java:S3776Û"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ŞÏÉúÿÿÿÿ8×Á1

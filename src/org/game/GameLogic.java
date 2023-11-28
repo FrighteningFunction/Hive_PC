@@ -1,6 +1,6 @@
 package org.game;
 
-import org.graphics.controllers.GameController;
+import org.graphics.controllers.GamePanelController;
 import org.insects.Queen;
 
 import java.util.HashSet;
@@ -9,7 +9,7 @@ import java.util.Set;
 public class GameLogic {
     private static GameLogic instance = null;
 
-    private GameController gameController;
+    private GamePanelController gamePanelController;
 
     enum SelectionState {
         STARTSELECT,
@@ -54,6 +54,7 @@ public class GameLogic {
         nextPlayer = whitePlayer;
         board = GameBoard.getInstance();
         board.clear();
+        new GameTile(board, new Coordinate(0,0));
         winner=null;
     }
 
@@ -268,8 +269,8 @@ public class GameLogic {
     }
 
     public void notifyListeners() {
-        if (gameController != null) {
-            gameController.onModelChange();
+        if (gamePanelController != null) {
+            gamePanelController.onModelChange();
         }
     }
 }

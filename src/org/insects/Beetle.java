@@ -4,7 +4,9 @@ import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.HiveLogger;
 import org.game.Player;
+import org.graphics.ImageLoader;
 
+import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -82,5 +84,10 @@ public class Beetle extends Insect {
         Set<GameTile> availableTiles = new HashSet<>();
         availableTiles = pathFinder(availableTiles, 0, location);
         return availableTiles;
+    }
+
+    @Override
+    protected Image setImage() {
+        return ImageLoader.loadImage("./Resources/beetle.png");
     }
 }

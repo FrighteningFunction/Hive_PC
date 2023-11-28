@@ -142,7 +142,7 @@ public class GameBoardTest {
             neighbours[i] = tile.getNeigbour(i);
         }
         tile.setInitialized(false);
-        tile.deleteGameTile();
+        tile.deleteGameTileFromBoard();
         boolean referenceDeleted = true;
         int wrongreferences = 0;
         int k = 3; //mert az első szomszéd a 3-as irányban rendelkezett a tile-al

@@ -1,5 +1,8 @@
 package org.graphics.views;
 
+import org.game.GameLogic;
+import org.game.GraphicLogger;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,8 +14,6 @@ public class MainMenu extends JPanel {
     JButton exit = new JButton ("exit");
 
     MenuButtonsPressed menuListener = new MenuButtonsPressed();
-
-    private final int ROWS = 2;
 
     JPanel mainPanel = new JPanel();
 
@@ -31,6 +32,8 @@ public class MainMenu extends JPanel {
 
         newGame.addActionListener(menuListener);
         exit.addActionListener(menuListener);
+
+        GraphicLogger.getLogger().info("MainMenu created successfully.");
     }
 
     class MenuButtonsPressed implements ActionListener {
@@ -43,5 +46,11 @@ public class MainMenu extends JPanel {
                     System.exit(0);
             }
         }
+    }
+
+    //todo: implementálni
+    public void startNewGame(){
+        GameLogic.newGame();
+
     }
 }

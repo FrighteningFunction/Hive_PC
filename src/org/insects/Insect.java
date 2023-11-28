@@ -69,6 +69,7 @@ public abstract class Insect {
             Set<GameTile> availableTiles = gameLogic.pingAvailableTilesForPlacing(this.player);
             if(availableTiles.contains(tile)){
                 initialized = true;
+                player.removeGameTile(location);
                 tile.initialize(this);
                 location=tile;
                 HiveLogger.getLogger().info("An insect was sucessfully placed.");

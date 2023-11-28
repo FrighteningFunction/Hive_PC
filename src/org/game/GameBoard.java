@@ -136,7 +136,6 @@ public class GameBoard {
     public void removeGameTile(GameTile tile) {
         if (boardMap.containsKey(tile.getCoordinate())) {
             boardMap.remove(tile.getCoordinate());
-            notifyOnGameTileRemoved(tile);
         } else {
             HiveLogger.getLogger().warn("Requested removable GameTile not found!");
         }
@@ -155,9 +154,9 @@ public class GameBoard {
      * Felér egy új játék kezdésével.
      */
     public void clear() {
-        for(GameTile tile : boardMap.values()){
-            tile.deleteGameTile();
-        }
+        //A GameTile-ok megmaradnak: de mivel a fő alkalmazásból
+        //egy referencia sem él, már garbage-ok lesznek (csak cyclic reference-ek vannak)
+        boardMap.clear();
         HiveLogger.getLogger().debug("Board was cleared.");
     }
 
@@ -197,13 +196,6 @@ public class GameBoard {
         if(listener!=null) {
             GraphicLogger.getLogger().info("GameBoard did not notify controller: null instance");
             listener.onGameTileAdded(tile);
-        }
-    }
-
-    public void notifyOnGameTileRemoved(GameTile tile){
-        if(listener!=null){
-            GraphicLogger.getLogger().info("GameBoard did not notify controller: null instance");
-            listener.onGameTileRemoved(tile);
         }
     }
 

@@ -1,13 +1,16 @@
 package org.game;
 
-import org.graphics.controllers.GameTileController;
+import org.graphics.controllers.ModelListener;
 import org.insects.Insect;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static java.lang.Math.*;
 import static java.lang.System.exit;
 
 public class GameTile {
-    private GameTileController gameTileController;
+    private List<ModelListener> listeners = new ArrayList<>();
 
     private TileStates state;
 
@@ -20,9 +23,15 @@ public class GameTile {
 
     private boolean initialized;
 
+    private final boolean isPlaceHolder;
+
     private GameBoard board;
 
     private Insect insect;
+
+    public void setCoordinate(Coordinate coordinate) {
+        this.coordinate = coordinate;
+    }
 
     private Coordinate coordinate;
     private GameTile[] neighbours = new GameTile[6];
@@ -38,6 +47,7 @@ public class GameTile {
      */
     public GameTile(GameBoard b, Coordinate c) {
         initialized = false;
+        isPlaceHolder=false;
         insect = null;
         state=TileStates.UNSELECTED;
         this.board = b;
@@ -50,7 +60,17 @@ public class GameTile {
         } catch (DoubleTileException e) {
             HiveLogger.getLogger().error("A new tile was created at an existing coordinate.");
         }
+        //todo: ez itt kell?
         notifyListeners();
+    }
+
+    public GameTile(Insect insect){
+        neighbours=null;
+        isPlaceHolder=true;
+        initialized=true;
+        state=TileStates.UNSELECTED;
+        coordinate=null;
+        this.insect=insect;
     }
 
     public static double getHexaTileHeight() {
@@ -59,10 +79,6 @@ public class GameTile {
 
     public static double getDir(){
         return DIR;
-    }
-
-    public GameTileController getGameTileController(){
-        return gameTileController;
     }
 
     public TileStates getState(){
@@ -79,7 +95,7 @@ public class GameTile {
      * Kizárólag inicializálatlan (ak. üres) tile-ok törölhetők ki. Egyébként fatális veszély lép fel.
      * Az összes rá mutató szomszéd-linket is kitörli.
      */
-    public void deleteGameTile() {
+    public void deleteGameTileFromBoard() {
         if (initialized) {
             HiveLogger.getLogger().fatal("deleteGameTile call to an initialized GameTile!");
         } else {
@@ -92,6 +108,8 @@ public class GameTile {
                     neighbours[i].removeNeighbour(GameBoard.invertDirection(i));
                 }
             }
+            state=TileStates.TERMINATED;
+            notifyListeners();
         }
     }
 
@@ -221,7 +239,7 @@ public class GameTile {
             insect = null;
             for (int i = 0; i < 6; i++) {
                 if (!this.getNeigbour(i).isInitialized() && this.getNeigbour(i).isOrphan()) {
-                    this.getNeigbour(i).deleteGameTile();
+                    this.getNeigbour(i).deleteGameTileFromBoard();
                 } else {
                     HiveLogger.getLogger().info("A neighbour was not an orphan while uninitialize, so was not deleted");
                 }
@@ -233,13 +251,16 @@ public class GameTile {
         GameLogic.getInstance().clickedTile(this);
     }
 
-    public void addGameTileController(GameTileController listener){
-        this.gameTileController=listener;
+    public void addGameTileController(ModelListener listener){
+
+        listeners.add(listener);
     }
 
     public void notifyListeners(){
-        if(gameTileController!=null) {
-            gameTileController.onModelChange();
+        if(!listeners.isEmpty()) {
+            for(ModelListener l : listeners){
+                l.onModelChange();
+            }
         }
     }
 }

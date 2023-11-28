@@ -1,51 +1,51 @@
 # Hive Game Application Specification
 
 ## Introduction
-This document outlines the development of a digital version of the board game "Hive" using Java and Swing for the graphical user interface (GUI). The purpose of this project is to provide a virtual experience of Hive, enabling two players to engage in the game on a single computer. The game will replicate the traditional Hive experience while leveraging the advantages of a digital platform, such as automated rule enforcement, game state management, and a visually appealing interface.
+This document outlines the development of a digital version of the board gamePanel "Hive" using Java and Swing for the graphical user interface (GUI). The purpose of this project is to provide a virtual experience of Hive, enabling two players to engage in the gamePanel on a single computer. The gamePanel will replicate the traditional Hive experience while leveraging the advantages of a digital platform, such as automated rule enforcement, gamePanel state management, and a visually appealing interface.
 
 ### Brief Description
-Hive is a two-player, turn-based strategy game where the objective is to surround the opponent's Queen Bee tile with a mix of their own and the opponent's tiles. Each tile represents a different insect, with its own unique movement pattern. The board is dynamically formed by the placement of these hexagonal tiles, and the game does not require a fixed board. The digital version aims to mimic these gameplay mechanics and provide an intuitive and interactive user experience.
+Hive is a two-player, turn-based strategy gamePanel where the objective is to surround the opponent's Queen Bee tile with a mix of their own and the opponent's tiles. Each tile represents a different insect, with its own unique movement pattern. The board is dynamically formed by the placement of these hexagonal tiles, and the gamePanel does not require a fixed board. The digital version aims to mimic these gameplay mechanics and provide an intuitive and interactive user experience.
 
 ## Use Cases
 ### Player Interactions:
-1. **Start Game**: Players can start a new game, reset the board, and choose their tile color (black or white).
-2. **Place Tile**: During their turn, players choose a tile from their collection and place it on the board adhering to the game's placement rules.
+1. **Start Game**: Players can start a new gamePanel, reset the board, and choose their tile color (black or white).
+2. **Place Tile**: During their turn, players choose a tile from their collection and place it on the board adhering to the gamePanel's placement rules.
 3. **Move Tile**: Players can move a tile according to the specific movement rules of that insect.
-4. **View Rules/Help**: Users can view the rules of the game or get help about the game mechanics.
-5. **Save/Load Game**: Players can save the current game state or load a previously saved game.
-6. **Quit Game**: Exit the current game session and close the application.
+4. **View Rules/Help**: Users can view the rules of the gamePanel or get help about the gamePanel mechanics.
+5. **Save/Load Game**: Players can save the current gamePanel state or load a previously saved gamePanel.
+6. **Quit Game**: Exit the current gamePanel session and close the application.
 
 ### Application Features:
 1. **Game History**: Tracks and displays the sequence of moves.
 2. **Undo Move**: Allows a player to undo their last move.
-3. **Game Timer**: Times the duration of the game or each move, enforcing time limits if set.
+3. **Game Timer**: Times the duration of the gamePanel or each move, enforcing time limits if set.
 
 ## Solution Outline
 
 ### Technological Solutions
 1. **Swing GUI**: The interface will be built using Java Swing, ensuring a responsive and intuitive user experience. Key components:
     - `JFrame` for the main window.
-    - Custom drawing on `JPanel` for the game board using low-level graphics routines (Graphics class) to render hexagonal tiles and insects.
+    - Custom drawing on `JPanel` for the gamePanel board using low-level graphics routines (Graphics class) to render hexagonal tiles and insects.
     - `JMenu` for the main menu, including options like New Game, Save/Load, Exit.
     - `JOptionPane` for prompts and messages.
-    - `JComboBox` for selecting tile color (black/white) before starting a new game.
+    - `JComboBox` for selecting tile color (black/white) before starting a new gamePanel.
 
-2. **Collections Framework**: Utilize Java Collections Framework for managing the game state, such as a `List` for tracking the sequence of moves and a `Set` or `Map` for storing the board state and the positions of the tiles.
+2. **Collections Framework**: Utilize Java Collections Framework for managing the gamePanel state, such as a `List` for tracking the sequence of moves and a `Set` or `Map` for storing the board state and the positions of the tiles.
 
 3. **File I/O**: Game state serialization for saving and loading games, using either Java's built-in serialization or JSON processing with libraries like Gson or Jackson.
 
-4. **JUnit Testing**: Test critical components of the game logic, including tile placement rules, move validation, and game state management. At least 10 methods across 3 different classes (e.g., `GameBoard`, `Tile`, `GameManager`) will be tested.
+4. **JUnit Testing**: Test critical components of the gamePanel logic, including tile placement rules, move validation, and gamePanel state management. At least 10 methods across 3 different classes (e.g., `GameBoard`, `Tile`, `GameManager`) will be tested.
 
 ### File Formats
-- **Game Save File**: JSON/XML format, storing the current state of the game, including board configuration, sequence of moves, and time elapsed.
+- **Game Save File**: JSON/XML format, storing the current state of the gamePanel, including board configuration, sequence of moves, and time elapsed.
 
 ### Testing Strategy
 - **Game Logic Tests**: Ensure that the movement and placement rules for each insect type are correctly implemented.
-- **GUI Tests**: Validate that the GUI correctly reflects the game state and responds to user inputs.
-- **Serialization Tests**: Confirm that saving and loading functionality works as intended, with accurate recreation of game state.
+- **GUI Tests**: Validate that the GUI correctly reflects the gamePanel state and responds to user inputs.
+- **Serialization Tests**: Confirm that saving and loading functionality works as intended, with accurate recreation of gamePanel state.
 
 ## Conclusion
-This application will offer a digital rendition of the Hive game with an emphasis on usability and adherence to the original game's rules. By fulfilling the mandatory functionalities and focusing on a robust testing strategy, the project aims to deliver a reliable and enjoyable Hive gaming experience.
+This application will offer a digital rendition of the Hive gamePanel with an emphasis on usability and adherence to the original gamePanel's rules. By fulfilling the mandatory functionalities and focusing on a robust testing strategy, the project aims to deliver a reliable and enjoyable Hive gaming experience.
 
 ## Rules
 
@@ -81,4 +81,4 @@ This application will offer a digital rendition of the Hive game with an emphasi
     - Moves one space like the Queen Bee.
     - Has a special ability to move an adjacent piece (friend or foe) by rolling it to an empty space around the Pillbug.
 
-In "Hive," each insect's movement is designed to mimic, in an abstract way, their real-life counterparts' behavior. The strategy in the game hinges on effectively using these movement patterns to surround the opponent's Queen Bee while protecting your own.
+In "Hive," each insect's movement is designed to mimic, in an abstract way, their real-life counterparts' behavior. The strategy in the gamePanel hinges on effectively using these movement patterns to surround the opponent's Queen Bee while protecting your own.

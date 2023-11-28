@@ -4,7 +4,9 @@ import org.game.GameBoard;
 import org.game.GameLogic;
 import org.game.GameTile;
 import org.game.Player;
+import org.graphics.ImageLoader;
 
+import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -52,5 +54,10 @@ public class Grasshopper extends Insect{
             }
         }
         return availableTiles;
+    }
+
+    @Override
+    protected Image setImage() {
+        return ImageLoader.loadImage("./Resources/grasshopper.png");
     }
 }

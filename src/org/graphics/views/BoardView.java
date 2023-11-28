@@ -2,16 +2,19 @@ package org.graphics.views;
 
 import org.game.Coordinate;
 import org.game.GameBoard;
+import org.game.GraphicLogger;
 
 import javax.swing.*;
 
-public class BoardView extends JPanel {
+//todo: Ez biztos Singleton legyen?
+public class BoardView extends JPanel implements NullPanel{
 
     private static BoardView instance;
     private GameBoard board = GameBoard.getInstance();
 
     private BoardView() {
         this.setLayout(null);
+        GraphicLogger.getLogger().info("BoardView was successfully created.");
     }
 
     public static BoardView getInstance(){
@@ -21,6 +24,7 @@ public class BoardView extends JPanel {
         return instance;
     }
 
+    @Override
     public Coordinate refactorCoordinate(Coordinate c) {
         double w = this.getWidth();
         double h = this.getHeight();

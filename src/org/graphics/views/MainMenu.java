@@ -2,7 +2,6 @@ package org.graphics.views;
 
 import org.game.GameLogic;
 import org.game.GraphicLogger;
-import org.game.HiveLogger;
 import org.graphics.HiveMain;
 import org.graphics.controllers.BoardController;
 import org.graphics.controllers.GamePanelController;
@@ -65,10 +64,13 @@ public class MainMenu extends JPanel {
     public void startNewGame(){
         GameLogic gameLogic = GameLogic.getInstance();
         GamePanel gamePanel = HiveMain.getGamePanel();
-        gameLogic.newGame();
         new PlayerPanelController(gamePanel.getBlackPlayerPanelView(), gameLogic.getBlackPlayer());
         new PlayerPanelController(gamePanel.getWhitePlayerPanelView(), gameLogic.getWhitePlayer());
         new BoardController(gamePanel.getBoardView(), gameLogic.getBoard());
         new GamePanelController(gameLogic, gamePanel);
+
+        gameLogic.newGame();
+
+        HiveMain.getCardLayout().show(HiveMain.getMainPanel(), "Game");
     }
 }

@@ -1,5 +1,6 @@
 package org.game;
 
+import org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy;
 import org.graphics.controllers.ModelListener;
 import org.insects.*;
 import org.insects.Insect;
@@ -13,6 +14,8 @@ import static java.lang.Math.cos;
 public class Player {
     private Queen queen;
 
+    private GameLogic gameLogic;
+
     public final HiveColor color;
 
     private List<Insect> insects = new ArrayList<>();
@@ -25,10 +28,18 @@ public class Player {
 
     Player(HiveColor color, GameLogic gameLogic) {
         this.color = color;
+        this.gameLogic = gameLogic;
 
-        queen = new Queen(this, gameLogic);
+        queen = null;
+        HiveLogger.getLogger().info("{} Player created successfully", color);
+    }
 
-        insects.add(queen);
+    /**
+     * Inicializálja az adott játékost, így készen áll új játékra.
+     * Felér egy resettel.
+     */
+    public void initPlayer(){
+        insects.add(new Queen(this, gameLogic));
 
         insects.add(new Ant(this, gameLogic));
         insects.add(new Ant(this, gameLogic));
@@ -44,6 +55,7 @@ public class Player {
         insects.add(new Spider(this, gameLogic));
         insects.add(new Spider(this, gameLogic));
 
+        //todo: ezt nem kellene globalizálni? Így több helyen simán el lehet számolni, pedig ugyanaz.
         final double HEIGHT = GameTile.getHexaTileHeight();
         final double WIDTH = (HEIGHT / 2 * cos(GameTile.getDir())) * 2;
 
@@ -56,7 +68,8 @@ public class Player {
 
             notifyOnAdd(gameTile);
         }
-        HiveLogger.getLogger().info("{} Player created successfully", color);
+
+        HiveLogger.getLogger().info("{} Player initialized successfully", color);
     }
 
     public void removeGameTile(GameTile tile) {
@@ -105,18 +118,24 @@ public class Player {
     public void notifyListeners() {
         if (listener != null) {
             listener.onModelChange();
+        }else {
+            GraphicLogger.getLogger().error("Player did not notify controller on notifyListeners: null instance");
         }
     }
 
     public void notifyOnRemove(GameTile tile) {
         if (listener != null) {
             listener.onGameTileRemoved(tile);
+        }else {
+            GraphicLogger.getLogger().error("Player did not notify controller on remove: null instance");
         }
     }
 
     private void notifyOnAdd(GameTile tile) {
         if (listener != null) {
             listener.onGameTileAdded(tile);
+        }else {
+            GraphicLogger.getLogger().error("Player did not notify controller on add: null instance");
         }
     }
 }

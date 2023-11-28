@@ -20,12 +20,11 @@ public class GameLogicTest {
 
     GameTile origoTile;
 
-    //todo: tesztek átfaktorlásása (gameLogic konstruktor probléma)
     @Before
     public void init(){
         board = GameBoard.getInstance();
         gameLogic = GameLogic.getInstance();
-        gameLogic.newGameforTesting();
+        gameLogic.newGameForTesting();
         origoTile = new GameTile(board, new Coordinate(0,0));
         queen = new Queen(gameLogic.getBlackPlayer(), gameLogic);
         queen.place(origoTile);

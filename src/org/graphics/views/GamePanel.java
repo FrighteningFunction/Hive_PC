@@ -18,10 +18,15 @@ public class GamePanel extends JPanel {
         whitePlayerPanelView = new PlayerPanelView();
         blackPlayerPanelView = new PlayerPanelView();
 
+        blackPlayerPanelView.setBorder(BorderFactory.createLineBorder(Color.red));
+        whitePlayerPanelView.setBorder(BorderFactory.createLineBorder(Color.red));
+        boardView.setBorder(BorderFactory.createLineBorder(Color.red));
+
         this.add(blackPlayerPanelView);
         this.add(boardView);
         this.add(whitePlayerPanelView);
 
+        setVisible(true);
         GraphicLogger.getLogger().info("GamePanel was created successfully.");
     }
 

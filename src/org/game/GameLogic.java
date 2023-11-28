@@ -1,6 +1,7 @@
 package org.game;
 
 import org.graphics.controllers.GamePanelController;
+import org.graphics.controllers.ModelListener;
 import org.insects.Queen;
 
 import java.util.HashSet;
@@ -9,7 +10,7 @@ import java.util.Set;
 public class GameLogic {
     private static GameLogic instance = null;
 
-    private GamePanelController gamePanelController;
+    private ModelListener listener;
 
     enum SelectionState {
         STARTSELECT,
@@ -45,12 +46,17 @@ public class GameLogic {
 
     private GameBoard board;
 
+    /**
+     * Létrehoz egy új GameLogic példányt.
+     * Vigyázat: itt még a játék inicializálatlan.
+     * A newGame-el készíthetjük elő a játék komponenseit.
+     */
     private GameLogic() {
         gameState = GameState.TERMINATED;
-        turns = 1;
+        turns = -1;
         whitePlayer = new Player(HiveColor.WHITE, this);
         blackPlayer = new Player(HiveColor.BLACK, this);
-        nextPlayer = whitePlayer;
+        nextPlayer = null;
         board = GameBoard.getInstance();
         winner = null;
     }
@@ -70,18 +76,17 @@ public class GameLogic {
     }
 
     /**
-     * Az új játékhoz reseteli a GameLogic attribútumait.
-     * Ezzel minden attribútuma újragenerálódik.
-     * (pl. a tábla is kitörlődik).
+     * Inicializálja a játékot, minden attribútumát előkészíti.
+     * Ez felér egy resettel.
+     * Figyelem: a tábla nem üres: egyetlen tile hozzáadódik!
      */
     public void newGame() {
         gameState = GameState.RUNNING;
         turns = 1;
-        whitePlayer = new Player(HiveColor.WHITE, this);
-        blackPlayer = new Player(HiveColor.BLACK, this);
+        whitePlayer.initPlayer();
+        blackPlayer.initPlayer();
 
         nextPlayer = whitePlayer;
-        board = GameBoard.getInstance();
         board.clear();
         new GameTile(board, new Coordinate(0, 0));
         winner = null;
@@ -94,14 +99,13 @@ public class GameLogic {
      * nincs lerakva automatikusan.
      *
      */
-    public void newGameforTesting(){
+    public void newGameForTesting(){
         gameState = GameState.RUNNING;
         turns = 1;
-        whitePlayer = new Player(HiveColor.WHITE, this);
-        blackPlayer = new Player(HiveColor.BLACK, this);
+        whitePlayer.initPlayer();
+        blackPlayer.initPlayer();
 
         nextPlayer = whitePlayer;
-        board = GameBoard.getInstance();
         board.clear();
         winner = null;
     }
@@ -288,7 +292,7 @@ public class GameLogic {
                 }
                 selectionState = SelectionState.STARTSELECT;
 
-                turns++;
+                incrementTurns();
 
                 checkEndGameCondition();
                 checkQueenCondition();
@@ -296,9 +300,15 @@ public class GameLogic {
         }
     }
 
+    public void addListener(ModelListener listener){
+        this.listener=listener;
+    }
+
     public void notifyListeners() {
-        if (gamePanelController != null) {
-            gamePanelController.onModelChange();
+        if (listener != null) {
+            listener.onModelChange();
+        }else{
+            GraphicLogger.getLogger().error("GameLogic: could not notify controller: null instance.");
         }
     }
 }

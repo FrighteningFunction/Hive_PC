@@ -7,10 +7,10 @@ import org.game.GraphicLogger;
 import javax.swing.*;
 
 public class BoardView extends JPanel implements NullPanel{
-    private transient GameBoard board = GameBoard.getInstance();
 
     public BoardView() {
         this.setLayout(null);
+        setVisible(true);
         GraphicLogger.getLogger().info("BoardView was successfully created.");
     }
 

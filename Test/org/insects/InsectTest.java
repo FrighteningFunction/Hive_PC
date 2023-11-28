@@ -3,9 +3,7 @@ import org.game.Coordinate;
 import org.game.GameBoard;
 import org.game.GameLogic;
 import org.game.GameTile;
-import org.insects.*;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +33,7 @@ public class InsectTest {
     public void init(){
         board=GameBoard.getInstance();
         gameLogic = GameLogic.getInstance();
-        gameLogic.newGameforTesting();
+        gameLogic.newGameForTesting();
         gameLogic.setTurns(2);
         whiteQueen=new Queen(gameLogic.getWhitePlayer(), gameLogic);
 

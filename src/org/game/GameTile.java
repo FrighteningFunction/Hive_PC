@@ -62,9 +62,14 @@ public class GameTile {
             HiveLogger.getLogger().error("A new tile was created at an existing coordinate.");
         }
         //todo: ez itt kell?
-        notifyListeners();
+        //notifyListeners();
     }
 
+    /**
+     * A még inicializálatlan rovarok tárolására használandó
+     * tile-ok konstruktora.
+     * @param insect a rovar, amit tartalmaznia kell.
+     */
     public GameTile(Insect insect){
         neighbours=null;
         isPlaceHolder=true;
@@ -146,7 +151,7 @@ public class GameTile {
         return initialized;
     }
 
-    protected void setInitialized(boolean val) {
+    public void setInitialized(boolean val) {
         initialized = val;
         HiveLogger.getLogger().warn("GameTile setInitialized metódusa meghívva!");
         notifyListeners();

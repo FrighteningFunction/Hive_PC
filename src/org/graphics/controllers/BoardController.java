@@ -27,13 +27,15 @@ public class BoardController implements ModelListener{
     @Override
     public void onGameTileAdded(GameTile tile) {
         Coordinate viewCord = tile.getCoordinate();
-        viewCord=boardView.refactorCoordinate(viewCord);
 
-        GameTileView gtv = new GameTileView(viewCord);
+        GameTileView gtv = new GameTileView();
 
         tile.addGameTileController(new GameTileController<BoardView>(tile, boardView, gtv));
 
         boardView.add(gtv);
+
+        boardView.revalidate();
+        boardView.repaint();
     }
 
     @Override

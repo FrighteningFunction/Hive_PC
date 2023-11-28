@@ -1,6 +1,7 @@
 package org.game;
 
 import org.graphics.controllers.BoardController;
+import org.graphics.controllers.ModelListener;
 
 import java.util.*;
 
@@ -9,7 +10,7 @@ import static java.lang.System.exit;
 public class GameBoard {
     private static GameBoard instance;
 
-    private BoardController listener;
+    private ModelListener listener;
 
     private GameBoard() {
     }
@@ -194,12 +195,13 @@ public class GameBoard {
 
     public void notifyOnGameTileAdded(GameTile tile) {
         if(listener!=null) {
-            GraphicLogger.getLogger().info("GameBoard did not notify controller: null instance");
             listener.onGameTileAdded(tile);
+        }else {
+            GraphicLogger.getLogger().error("GameBoard did not notify controller: null instance");
         }
     }
 
-    public void addListener(BoardController listener){
+    public void addListener(ModelListener listener){
         this.listener=listener;
     }
 }

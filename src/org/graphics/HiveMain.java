@@ -28,8 +28,7 @@ public class HiveMain {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Hive");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setSize(800, 800);
-        frame.setResizable(false);
+        frame.setSize(700, 840);
 
         mainPanel = new JPanel(mainCardLayout);
 

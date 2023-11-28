@@ -70,6 +70,7 @@ public abstract class Insect {
             if(availableTiles.contains(tile)){
                 initialized = true;
                 player.removeGameTile(location);
+                player.removeInsect(this);
                 tile.initialize(this);
                 location=tile;
                 HiveLogger.getLogger().info("An insect was sucessfully placed.");

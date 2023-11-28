@@ -1,3 +1,6 @@
 
 »
-java:S6548	"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(€Òäúÿÿÿÿ8Şå–ŠÁ1
+java:S6548
+"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(€Òäúÿÿÿÿ8Şå–ŠÁ1
+b
+java:S1128"ERemove this unused import 'org.graphics.controllers.BoardController'.(âíªü8„ ¬Á1

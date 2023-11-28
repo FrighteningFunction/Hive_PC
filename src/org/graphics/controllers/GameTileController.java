@@ -26,8 +26,17 @@ public class GameTileController<T extends JComponent & NullPanel> implements Mod
         this.gameTileView=gameTileView;
         this.container = container;
 
+        setUpGameTileView();
+
         gameTileView.addClickListener(new ClickListener());
         logger.info("GameTileController successfully created.");
+    }
+
+    private void setUpGameTileView(){
+        gameTileView.setInitialized(tile.isInitialized());
+        gameTileView.setStates(tile.getState());
+        gameTileView.setC(container.refactorCoordinate(tile.getCoordinate()));
+        gameTileView.setInsect(tile.getInsect());
     }
 
     public GameTileView getGameTileView() {
@@ -40,10 +49,7 @@ public class GameTileController<T extends JComponent & NullPanel> implements Mod
             container.remove(gameTileView);
         } else {
 
-            gameTileView.setInitialized(tile.isInitialized());
-            gameTileView.setStates(tile.getState());
-            gameTileView.setC(container.refactorCoordinate(tile.getCoordinate()));
-            gameTileView.setInsect(tile.getInsect());
+            setUpGameTileView();
 
             gameTileView.repaint();
         }

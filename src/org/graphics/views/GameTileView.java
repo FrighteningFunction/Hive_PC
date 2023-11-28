@@ -15,6 +15,7 @@ import org.apache.logging.log4j.Logger;
 
 import static java.lang.Math.cos;
 
+//todo: játékosszíneknek megfelelően is kéne rajzolni
 public class GameTileView extends JComponent {
     private final transient Logger logger = LogManager.getLogger();
 
@@ -26,14 +27,35 @@ public class GameTileView extends JComponent {
 
     private transient Insect insect = null;
 
+    //Konstansok
+
+    private Dimension fixedSize;
+    private static final int BORDER_SIZE = 3;
+
     private static final double TILE_HEIGHT = GameTile.getHexaTileHeight();
 
     private static final double DIR = GameTile.getDir();
 
     private static final double TILE_RADIUS = TILE_HEIGHT / 2 * cos(DIR);
 
-    public GameTileView(Coordinate c) {
-        this.c = c;
+    public GameTileView() {
+
+        // Calculate the width and height of the hexagon's bounding rectangle
+        int width = (int) (Math.round(2 * TILE_RADIUS));
+        int height = (int) Math.round(TILE_HEIGHT);
+        fixedSize = new Dimension(width, height);
+
+        // Set the size of the hex tile
+        setPreferredSize(fixedSize);
+        setMinimumSize(fixedSize);
+        setMaximumSize(fixedSize);
+
+        //todo: a koordinátát vissza kéne tenni a konstruktorba, és a komplett gametileview létrehozást
+        //és műveletet a gametilecontrollernek kellene kezelni
+        setBounds((int) c.getX(), (int) c.getY(), width, height);
+
+        setVisible(true);
+        logger.info("GameTileView at coordinate x: {} y: {} was created.", c.getX(), c.getY());
     }
 
     public void setStates(TileStates states) {
@@ -62,6 +84,7 @@ public class GameTileView extends JComponent {
         if (initialized) {
             drawHexagon(g2d, Color.BLACK);
             hexagonDrawn = true;
+            logger.info("A black hexagon was drawn.");
         }
 
         // Draw border or full hexagon based on state
@@ -69,7 +92,7 @@ public class GameTileView extends JComponent {
             case SELECTED:
                 if (initialized) {
                     drawHexagonBorder(g2d, Color.GREEN);
-                    logger.info("A black hexagon with a green border was drawn.");
+                    logger.info("A green border was drawn.");
                 } else {
                     drawHexagon(g2d, Color.GREEN);
                     logger.info("A full green hexagon was drawn.");
@@ -79,7 +102,7 @@ public class GameTileView extends JComponent {
             case PINGED:
                 if (initialized) {
                     drawHexagonBorder(g2d, Color.RED);
-                    logger.info("A black hexagon with a red border was drawn.");
+                    logger.info("A red border was drawn.");
                 } else {
                     drawHexagon(g2d, Color.RED);
                     logger.info("A full red hexagon was drawn.");
@@ -108,7 +131,7 @@ public class GameTileView extends JComponent {
     }
 
     private void drawHexagonBorder(Graphics2D g2d, Color borderColor) {
-        double borderSize = TILE_RADIUS + 3; // Adjust the border size as needed
+        double borderSize = TILE_RADIUS + BORDER_SIZE; // Adjust the border size as needed
         g2d.setColor(borderColor);
         Shape borderHexagon = createHexagonWithSize(borderSize);
         g2d.draw(borderHexagon); // Draw border hexagon
@@ -134,7 +157,7 @@ public class GameTileView extends JComponent {
     }
 
     private Image resizeImageToFitTile(Image originalImage) {
-        int maxSize = (int) (TILE_RADIUS * 2);
+        int maxSize = (int) (TILE_HEIGHT);
 
         int originalWidth = originalImage.getWidth(this);
         int originalHeight = originalImage.getHeight(this);

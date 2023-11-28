@@ -112,3 +112,7 @@ e
 5src/org/graphics/controllers/GamePanelController.java,5\7\5765af404f0539f8b1a867b6da6f65d0488aaafd
 Q
 !src/org/graphics/ImageLoader.java,3\e\3ea2d905a9d7f976fd2860900a287e3240f5bd16
+W
+'Test/org/graphics/GameTileViewTest.java,f\f\fffb13c82367da5181196ab6051c07193a6b42e5
+X
+(Test/org/graphics/GameTileViewProbe.java,1\4\14c92d1d982e0a7f07d56d2df2bfb1e9efd09a54

@@ -14,6 +14,7 @@ public class PlayerPanelController implements ModelListener{
     public PlayerPanelController(PlayerPanelView playerPanelView, Player p){
         this.p=p;
         this.playerPanelView=playerPanelView;
+        p.addListener(this);
 
         GraphicLogger.getLogger().info("PlayerPanelController for {} was created", p.getColor());
     }
@@ -25,9 +26,12 @@ public class PlayerPanelController implements ModelListener{
 
     @Override
     public void onGameTileAdded(GameTile tile){
-        GameTileView gameTileView = new GameTileView(playerPanelView.refactorCoordinate(tile.getCoordinate()));
+        GameTileView gameTileView = new GameTileView();
         new GameTileController<>(tile, playerPanelView, gameTileView);
         playerPanelView.add(gameTileView);
+
+        playerPanelView.revalidate();
+        playerPanelView.repaint();
     }
 
     @Override

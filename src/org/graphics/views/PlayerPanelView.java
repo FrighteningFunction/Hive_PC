@@ -10,6 +10,7 @@ public class PlayerPanelView extends JPanel implements NullPanel{
 
     public PlayerPanelView(){
         this.setLayout(null);
+        setVisible(true);
         GraphicLogger.getLogger().info("PlayerPanelView created successfully.");
     }
 

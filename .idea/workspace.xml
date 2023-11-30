@@ -5,62 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/szoko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/apache_logging_log4j_core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_10_extended.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3edcaabfc78d972124161048bc139a969917df3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/4054654ba59dcf6266f18ba81cc248f283152b56" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82a6c80b2c5369919f3452dd22999f468b875fb1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/8326fcf38acc35c617202cf976f437b891baca6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ee14e16e862d9d7f0220c988af10e24918b4819" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96b11194752c7d7d0699a5bf6974433564dd51b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b7fe6fd88bec4b0f58a28bf89c249956e5e25e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b38ef2499cb18bc3c864eda818050df7259a4180" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b56928c11ac56b56d806e8f665b5a07692d14d4f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccb4ad50b5750be5093be1e6b58f1a62878bfccb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7e394678d3250b2b11c78c13c6a1f04e1802270" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3edcaabfc78d972124161048bc139a969917df3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/0/4054654ba59dcf6266f18ba81cc248f283152b56" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/2/82a6c80b2c5369919f3452dd22999f468b875fb1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/3/8326fcf38acc35c617202cf976f437b891baca6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ee14e16e862d9d7f0220c988af10e24918b4819" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/6/96b11194752c7d7d0699a5bf6974433564dd51b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/b/9b7fe6fd88bec4b0f58a28bf89c249956e5e25e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/3/b38ef2499cb18bc3c864eda818050df7259a4180" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/5/b56928c11ac56b56d806e8f665b5a07692d14d4f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccb4ad50b5750be5093be1e6b58f1a62878bfccb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f7e394678d3250b2b11c78c13c6a1f04e1802270" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hive_PC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hive_PC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/PlayerPanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/NullPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/NullPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,6 +34,9 @@
   "associatedIndex": 6
 }]]></component>
   <component name="ProjectId" id="2YuSNGXE8DTapaSsVvkNyLXDx2X" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,6 +44,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Downloaded.Files.Path.Enabled": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -127,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701373938941</updated>
-      <workItem from="1701373942155" duration="1533000" />
+      <workItem from="1701373942155" duration="2496000" />
     </task>
     <servers />
   </component>
@@ -144,5 +110,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

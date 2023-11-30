@@ -23,6 +23,9 @@ public class GameTileView extends JComponent {
 
     private boolean initialized = false;
 
+    /**
+     * A JComponent abszolút koordinátája a konténerben.
+     */
     private transient Coordinate c = null;
 
     private transient Insect insect = null;
@@ -34,9 +37,14 @@ public class GameTileView extends JComponent {
 
     private static final double TILE_HEIGHT = GameTile.getHexaTileHeight();
 
-    private static final double DIR = GameTile.getDir();
+    private static final double TILE_RADIUS = GameTile.getTileRadius();
 
-    private static final double TILE_RADIUS = TILE_HEIGHT / 2 * cos(DIR);
+
+    //todo: itt továbbhaladni a refaktorálással: Valami gond van a koordinátaszámítással vagy itt vagy a JComponens globális koordinátaszámításánál.
+    /**
+     * Megmutatja, hogy hol található a hatszög középpontja a JComponent koordinátáihoz képest.
+     */
+    private static final transient Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS/2, TILE_HEIGHT/2);
 
     public GameTileView(Coordinate c) {
 
@@ -52,12 +60,28 @@ public class GameTileView extends JComponent {
 
         this.c=c;
 
-        //todo: a koordinátát vissza kéne tenni a konstruktorba, és a komplett gametileview létrehozást
-        //és műveletet a gametilecontrollernek kellene kezelni
         setBounds((int) c.getX(), (int) c.getY(), width, height);
 
         setVisible(true);
         logger.info("GameTileView at coordinate x: {} y: {} was created.", c.getX(), c.getY());
+    }
+
+    /**
+     * Konstruktor elsősorban tesztelésre.
+     */
+    public GameTileView(){
+        // Calculate the width and height of the hexagon's bounding rectangle
+        int width = (int) (Math.round(2 * TILE_RADIUS));
+        int height = (int) Math.round(TILE_HEIGHT);
+        fixedSize = new Dimension(width, height);
+
+        // Set the size of the hex tile
+        setPreferredSize(fixedSize);
+        setMinimumSize(fixedSize);
+        setMaximumSize(fixedSize);
+
+        setBounds((int) c.getX(), (int) c.getY(), width, height);
+        logger.warn("The GameTileView's constructor intended for testing was called!");
     }
 
     public void setStates(TileStates states) {
@@ -127,7 +151,7 @@ public class GameTileView extends JComponent {
         // Draw insect image if initialized
         if (initialized && insect != null && insect.getImage() != null) {
             Image resizedImage = resizeImageToFitTile(insect.getImage());
-            g2d.drawImage(resizedImage, (int) c.getX(), (int) c.getY(), this);
+            g2d.drawImage(resizedImage, (int) INNER_ORIGO.getX(), (int) INNER_ORIGO.getY(), this);
             logger.info("An insect image was drawn.");
         }
     }
@@ -146,8 +170,8 @@ public class GameTileView extends JComponent {
     }
 
     private Shape createHexagonWithSize(double size) {
-        double x = c.getX();
-        double y = c.getY();
+        double x = INNER_ORIGO.getX();
+        double y = INNER_ORIGO.getY();
         Path2D path = new Path2D.Double();
         double angleStep = Math.PI / 3;
         path.moveTo(x + size * cos(0), y + size * Math.sin(0));

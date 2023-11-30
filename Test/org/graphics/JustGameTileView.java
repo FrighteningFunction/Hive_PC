@@ -3,11 +3,14 @@ package org.graphics;
 import org.game.Coordinate;
 import org.game.GameLogic;
 import org.game.GameTile;
+import org.game.TileStates;
 import org.graphics.controllers.GameTileController;
+import org.graphics.views.GameTileView;
 import org.insects.Insect;
 import org.insects.Queen;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class JustGameTileView {
     private static GameLogic gameLogic = GameLogic.getInstance();
@@ -20,17 +23,16 @@ public class JustGameTileView {
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("GameTileView Test");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        frame.add();
+        frame.setLayout(new FlowLayout());
 
         Insect testInsect = new Queen(gameLogic.getBlackPlayer(), gameLogic);
 
-        GameTile gameTile = new GameTile(testInsect);
+        GameTileView gameTileView = new GameTileView();
+        gameTileView.setInsect(testInsect);
+        gameTileView.setInitialized(true);
+        gameTileView.setStates(TileStates.UNSELECTED);
 
-        Coordinate c = new Coordinate(0,0);
-        gameTile.setCoordinate(c);
-
-        GameTileController<TestJPanel> gameTileController = new GameTileController<>(gameTile, mainPanel);
+        frame.add(gameTileView);
 
 
         // Center the frame on the screen and make it visible.

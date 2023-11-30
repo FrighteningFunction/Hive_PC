@@ -4,15 +4,15 @@ import org.game.Coordinate;
 import org.game.GameTile;
 import org.game.TileStates;
 import org.graphics.views.GameTileView;
-import org.graphics.views.NullPanel;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.graphics.views.ViewUtil;
 
-public class GameTileController<T extends JComponent & NullPanel> implements ModelListener {
+public class GameTileController<T extends JComponent> implements ModelListener {
     private Logger logger = LogManager.getLogger();
 
     private GameTileView gameTileView;
@@ -25,7 +25,7 @@ public class GameTileController<T extends JComponent & NullPanel> implements Mod
     public GameTileController(GameTile tile, T container) {
         this.tile = tile;
 
-        Coordinate c = container.refactorCoordinate(tile.getCoordinate());
+        Coordinate c = ViewUtil.refactorCoordinate(tile.getCoordinate(), container);
 
         this.gameTileView=new GameTileView(c);
         container.add(gameTileView);
@@ -40,7 +40,7 @@ public class GameTileController<T extends JComponent & NullPanel> implements Mod
     private void setUpGameTileView(){
         gameTileView.setInitialized(tile.isInitialized());
         gameTileView.setStates(tile.getState());
-        gameTileView.setC(container.refactorCoordinate(tile.getCoordinate()));
+        gameTileView.setC(ViewUtil.refactorCoordinate(tile.getCoordinate(), container));
         gameTileView.setInsect(tile.getInsect());
     }
 

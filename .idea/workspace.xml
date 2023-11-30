@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" afterDir="false" />
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="new classes for testing gametileview">
+      <change afterPath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/NullPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/NullPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/NullPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +36,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2YuSNGXE8DTapaSsVvkNyLXDx2X" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,32 +49,46 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.GameTileViewProbe">
     <configuration name="GameTileViewProbe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.graphics.GameTileViewProbe" />
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.graphics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JustGameTileView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.graphics.JustGameTileView" />
       <module name="Hive_PC" />
       <extension name="coverage">
         <pattern>
@@ -82,6 +103,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameTileViewProbe" />
+        <item itemvalue="Application.JustGameTileView" />
       </list>
     </recent_temporary>
   </component>
@@ -93,8 +115,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701373938941</updated>
-      <workItem from="1701373942155" duration="2496000" />
+      <workItem from="1701373942155" duration="2571000" />
+      <workItem from="1701381740715" duration="5056000" />
     </task>
+    <task id="LOCAL-00001" summary="new classes for testing gametileview">
+      <option name="closed" value="true" />
+      <created>1701376535650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701376535650</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,5 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new classes for testing gametileview" />
+    <option name="LAST_COMMIT_MESSAGE" value="new classes for testing gametileview" />
   </component>
 </project>

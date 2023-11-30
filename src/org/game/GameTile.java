@@ -21,6 +21,8 @@ public class GameTile {
     //in degrees
     private static final double DIR = PI/6;
 
+    private static final double TILE_RADIUS = HEIGHT / 2 * cos(DIR);
+
     private boolean initialized;
 
     //todo: ezt megnézni
@@ -81,6 +83,10 @@ public class GameTile {
 
     public static double getHexaTileHeight() {
         return HEIGHT;
+    }
+
+    public static double getTileRadius(){
+        return TILE_RADIUS;
     }
 
     public static double getDir(){

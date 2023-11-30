@@ -5,13 +5,11 @@ import javax.swing.*;
 import org.game.Coordinate;
 import org.game.GameLogic;
 import org.game.GameTile;
-import org.game.TileStates;
 import org.graphics.controllers.GameTileController;
-import org.graphics.views.GameTileView;
-import org.graphics.views.NullPanel;
-import org.graphics.views.PlayerPanelView;
 import org.insects.Insect;
 import org.insects.Queen;
+
+import java.awt.*;
 
 public class GameTileViewProbe {
     private static GameLogic gameLogic = GameLogic.getInstance();
@@ -23,7 +21,10 @@ public class GameTileViewProbe {
 
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("GameTileView Test");
+        frame.setSize(700,800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        frame.setLayout(new GridLayout(1,1));
 
         TestJPanel mainPanel = new TestJPanel();
 

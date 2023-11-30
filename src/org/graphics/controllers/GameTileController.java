@@ -1,5 +1,6 @@
 package org.graphics.controllers;
 
+import org.game.Coordinate;
 import org.game.GameTile;
 import org.game.TileStates;
 import org.graphics.views.GameTileView;
@@ -20,10 +21,14 @@ public class GameTileController<T extends JComponent & NullPanel> implements Mod
 
     private GameTile tile;
 
-    //todo: Nem kellene kapásból itt hozzáadni a konstruktorban kapott ui komponenst a konténerhez?
-    public GameTileController(GameTile tile, T container, GameTileView gameTileView) {
+
+    public GameTileController(GameTile tile, T container) {
         this.tile = tile;
-        this.gameTileView=gameTileView;
+
+        Coordinate c = container.refactorCoordinate(tile.getCoordinate());
+
+        this.gameTileView=new GameTileView(c);
+        container.add(gameTileView);
         this.container = container;
 
         setUpGameTileView();

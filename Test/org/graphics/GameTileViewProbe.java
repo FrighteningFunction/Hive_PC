@@ -27,18 +27,18 @@ public class GameTileViewProbe {
         PlayerPanelView playerPanelView = new PlayerPanelView();
         frame.add(playerPanelView);
 
-
-        GameTileView gameTileView = new GameTileView();
-
         Insect testInsect = new Queen(gameLogic.getBlackPlayer(), gameLogic);
 
         GameTile gameTile = new GameTile(testInsect);
 
-        GameTileController<PlayerPanelView> gameTileController = new GameTileController<>(gameTile, playerPanelView, gameTileView);
+        Coordinate c = new Coordinate(0,0);
+        gameTile.setCoordinate(c);
+
+        GameTileController<PlayerPanelView> gameTileController = new GameTileController<>(gameTile, playerPanelView);
 
 
         // Center the frame on the screen and make it visible.
-        //frame.setLocationRelativeTo(null);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }

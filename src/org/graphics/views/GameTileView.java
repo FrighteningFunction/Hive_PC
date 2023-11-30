@@ -23,7 +23,7 @@ public class GameTileView extends JComponent {
 
     private boolean initialized = false;
 
-    private transient Coordinate c;
+    private transient Coordinate c = null;
 
     private transient Insect insect = null;
 
@@ -38,7 +38,7 @@ public class GameTileView extends JComponent {
 
     private static final double TILE_RADIUS = TILE_HEIGHT / 2 * cos(DIR);
 
-    public GameTileView() {
+    public GameTileView(Coordinate c) {
 
         // Calculate the width and height of the hexagon's bounding rectangle
         int width = (int) (Math.round(2 * TILE_RADIUS));
@@ -49,6 +49,8 @@ public class GameTileView extends JComponent {
         setPreferredSize(fixedSize);
         setMinimumSize(fixedSize);
         setMaximumSize(fixedSize);
+
+        this.c=c;
 
         //todo: a koordinátát vissza kéne tenni a konstruktorba, és a komplett gametileview létrehozást
         //és műveletet a gametilecontrollernek kellene kezelni

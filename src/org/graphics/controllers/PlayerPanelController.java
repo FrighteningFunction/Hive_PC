@@ -26,9 +26,7 @@ public class PlayerPanelController implements ModelListener{
 
     @Override
     public void onGameTileAdded(GameTile tile){
-        GameTileView gameTileView = new GameTileView();
-        new GameTileController<>(tile, playerPanelView, gameTileView);
-        playerPanelView.add(gameTileView);
+        new GameTileController<>(tile, playerPanelView);
 
         playerPanelView.revalidate();
         playerPanelView.repaint();

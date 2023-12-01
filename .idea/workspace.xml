@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="new classes for testing gametileview">
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ant.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/ant.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/beetle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/beetle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/grasshopper.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/grasshopper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/queen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/queen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/spider.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/spider.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hive_PC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hive_PC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/HiveMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +78,22 @@
       <recent name="C:\Users\szoko\IdeaProjects\Hive_PC\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameTileViewProbe">
+  <component name="RunManager" selected="Application.HiveMain">
     <configuration name="GameTileViewProbe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.graphics.GameTileViewProbe" />
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.graphics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HiveMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.graphics.HiveMain" />
       <module name="Hive_PC" />
       <extension name="coverage">
         <pattern>
@@ -105,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HiveMain" />
         <item itemvalue="Application.GameTileViewProbe" />
         <item itemvalue="Application.JustGameTileView" />
       </list>
@@ -129,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701376535650</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)">
+      <option name="closed" value="true" />
+      <created>1701442676889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701442676889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,9 +173,19 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new classes for testing gametileview" />
-    <option name="LAST_COMMIT_MESSAGE" value="new classes for testing gametileview" />
+    <MESSAGE value="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)" />
+    <option name="LAST_COMMIT_MESSAGE" value="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/insects/Insect.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.game.GameTile" memberName="insect" />

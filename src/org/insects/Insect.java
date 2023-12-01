@@ -155,4 +155,8 @@ public abstract class Insect {
         return num;
     }
 
+    public void setLocation(GameTile tile){
+        location=tile;
+    }
+
 }

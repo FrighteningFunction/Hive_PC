@@ -20,7 +20,7 @@ import static java.lang.Math.cos;
 public class GameTileView extends JComponent {
     private final transient Logger logger = LogManager.getLogger();
 
-    private transient TileStates states = TileStates.UNSELECTED;
+    private transient TileStates state = TileStates.UNSELECTED;
 
     private boolean initialized = false;
 
@@ -65,7 +65,7 @@ public class GameTileView extends JComponent {
 
         setBounds((int) c.getX(), (int) c.getY(), width, height);
 
-        Border redBorder = BorderFactory.createLineBorder(Color.RED, 2);
+        Border redBorder = BorderFactory.createLineBorder(Color.PINK, 2);
         this.setBorder(redBorder);
 
         setVisible(true);
@@ -90,8 +90,8 @@ public class GameTileView extends JComponent {
         logger.warn("The GameTileView's constructor intended for testing was called!");
     }
 
-    public void setStates(TileStates states) {
-        this.states = states;
+    public void setState(TileStates state) {
+        this.state = state;
     }
 
     public void setInitialized(boolean initialized) {
@@ -120,7 +120,7 @@ public class GameTileView extends JComponent {
         }
 
         // Draw border or full hexagon based on state
-        switch (states) {
+        switch (state) {
             case SELECTED:
                 if (initialized) {
                     drawHexagonBorder(g2d, Color.GREEN, true);

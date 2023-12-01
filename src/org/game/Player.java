@@ -1,6 +1,5 @@
 package org.game;
 
-import org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy;
 import org.graphics.controllers.ModelListener;
 import org.insects.*;
 import org.insects.Insect;
@@ -9,18 +8,16 @@ import org.insects.Queen;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Math.cos;
-
 public class Player {
-    private Queen queen;
+    private final Queen queen;
 
-    private GameLogic gameLogic;
+    private final GameLogic gameLogic;
 
     public final HiveColor color;
 
-    private List<Insect> insects = new ArrayList<>();
+    private final List<Insect> insects = new ArrayList<>();
 
-    private List<GameTile> insectHolders = new ArrayList<>();
+    private final List<GameTile> insectHolders = new ArrayList<>();
 
     private ModelListener listener;
 
@@ -30,7 +27,7 @@ public class Player {
         this.color = color;
         this.gameLogic = gameLogic;
 
-        queen = null;
+        queen = new Queen(this, gameLogic);
         HiveLogger.getLogger().info("{} Player created successfully", color);
     }
 
@@ -39,7 +36,7 @@ public class Player {
      * Felér egy resettel.
      */
     public void initPlayer(){
-        insects.add(new Queen(this, gameLogic));
+        insects.add(queen);
 
         insects.add(new Ant(this, gameLogic));
         insects.add(new Ant(this, gameLogic));
@@ -55,16 +52,30 @@ public class Player {
         insects.add(new Spider(this, gameLogic));
         insects.add(new Spider(this, gameLogic));
 
-        //todo: ezt nem kellene globalizálni? Így több helyen simán el lehet számolni, pedig ugyanaz.
-        final double HEIGHT = GameTile.getHexaTileHeight();
-        final double WIDTH = (HEIGHT / 2 * cos(GameTile.getDir())) * 2;
-
+        //jobbról kezdve felváltva balra-jobbra feltöltjük a játékos készletét
         int i = 0;
+        int leftNum=1;
+        int rightNum=1;
         for (Insect insect : insects) {
             GameTile gameTile = new GameTile(insect);
-            Coordinate c = new Coordinate(i * WIDTH + SPACE_BETWEEN_TILES, 0);
+            Coordinate c;
+            if(i==0) {
+                //az elsőt középre tesszük le
+                 c = new Coordinate(i * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
+            }else{
+                //balra tesszük
+                if(i%2==0) {
+                    c = new Coordinate(-1*leftNum * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
+                    leftNum++;
+                }else{
+                    //jobbra tesszük
+                    c = new Coordinate(rightNum * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
+                    rightNum++;
+                }
+            }
             i++;
             gameTile.setCoordinate(c);
+            insectHolders.add(gameTile);
 
             notifyOnAdd(gameTile);
         }
@@ -74,8 +85,8 @@ public class Player {
 
     public void removeGameTile(GameTile tile) {
         if (insectHolders.remove(tile)) {
+            tile.setState(TileStates.TERMINATED); //ezzel a GameTileController automatikusan kitörli majd
             HiveLogger.getLogger().info("placeholder tile from {} was successfully deleted.", color);
-            notifyOnRemove(tile);
         } else {
             HiveLogger.getLogger().fatal("placeholder tile specified was not found for {} player", color);
         }
@@ -120,14 +131,6 @@ public class Player {
             listener.onModelChange();
         }else {
             GraphicLogger.getLogger().error("Player did not notify controller on notifyListeners: null instance");
-        }
-    }
-
-    public void notifyOnRemove(GameTile tile) {
-        if (listener != null) {
-            listener.onGameTileRemoved(tile);
-        }else {
-            GraphicLogger.getLogger().error("Player did not notify controller on remove: null instance");
         }
     }
 

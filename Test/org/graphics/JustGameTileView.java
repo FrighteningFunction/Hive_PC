@@ -1,10 +1,7 @@
 package org.graphics;
 
-import org.game.Coordinate;
 import org.game.GameLogic;
-import org.game.GameTile;
 import org.game.TileStates;
-import org.graphics.controllers.GameTileController;
 import org.graphics.views.GameTileView;
 import org.insects.Insect;
 import org.insects.Queen;
@@ -30,7 +27,7 @@ public class JustGameTileView {
         GameTileView gameTileView = new GameTileView();
         gameTileView.setInsect(testInsect);
         gameTileView.setInitialized(true);
-        gameTileView.setStates(TileStates.UNSELECTED);
+        gameTileView.setState(TileStates.UNSELECTED);
 
         frame.add(gameTileView);
 

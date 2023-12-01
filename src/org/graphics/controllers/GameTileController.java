@@ -2,12 +2,14 @@ package org.graphics.controllers;
 
 import org.game.Coordinate;
 import org.game.GameTile;
+import org.game.GraphicLogger;
 import org.game.TileStates;
 import org.graphics.views.GameTileView;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.graphics.views.ViewUtil;
@@ -27,9 +29,11 @@ public class GameTileController<T extends JComponent> implements ModelListener {
 
         Coordinate c = ViewUtil.refactorCoordinate(tile.getCoordinate(), container);
 
-        this.gameTileView=new GameTileView(c);
-        container.add(gameTileView);
+        this.gameTileView = new GameTileView(c);
         this.container = container;
+
+        container.add(gameTileView);
+        tile.addListener(this);
 
         setUpGameTileView();
 
@@ -37,11 +41,12 @@ public class GameTileController<T extends JComponent> implements ModelListener {
         logger.info("GameTileController successfully created.");
     }
 
-    private void setUpGameTileView(){
+    private void setUpGameTileView() {
         gameTileView.setInitialized(tile.isInitialized());
-        gameTileView.setStates(tile.getState());
+        gameTileView.setState(tile.getState());
         gameTileView.setC(ViewUtil.refactorCoordinate(tile.getCoordinate(), container));
         gameTileView.setInsect(tile.getInsect());
+        gameTileView.repaint();
     }
 
     public GameTileView getGameTileView() {
@@ -52,11 +57,14 @@ public class GameTileController<T extends JComponent> implements ModelListener {
     public void onModelChange() {
         if (tile.getState() == TileStates.TERMINATED) {
             container.remove(gameTileView);
+            container.revalidate();
+            container.repaint();
+            GraphicLogger.getLogger().info("GameTileView at ({},{}) in {} was removed successfully.", gameTileView.getX(), gameTileView.getY(), container);
         } else {
-
             setUpGameTileView();
 
             gameTileView.repaint();
+            logger.info("GameTileView at ({},{}) got updated.", gameTileView.getX(), gameTileView.getY());
         }
     }
 
@@ -74,7 +82,7 @@ public class GameTileController<T extends JComponent> implements ModelListener {
         @Override
         public void mouseClicked(MouseEvent e) {
             tile.gotClicked();
-            logger.info("Tile at x: {} y: {} got clicked.", tile.getCoordinate().getX(), tile.getCoordinate().getY());
+            logger.info("Tile at ({}, {}) got clicked.", gameTileView.getX(), gameTileView.getY());
         }
 
         @Override

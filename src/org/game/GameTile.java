@@ -63,8 +63,6 @@ public class GameTile {
         } catch (DoubleTileException e) {
             HiveLogger.getLogger().error("A new tile was created at an existing coordinate.");
         }
-        //todo: ez itt kell?
-        //notifyListeners();
     }
 
     /**
@@ -79,6 +77,7 @@ public class GameTile {
         state=TileStates.UNSELECTED;
         coordinate=null;
         this.insect=insect;
+        insect.setLocation(this);
     }
 
     public static double getHexaTileHeight() {
@@ -237,6 +236,7 @@ public class GameTile {
                 }
             }
         }
+        notifyListeners();
     }
 
     /**
@@ -257,14 +257,15 @@ public class GameTile {
                 }
             }
         }
+        notifyListeners();
     }
 
     public void gotClicked(){
         GameLogic.getInstance().clickedTile(this);
+        notifyListeners();
     }
 
-    public void addGameTileController(ModelListener listener){
-
+    public void addListener(ModelListener listener){
         listeners.add(listener);
     }
 
@@ -273,6 +274,8 @@ public class GameTile {
             for(ModelListener l : listeners){
                 l.onModelChange();
             }
+        }else{
+            GraphicLogger.getLogger().error("GameTile did not notify listener(s) : no listeners!");
         }
     }
 }

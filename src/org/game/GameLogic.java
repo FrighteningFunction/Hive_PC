@@ -1,6 +1,5 @@
 package org.game;
 
-import org.graphics.controllers.GamePanelController;
 import org.graphics.controllers.ModelListener;
 import org.insects.Queen;
 
@@ -90,7 +89,8 @@ public class GameLogic {
         board.clear();
         new GameTile(board, new Coordinate(0, 0));
         winner = null;
-        HiveLogger.getLogger().info("GameLogic: New Game was started successfully.");
+        HiveLogger.getLogger().info("GameLogic: New Game was started successfully.\n" +
+                "############################################");
     }
 
     /**
@@ -222,6 +222,11 @@ public class GameLogic {
             }
         }
 
+        //átállítjuk a kiválasztott Tile-ok állapotát PINGED-re
+        for(GameTile tile : availableTiles){
+            tile.setState(TileStates.PINGED);
+        }
+
         return availableTiles;
     }
 
@@ -237,11 +242,11 @@ public class GameLogic {
     }
 
     private void checkEndGameCondition() {
-        if (whitePlayer.getNeighboursOfQueen() == 6) {
+        if (whitePlayer.getQueen().isInitialized()&&whitePlayer.getNeighboursOfQueen() == 6) {
             HiveLogger.getLogger().debug("The black Player won!");
             gameState = GameState.TERMINATED;
             notifyListeners();
-        } else if (blackPlayer.getNeighboursOfQueen() == 6) {
+        } else if (blackPlayer.getQueen().isInitialized()&&blackPlayer.getNeighboursOfQueen() == 6) {
             HiveLogger.getLogger().debug("The white Player won!");
             gameState = GameState.TERMINATED;
             notifyListeners();
@@ -251,13 +256,13 @@ public class GameLogic {
     public void clickedTile(GameTile tile) {
 
         Set<GameTile> pingedTiles = new HashSet<>();
+        Player actor = nextPlayer;
 
         //ha először kattintunk
         if (selectionState == SelectionState.STARTSELECT) {
-            Player actor = tile.getInsect().getPlayer();
 
             //ha inicializált tile-ra kattintunk, és a sajátunkra
-            if (tile.isInitialized() && actor.equals(nextPlayer)) {
+            if (tile.isInitialized() && actor.equals(tile.getInsect().getPlayer())) {
 
                 //ha a kiválasztott rovart letettük már
                 if (tile.getInsect().isInitialized()) {
@@ -268,7 +273,10 @@ public class GameLogic {
                     selectionState = SelectionState.PLACESELECT;
                     pingedTiles.addAll(pingAvailableTilesForPlacing(actor));
                 }
-                startTile = tile;
+                if(startTile!=null){
+                    startTile.setState(TileStates.UNSELECTED);
+                }
+                startTile=tile;
 
                 tile.setState(TileStates.SELECTED);
             } else {
@@ -276,6 +284,7 @@ public class GameLogic {
             }
 
         } else {
+            //ha másodszor kattintunk
 
             boolean success;
             if (selectionState == SelectionState.MOVESELECT) {

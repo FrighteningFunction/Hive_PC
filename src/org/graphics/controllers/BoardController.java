@@ -26,9 +26,8 @@ public class BoardController implements ModelListener{
 
     @Override
     public void onGameTileAdded(GameTile tile) {
-        Coordinate viewCord = tile.getCoordinate();
 
-        tile.addGameTileController(new GameTileController<BoardView>(tile, boardView));
+        new GameTileController<>(tile, boardView);
 
         boardView.revalidate();
         boardView.repaint();

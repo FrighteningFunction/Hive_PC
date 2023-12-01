@@ -14,7 +14,7 @@ public class ViewUtil {
 
         //Azért toljuk el a radiussal és a magassággal, mert a hexatile-t középre akarjuk
         double x = w / 2 + c.getX()-GameTile.getTileRadius();
-        double y = h / 2 - c.getY()+GameTile.getHexaTileHeight();
+        double y = h / 2 - c.getY()-GameTile.getHexaTileHeight()/2;
 
         return new Coordinate(x, y);
     }

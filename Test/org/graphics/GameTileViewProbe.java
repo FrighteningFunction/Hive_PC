@@ -1,11 +1,15 @@
 package org.graphics;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 
 import org.game.Coordinate;
 import org.game.GameLogic;
 import org.game.GameTile;
+import org.game.TileStates;
 import org.graphics.controllers.GameTileController;
+import org.insects.Ant;
+import org.insects.Grasshopper;
 import org.insects.Insect;
 import org.insects.Queen;
 
@@ -28,11 +32,17 @@ public class GameTileViewProbe {
 
         TestJPanel mainPanel = new TestJPanel();
 
+        Border redBorder = BorderFactory.createLineBorder(Color.RED, 2);
+        mainPanel.setBorder(redBorder);
+
         frame.add(mainPanel);
 
-        Insect testInsect = new Queen(gameLogic.getBlackPlayer(), gameLogic);
+        Insect testInsect = new Ant(gameLogic.getBlackPlayer(), gameLogic);
 
         GameTile gameTile = new GameTile(testInsect);
+
+        gameTile.setInitialized(true);
+        gameTile.setState(TileStates.SELECTED);
 
         Coordinate c = new Coordinate(0,0);
         gameTile.setCoordinate(c);

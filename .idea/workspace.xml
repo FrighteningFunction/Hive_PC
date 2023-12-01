@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="new classes for testing gametileview">
-      <change afterPath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/ant.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/ant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/beetle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/beetle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/grasshopper.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/grasshopper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/queen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/queen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/spider.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/spider.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/NullPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +71,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\szoko\IdeaProjects\Hive_PC\Resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.GameTileViewProbe">
     <configuration name="GameTileViewProbe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.graphics.GameTileViewProbe" />
@@ -147,5 +150,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new classes for testing gametileview" />
     <option name="LAST_COMMIT_MESSAGE" value="new classes for testing gametileview" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.game.GameTile" memberName="insect" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Hive_PC$All_in_Hive_PC.ic" NAME="All in Hive_PC Coverage Results" MODIFIED="1701026439443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Hive_PC$org_in_Hive_PC.ic" NAME="org in Hive_PC Coverage Results" MODIFIED="1700935196277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.*</FILTER>
+    </SUITE>
   </component>
 </project>

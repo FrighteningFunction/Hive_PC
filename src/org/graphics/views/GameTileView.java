@@ -6,6 +6,7 @@ import org.game.TileStates;
 import org.insects.Insect;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.MouseListener;
 import java.awt.geom.Path2D;
@@ -35,6 +36,8 @@ public class GameTileView extends JComponent {
     private Dimension fixedSize;
     private static final int BORDER_SIZE = 3;
 
+    private static final float BORDER_WIDTH = 2.0f;
+
     private static final double TILE_HEIGHT = GameTile.getHexaTileHeight();
 
     private static final double TILE_RADIUS = GameTile.getTileRadius();
@@ -44,13 +47,13 @@ public class GameTileView extends JComponent {
     /**
      * Megmutatja, hogy hol található a hatszög középpontja a JComponent koordinátáihoz képest.
      */
-    private static final transient Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS/2, TILE_HEIGHT/2);
+    private static final transient Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS, TILE_HEIGHT/2);
 
     public GameTileView(Coordinate c) {
 
         // Calculate the width and height of the hexagon's bounding rectangle
-        int width = (int) (Math.round(2 * TILE_RADIUS));
-        int height = (int) Math.round(TILE_HEIGHT);
+        int width = (int) (Math.round(2 * TILE_RADIUS)+BORDER_SIZE);
+        int height = (int) Math.round(TILE_HEIGHT+BORDER_SIZE);
         fixedSize = new Dimension(width, height);
 
         // Set the size of the hex tile
@@ -61,6 +64,9 @@ public class GameTileView extends JComponent {
         this.c=c;
 
         setBounds((int) c.getX(), (int) c.getY(), width, height);
+
+        Border redBorder = BorderFactory.createLineBorder(Color.RED, 2);
+        this.setBorder(redBorder);
 
         setVisible(true);
         logger.info("GameTileView at coordinate x: {} y: {} was created.", c.getX(), c.getY());
@@ -108,7 +114,7 @@ public class GameTileView extends JComponent {
 
         // Draw the main hexagon if the tile is initialized
         if (initialized) {
-            drawHexagon(g2d, Color.BLACK);
+            drawHexagonBorder(g2d, Color.BLACK, false);
             hexagonDrawn = true;
             logger.info("A black hexagon was drawn.");
         }
@@ -117,20 +123,20 @@ public class GameTileView extends JComponent {
         switch (states) {
             case SELECTED:
                 if (initialized) {
-                    drawHexagonBorder(g2d, Color.GREEN);
+                    drawHexagonBorder(g2d, Color.GREEN, true);
                     logger.info("A green border was drawn.");
                 } else {
-                    drawHexagon(g2d, Color.GREEN);
+                    drawHexagonBorder(g2d, Color.GREEN, false);
                     logger.info("A full green hexagon was drawn.");
                 }
                 hexagonDrawn = true;
                 break;
             case PINGED:
                 if (initialized) {
-                    drawHexagonBorder(g2d, Color.RED);
+                    drawHexagonBorder(g2d, Color.RED, true);
                     logger.info("A red border was drawn.");
                 } else {
-                    drawHexagon(g2d, Color.RED);
+                    drawHexagonBorder(g2d, Color.RED, false);
                     logger.info("A full red hexagon was drawn.");
                 }
                 hexagonDrawn = true;
@@ -147,18 +153,27 @@ public class GameTileView extends JComponent {
             logger.info("No hexatile was drawn.");
         }
 
-
-        // Draw insect image if initialized
+        //todo: megoldani, hogy minden rovar teljesen középen legyen
+        //Draw insect image if initialized
         if (initialized && insect != null && insect.getImage() != null) {
             Image resizedImage = resizeImageToFitTile(insect.getImage());
-            g2d.drawImage(resizedImage, (int) INNER_ORIGO.getX(), (int) INNER_ORIGO.getY(), this);
+            Coordinate imgCord = getCenteredImageCoordinate(resizedImage);
+            g2d.drawImage(resizedImage, (int) imgCord.getX(), (int) imgCord.getY(), this);
             logger.info("An insect image was drawn.");
         }
     }
 
-    private void drawHexagonBorder(Graphics2D g2d, Color borderColor) {
-        double borderSize = TILE_RADIUS + BORDER_SIZE; // Adjust the border size as needed
+    private void drawHexagonBorder(Graphics2D g2d, Color borderColor, boolean isOuter) {
+        double borderSize;
+
+        if(isOuter) {
+            borderSize = TILE_RADIUS + BORDER_SIZE;
+        }else{
+            borderSize=TILE_RADIUS;
+        }
         g2d.setColor(borderColor);
+
+        g2d.setStroke(new BasicStroke(BORDER_WIDTH));
         Shape borderHexagon = createHexagonWithSize(borderSize);
         g2d.draw(borderHexagon); // Draw border hexagon
     }
@@ -205,6 +220,29 @@ public class GameTileView extends JComponent {
 
         // Resize the image
         return originalImage.getScaledInstance(newWidth, newHeight, Image.SCALE_SMOOTH);
+    }
+
+    /**
+     * Calculates the top-left coordinate at which the image should be drawn to be centered.
+     *
+     * @param image The image to be centered.
+     * @return The coordinate at which to start drawing the image.
+     */
+    public Coordinate getCenteredImageCoordinate(Image image) {
+        // Get the width and height of the image
+        int imageWidth = image.getWidth(this);
+        int imageHeight = image.getHeight(this);
+
+        // Get the width and height of the component
+        int componentWidth = this.getWidth();
+        int componentHeight = this.getHeight();
+
+        // Calculate the top-left x and y coordinates to start drawing the image
+        int x = (componentWidth - imageWidth) / 2;
+        int y = (componentHeight - imageHeight) / 2;
+
+        // Return the calculated coordinates
+        return new Coordinate(x, y);
     }
 
     public void addClickListener(MouseListener listener) {

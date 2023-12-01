@@ -14,14 +14,14 @@ public class GameTile {
 
     private TileStates state;
 
+    private static final double TILE_RADIUS = 50;
+
     //the height of the tile
-    private static final double HEIGHT = 50;
+    private static final double HEIGHT = 2*sqrt(pow(TILE_RADIUS, 2)-pow(TILE_RADIUS, 2)/4);
 
     //the degree of the directions of the neighbouring hexatiles
     //in degrees
     private static final double DIR = PI/6;
-
-    private static final double TILE_RADIUS = HEIGHT / 2 * cos(DIR);
 
     private boolean initialized;
 

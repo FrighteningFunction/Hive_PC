@@ -92,8 +92,8 @@ public abstract class Insect {
      * @return true ha csúszna, false ha rendben van
      */
     protected boolean isItSliding(GameTile tile, int direction) {
-        GameTile toTheLeft = tile.getNeigbour((direction - 1) % 6);
-        GameTile toTheRight = tile.getNeigbour((direction + 1) % 6);
+        GameTile toTheLeft = tile.getNeighbour((direction - 1 + 6) % 6);
+        GameTile toTheRight = tile.getNeighbour((direction + 1) % 6);
 
         //elősször kiértékeljük, hogy nullok-e, nehogy nullpointerexceptiont kapjunk.
         return toTheLeft != null && toTheRight != null && !(toTheLeft.isInitialized() && toTheRight.isInitialized());
@@ -116,9 +116,9 @@ public abstract class Insect {
             destinations.add(root);
         } else {
             for (int i = 0; i < 6; ++i) {
-                GameTile to = root.getNeigbour(i);
+                GameTile to = root.getNeighbour(i);
                 if (to!=null && isItSliding(root, i) && !to.isInitialized() && !to.equals(from)) {
-                    destinations.addAll(pathFinder(destinations, steps++, root.getNeigbour(i), root));
+                    destinations.addAll(pathFinder(destinations, steps++, root.getNeighbour(i), root));
                 }
             }
         }
@@ -148,7 +148,7 @@ public abstract class Insect {
     public int getTotalNeighbours(){
         int num = 0;
         for(int i=0; i<6; i++){
-            if(location.getNeigbour(i).isInitialized()){
+            if(location.getNeighbour(i).isInitialized()){
                 num++;
             }
         }

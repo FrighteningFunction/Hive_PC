@@ -39,7 +39,7 @@ public class InsectTest {
 
         origoTile = new GameTile(board, new Coordinate(0,0));
         whiteQueen.place(origoTile);
-        starterTile = origoTile.getNeigbour(3);
+        starterTile = origoTile.getNeighbour(3);
     }
 
     @Test
@@ -48,7 +48,7 @@ public class InsectTest {
         Set<GameTile> expected = new HashSet<>(board.getUnInitializedTileSet());
         assertEquals("Incorrect gametiles pinged available for placing", expected, gameLogic.pingAvailableTilesForPlacing(gameLogic.getBlackPlayer()));
 
-        GameTile chosenTile = origoTile.getNeigbour(3);
+        GameTile chosenTile = origoTile.getNeighbour(3);
         grasshopper.place(chosenTile);
         assertTrue("Insect was not placed as it should have been", chosenTile.isInitialized());
     }
@@ -58,11 +58,11 @@ public class InsectTest {
         Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
         grasshopper.place(starterTile);
         Set<GameTile> expected = new HashSet<>();
-        expected.add(origoTile.getNeigbour(0));
+        expected.add(origoTile.getNeighbour(0));
 
         assertEquals("Incorrect availableTiles!", expected, grasshopper.pingAvailableTiles());
 
-        GameTile chosenTile = origoTile.getNeigbour(0);
+        GameTile chosenTile = origoTile.getNeighbour(0);
         grasshopper.move(chosenTile);
         assertTrue("Insect was not moved as it should have been", chosenTile.isInitialized());
         assertFalse("Starter Tile was not uninitialized", starterTile.isInitialized());
@@ -73,7 +73,7 @@ public class InsectTest {
         Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
         grasshopper.place(starterTile);
 
-        GameTile chosenTile = origoTile.getNeigbour(2);
+        GameTile chosenTile = origoTile.getNeighbour(2);
         grasshopper.move(chosenTile);
         assertFalse("Insect should not have been moved!", chosenTile.isInitialized());
         assertTrue("Starter Tile was uninitialized even though insect did not move", starterTile.isInitialized());

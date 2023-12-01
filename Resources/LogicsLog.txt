@@ -1,0 +1,321 @@
+2023-12-01T16:46:19,033 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T16:46:19,033 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T16:46:19,102 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T16:46:19,118 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T16:46:19,133 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+2023-12-01T16:47:09,558 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T16:47:09,558 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T16:47:09,636 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T16:47:09,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T16:47:09,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+2023-12-01T16:48:25,545 [AWT-EventQueue-0] FATAL org.game.HiveLogger removeGameTile - placeholder tile specified was not found for WHITE player
+2023-12-01T16:48:25,545 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T16:54:25,028 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T16:54:25,028 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T16:54:25,113 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T16:54:25,129 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T16:54:25,129 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+2023-12-01T16:56:00,176 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:00,645 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T16:59:00,645 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T16:59:00,730 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T16:59:00,746 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T16:59:00,746 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+2023-12-01T16:59:04,363 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:04,484 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:04,715 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:04,823 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:05,046 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:05,862 [AWT-EventQueue-0] FATAL org.game.HiveLogger removeGameTile - placeholder tile specified was not found for WHITE player
+2023-12-01T16:59:05,878 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T16:59:17,416 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:17,633 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:17,732 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T16:59:18,450 [AWT-EventQueue-0] FATAL org.game.HiveLogger removeGameTile - placeholder tile specified was not found for BLACK player
+2023-12-01T16:59:18,450 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T16:59:18,450 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T16:59:18,450 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T16:59:18,450 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T17:02:12,737 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:02:12,737 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:02:12,806 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:02:12,822 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:02:12,822 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+2023-12-01T17:10:14,278 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:10:14,278 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:10:14,356 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:10:14,378 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:10:14,378 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+2023-12-01T17:10:23,198 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T17:10:23,700 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T17:10:24,085 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T17:10:24,470 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T17:10:26,342 [AWT-EventQueue-0] FATAL org.game.HiveLogger removeGameTile - placeholder tile specified was not found for WHITE player
+2023-12-01T17:10:26,343 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T17:15:37,309 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:15:37,309 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:15:37,378 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:15:37,410 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:15:37,410 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T17:17:10,456 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:17:10,469 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:17:10,551 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:17:10,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:17:10,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T17:18:14,826 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:18:14,826 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:18:14,895 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:18:14,926 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:18:14,926 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T17:19:00,288 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:19:00,288 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:19:00,373 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:19:00,404 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:19:00,404 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T17:25:34,568 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:25:34,568 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:25:34,651 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:25:34,668 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:25:34,668 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T17:25:39,628 [AWT-EventQueue-0] FATAL org.game.HiveLogger removeGameTile - placeholder tile specified was not found for WHITE player
+2023-12-01T17:25:39,628 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T17:32:51,580 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T17:32:51,580 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T17:32:51,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T17:32:51,689 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T17:32:51,689 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T17:32:54,546 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:14:45,521 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:14:45,521 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:14:45,572 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:14:45,592 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:14:45,592 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:14:48,366 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:14:48,381 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:17:05,185 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:17:05,195 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:17:05,236 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:17:05,256 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:17:05,256 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:17:07,286 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:17:07,286 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:18:30,530 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:18:30,538 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:18:30,595 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:18:30,616 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:18:30,632 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:18:33,873 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:18:33,873 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:25:56,937 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:25:56,947 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:25:57,008 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:25:57,028 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:25:57,028 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:26:15,399 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:26:34,939 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:29:07,554 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:29:07,554 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:29:07,594 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:29:07,615 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:29:07,615 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:29:10,236 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:29:10,252 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:29:24,798 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T18:29:24,814 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:29:24,814 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:29:24,814 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:29:24,814 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:32:37,913 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:32:37,913 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:32:37,964 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:32:37,984 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:32:37,984 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:32:42,769 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:32:42,769 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:32:53,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T18:32:53,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:32:53,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:32:53,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:32:53,585 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:41:33,925 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:41:33,928 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:41:33,968 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:41:33,988 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:41:33,988 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:46:52,984 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:46:52,984 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:47:08,228 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:47:11,422 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:47:11,422 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:47:24,897 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:47:24,905 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:47:24,947 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:47:24,968 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:47:24,968 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:50:27,605 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:50:27,605 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:50:27,654 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:50:27,676 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:50:27,676 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:51:07,892 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:51:07,903 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:51:07,943 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:51:07,963 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:51:07,963 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:51:10,247 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:51:10,247 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:51:19,339 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T18:51:19,339 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:51:19,339 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:51:19,339 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T18:51:19,339 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:54:29,511 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:54:29,521 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:54:29,591 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:54:29,620 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:54:29,620 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:54:53,822 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:54:53,838 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T18:56:33,264 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T18:56:33,274 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T18:56:33,333 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T18:56:33,355 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T18:56:33,363 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T18:57:21,725 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T18:57:21,737 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:00:35,516 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T19:00:35,516 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T19:00:35,557 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T19:00:35,577 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T19:00:35,577 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T19:00:38,473 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:00:38,473 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:00:43,076 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T19:00:43,091 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:00:43,091 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:00:43,091 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:00:43,091 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:02:26,827 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T19:02:26,827 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T19:02:26,876 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T19:02:26,896 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T19:02:26,898 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T19:02:34,473 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T19:02:34,695 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T19:02:34,805 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T19:02:36,463 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:02:36,463 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:02:40,104 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T19:02:40,104 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:02:40,104 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:02:40,104 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:02:40,104 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:02:48,045 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T19:02:48,145 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-01T19:02:51,231 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:02:51,231 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:02:51,231 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:02:51,231 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:02:51,231 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:03:01,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T19:03:01,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:03:01,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:03:01,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:03:01,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:03:08,426 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:03:08,426 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:03:08,426 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:03:08,426 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:03:08,426 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:11:42,409 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T19:11:42,409 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T19:12:02,998 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T19:12:03,032 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T19:12:03,032 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T19:12:27,238 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T19:12:27,240 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T19:12:27,280 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T19:12:27,300 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T19:12:27,300 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T19:12:29,331 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:12:29,347 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:12:36,694 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T19:12:36,694 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:12:36,694 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:12:36,694 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:12:36,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:17:17,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T19:17:17,709 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T19:17:17,760 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T19:17:17,780 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T19:17:17,780 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T19:17:19,923 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:17:19,938 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:17:22,482 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T19:17:22,482 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:22,482 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:22,482 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:22,482 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:36,644 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger uninitialize - A neighbour was not an orphan while uninitialize, so was not deleted
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.HiveLogger deleteGameTileFromBoard - At a direction the blank tile found no neighbour.
+2023-12-01T19:17:38,380 [AWT-EventQueue-0] INFO  org.game.HiveLogger move - The player wanted to step to an incorrect Tile
+2023-12-01T19:19:24,764 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - WHITE Player created successfully
+2023-12-01T19:19:24,764 [AWT-EventQueue-0] INFO  org.game.HiveLogger <init> - BLACK Player created successfully
+2023-12-01T19:19:24,815 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - WHITE Player initialized successfully
+2023-12-01T19:19:24,835 [AWT-EventQueue-0] INFO  org.game.HiveLogger initPlayer - BLACK Player initialized successfully
+2023-12-01T19:19:24,835 [AWT-EventQueue-0] INFO  org.game.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-01T19:19:33,377 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from WHITE was successfully deleted.
+2023-12-01T19:19:33,382 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.
+2023-12-01T19:19:44,693 [AWT-EventQueue-0] INFO  org.game.HiveLogger removeGameTile - placeholder tile from BLACK was successfully deleted.
+2023-12-01T19:19:44,710 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:19:44,710 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:19:44,710 [AWT-EventQueue-0] INFO  org.game.HiveLogger initialize - At a direction there already was a Tile.
+2023-12-01T19:19:44,710 [AWT-EventQueue-0] INFO  org.game.HiveLogger place - An insect was sucessfully placed.

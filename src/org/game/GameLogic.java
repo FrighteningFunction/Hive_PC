@@ -35,15 +35,17 @@ public class GameLogic {
 
     private int turns;
 
-    private Player whitePlayer;
+    private final Player whitePlayer;
 
-    private Player blackPlayer;
+    private final Player blackPlayer;
 
     private Player nextPlayer;
 
+    private final  Set<GameTile> pingedTiles = new HashSet<>();
+
     private Player winner;
 
-    private GameBoard board;
+    private final GameBoard board;
 
     /**
      * Létrehoz egy új GameLogic példányt.
@@ -163,7 +165,7 @@ public class GameLogic {
     private static void pathFinder(Set<GameTile> visited, GameTile root, final GameTile exception) {
         visited.add(root);
         for (int i = 0; i < 6; i++) {
-            GameTile to = root.getNeigbour(i);
+            GameTile to = root.getNeighbour(i);
             if (to.isInitialized() && !visited.contains(to) && to != exception) {
                 pathFinder(visited, to, exception);
             }
@@ -210,8 +212,8 @@ public class GameLogic {
             for (GameTile tile : unInitializedTiles) {
                 boolean noOpponentNeighbour = true;
                 for (int i = 0; i < 6; i++) {
-                    GameTile neighbour = tile.getNeigbour(i);
-                    if (neighbour.isInitialized() && !neighbour.getInsect().getPlayer().equals(p)) {
+                    GameTile neighbour = tile.getNeighbour(i);
+                    if (neighbour!=null && neighbour.isInitialized() && !neighbour.getInsect().getPlayer().equals(p)) {
                         noOpponentNeighbour = false;
                         break;
                     }
@@ -255,7 +257,6 @@ public class GameLogic {
 
     public void clickedTile(GameTile tile) {
 
-        Set<GameTile> pingedTiles = new HashSet<>();
         Player actor = nextPlayer;
 
         //ha először kattintunk
@@ -299,6 +300,7 @@ public class GameLogic {
                 for (GameTile g : pingedTiles) {
                     g.setState(TileStates.UNSELECTED);
                 }
+                pingedTiles.clear();
                 selectionState = SelectionState.STARTSELECT;
 
                 incrementTurns();

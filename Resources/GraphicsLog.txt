@@ -1,0 +1,312 @@
+2023-12-01T16:46:13,495 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T16:46:13,511 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T16:46:13,511 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:46:13,511 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:46:13,511 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T16:46:19,033 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T16:46:19,033 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T16:46:19,033 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T16:46:19,033 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T16:47:07,969 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T16:47:07,985 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T16:47:07,985 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:47:07,985 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:47:07,985 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T16:47:09,574 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T16:47:09,574 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T16:47:09,574 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T16:47:09,574 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T16:54:23,694 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T16:54:23,694 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T16:54:23,694 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:54:23,694 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:54:23,694 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T16:54:25,044 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T16:54:25,044 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T16:54:25,044 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T16:54:25,044 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T16:58:59,319 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T16:58:59,326 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T16:58:59,326 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:58:59,326 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T16:58:59,326 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T16:59:00,661 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T16:59:00,661 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T16:59:00,661 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T16:59:00,661 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:02:11,255 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:02:11,271 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:02:11,271 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:02:11,271 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:02:11,271 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:02:12,737 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:02:12,737 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:02:12,737 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:02:12,737 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:10:13,053 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:10:13,069 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:10:13,069 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:10:13,075 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:10:13,075 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:10:14,278 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:10:14,278 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:10:14,294 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:10:14,294 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:15:35,357 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:15:35,372 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:15:35,372 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:15:35,372 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:15:35,372 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:15:37,309 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:15:37,309 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:15:37,309 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:15:37,309 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:17:09,156 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:17:09,166 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:17:09,166 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:17:09,166 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:17:09,166 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:17:10,469 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:17:10,469 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:17:10,469 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:17:10,469 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:18:13,734 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:18:13,734 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:18:13,734 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:18:13,734 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:18:13,734 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:18:14,826 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:18:14,826 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:18:14,826 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:18:14,826 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:18:58,916 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:18:58,932 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:18:58,932 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:18:58,932 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:18:58,932 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:19:00,288 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:19:00,288 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:19:00,288 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:19:00,288 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:25:32,464 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:25:32,464 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:25:32,464 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:25:32,464 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:25:32,464 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:25:34,568 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:25:34,584 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:25:34,584 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:25:34,584 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T17:32:49,895 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T17:32:49,895 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T17:32:49,895 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:32:49,895 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T17:32:49,895 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T17:32:51,580 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T17:32:51,580 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T17:32:51,580 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T17:32:51,580 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:14:43,862 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:14:43,862 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:14:43,862 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:14:43,862 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:14:43,862 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:14:45,529 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:14:45,529 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:14:45,529 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:14:45,531 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:14:48,366 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5feed095,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:17:03,575 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:17:03,590 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:17:03,590 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:17:03,590 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:17:03,590 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:17:05,195 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:17:05,195 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:17:05,195 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:17:05,203 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:17:07,286 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@40215499,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:18:28,948 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:18:28,964 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:18:28,964 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:18:28,964 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:18:28,964 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:18:30,538 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:18:30,548 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:18:30,548 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:18:30,548 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:18:33,873 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3e66a99e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:25:55,542 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:25:55,542 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:25:55,542 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:25:55,542 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:25:55,542 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:25:56,947 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:25:56,955 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:25:56,957 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:25:56,958 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:26:15,399 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@27339b70,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:29:05,983 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:29:05,983 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:29:05,983 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:29:05,983 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:29:05,996 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:29:07,562 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:29:07,562 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:29:07,562 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:29:07,564 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:29:10,236 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@77dacd36,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:29:24,798 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@36d79e8e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:32:36,345 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:32:36,360 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:32:36,360 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:32:36,360 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:32:36,360 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:32:37,921 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:32:37,921 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:32:37,923 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:32:37,923 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:32:42,769 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4d3e002c,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:32:53,585 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@20369637,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:41:32,171 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:41:32,187 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:41:32,187 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:41:32,187 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:41:32,187 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:41:33,928 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:41:33,928 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:41:33,928 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:41:33,928 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:46:51,059 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:46:51,069 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:46:51,071 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:46:51,071 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:46:51,071 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:46:52,992 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:46:52,992 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:46:52,992 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:46:52,992 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:47:23,593 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:47:23,593 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:47:23,593 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:47:23,593 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:47:23,593 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:47:24,907 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:47:24,907 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:47:24,907 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:47:24,907 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:50:25,918 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:50:25,918 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:50:25,933 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:50:25,933 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:50:25,933 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:50:27,613 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:50:27,613 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:50:27,615 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:50:27,615 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:51:06,476 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:51:06,476 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:51:06,476 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:51:06,476 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:51:06,476 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:51:07,903 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:51:07,903 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:51:07,903 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:51:07,903 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:51:10,247 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4d1255c3,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:51:19,339 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@25b5f3bc,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:54:21,317 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:54:21,333 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:54:21,333 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:54:21,333 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:54:21,339 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:54:27,026 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:54:27,041 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:54:27,041 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:54:27,041 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:54:27,041 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:54:29,521 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:54:29,529 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:54:29,529 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:54:29,531 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:54:53,822 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@278c4402,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T18:56:31,917 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T18:56:31,917 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T18:56:31,917 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:56:31,917 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T18:56:31,917 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T18:56:33,274 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T18:56:33,274 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T18:56:33,274 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T18:56:33,274 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T18:57:21,725 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@62f85e7d,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:00:34,151 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T19:00:34,151 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T19:00:34,151 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:00:34,151 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:00:34,151 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T19:00:35,516 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T19:00:35,516 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T19:00:35,524 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T19:00:35,524 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T19:00:38,473 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@55710fd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:00:43,076 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@412cfa61,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:02:25,375 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T19:02:25,375 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T19:02:25,375 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:02:25,375 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:02:25,375 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T19:02:26,836 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T19:02:26,838 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T19:02:26,838 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T19:02:26,838 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T19:02:36,463 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@469b79af,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:02:40,104 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4bb4ef3,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:02:51,231 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1012,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@469b79af,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:03:01,709 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1212,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4bb4ef3,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:03:08,426 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (612,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@469b79af,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:11:40,565 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T19:11:40,565 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T19:11:40,565 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:11:40,565 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:11:40,565 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T19:11:42,419 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T19:11:42,419 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T19:11:42,419 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T19:11:42,419 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T19:12:25,590 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T19:12:25,605 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T19:12:25,605 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:12:25,612 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:12:25,612 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T19:12:27,240 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T19:12:27,240 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T19:12:27,240 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T19:12:27,248 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T19:12:29,331 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6475e72f,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:12:36,694 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1a179873,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:17:16,172 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T19:17:16,182 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T19:17:16,182 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:17:16,182 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:17:16,182 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T19:17:17,709 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T19:17:17,718 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T19:17:17,718 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T19:17:17,720 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T19:17:19,923 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@137864ad,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:17:22,482 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1fceea3a,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:17:30,772 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@273f3c6e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@273f3c6e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:17:36,659 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,0) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@273f3c6e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:19:23,204 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-01T19:19:23,204 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-01T19:19:23,204 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:19:23,204 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-01T19:19:23,219 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-01T19:19:24,764 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-01T19:19:24,772 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-01T19:19:24,772 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-01T19:19:24,774 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-01T19:19:33,376 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@406a660e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-01T19:19:44,693 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@9f07b7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.

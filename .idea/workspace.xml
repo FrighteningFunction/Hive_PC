@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)">
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban.">
+      <change afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hive_PC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hive_PC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/game/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/game/GameBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/game/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/game/GameLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/insects/InsectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/insects/InsectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/HiveMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Ant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701442676889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban.">
+      <option name="closed" value="true" />
+      <created>1701453187221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701453187221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,18 +181,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new classes for testing gametileview" />
     <MESSAGE value="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)" />
-    <option name="LAST_COMMIT_MESSAGE" value="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)" />
+    <MESSAGE value="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban." />
+    <option name="LAST_COMMIT_MESSAGE" value="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/insects/Insect.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.game.GameTile" memberName="insect" />

@@ -28,7 +28,7 @@ public class Grasshopper extends Insect{
             destinations.add(root);
             return destinations;
         }else{
-            destinations.addAll(pathFinder(destinations, root.getNeigbour(GameBoard.invertDirection(from)), from));
+            destinations.addAll(pathFinder(destinations, root.getNeighbour(GameBoard.invertDirection(from)), from));
         }
         return destinations;
     }
@@ -48,7 +48,7 @@ public class Grasshopper extends Insect{
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
         for(int i=0; i<6; i++){
-            GameTile neighbour = location.getNeigbour(i);
+            GameTile neighbour = location.getNeighbour(i);
             if(neighbour.isInitialized()){
                 availableTiles.addAll(pathFinder(availableTiles, neighbour, GameBoard.invertDirection(i)));
             }

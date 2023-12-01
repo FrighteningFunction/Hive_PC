@@ -33,10 +33,10 @@ public class GameLogicTest {
     @Test
     public void initializedTileSetTest(){
         Insect grasshopper = new Grasshopper(gameLogic.getWhitePlayer(), gameLogic);
-        grasshopper.place(origoTile.getNeigbour(0));
+        grasshopper.place(origoTile.getNeighbour(0));
         Set<GameTile> expected = new HashSet<>();
         expected.add(origoTile);
-        expected.add(origoTile.getNeigbour(0));
+        expected.add(origoTile.getNeighbour(0));
         assertEquals("Incorrect initializedTile set", expected, board.getInitializedTileSet());
     }
 
@@ -44,7 +44,7 @@ public class GameLogicTest {
     public void uninitializedTileSetTest(){
         Set<GameTile> expected = new HashSet<>();
         for(int i=0; i<6; i++){
-            expected.add(origoTile.getNeigbour(i));
+            expected.add(origoTile.getNeighbour(i));
         }
         assertEquals("Incorrect uninitializedTile set", expected, board.getUnInitializedTileSet());
     }
@@ -52,11 +52,11 @@ public class GameLogicTest {
     @Test
     public void hiveConnectionTest(){
         Insect grasshopper1 = new Grasshopper(gameLogic.getWhitePlayer(), gameLogic);
-        GameTile grasshopper1Tile = origoTile.getNeigbour(0);
+        GameTile grasshopper1Tile = origoTile.getNeighbour(0);
         grasshopper1.place(grasshopper1Tile);
         Insect grasshopper2 = new Grasshopper(gameLogic.getWhitePlayer(), gameLogic);
 
-        GameTile grasshopper2Tile = origoTile.getNeigbour(3);
+        GameTile grasshopper2Tile = origoTile.getNeighbour(3);
         grasshopper2.place(grasshopper2Tile);
 
         assertTrue("False alert for hiveConnection problem", gameLogic.wouldHiveBeConnected(grasshopper2Tile));

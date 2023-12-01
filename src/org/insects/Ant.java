@@ -26,9 +26,9 @@ public class Ant extends Insect{
     protected Set<GameTile> pathFinder(Set<GameTile> destinations, GameTile root, GameTile from) {
         if(!root.isInitialized()) destinations.add(root); //hogy a kiindulópontot ne adjuk hozzá
         for (int i = 0; i < 6; ++i) {
-            GameTile to = root.getNeigbour(i);
+            GameTile to = root.getNeighbour(i);
             if (to!=null && isItSliding(root, i) && !to.isInitialized() && !to.equals(from)) {
-                destinations.addAll(pathFinder(destinations, root.getNeigbour(i), root));
+                destinations.addAll(pathFinder(destinations, root.getNeighbour(i), root));
             }
         }
         return destinations;

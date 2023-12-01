@@ -76,7 +76,7 @@ public class GameBoardTest {
 
         boolean noNeighbour = true;
         for (int i = 0; i < 6; i++) {
-            if (starter.getNeigbour(i) != null) {
+            if (starter.getNeighbour(i) != null) {
                 noNeighbour = false;
             }
         }
@@ -88,8 +88,8 @@ public class GameBoardTest {
     public void linkTilesTest1() {
         GameTile origo = new GameTile(board, new Coordinate(0, 0));
         GameTile north = new GameTile(board, new Coordinate(0, HEIGHT));
-        assertEquals("Neighbour tiles weren't linked consistently!", origo, north.getNeigbour(3));
-        assertEquals("Neighbour tiles weren't linked consistently!", north, origo.getNeigbour(0));
+        assertEquals("Neighbour tiles weren't linked consistently!", origo, north.getNeighbour(3));
+        assertEquals("Neighbour tiles weren't linked consistently!", north, origo.getNeighbour(0));
     }
 
     @Test
@@ -97,7 +97,7 @@ public class GameBoardTest {
         GameTile origo = new GameTile(board, new Coordinate(0, 0));
         origo.initialize(getInsect());
         for (int i = 0; i < 6; i++) {
-            assertEquals("", origo.getNeigbour(i).getNeigbour(GameBoard.invertDirection(i)), origo);
+            assertEquals("", origo.getNeighbour(i).getNeighbour(GameBoard.invertDirection(i)), origo);
         }
     }
 
@@ -107,7 +107,7 @@ public class GameBoardTest {
         tile.initialize(getInsect());
         int nullneighbours = 0;
         for (int i = 0; i < 6; i++) {
-            if (tile.getNeigbour(i) == null) {
+            if (tile.getNeighbour(i) == null) {
                 nullneighbours++;
             }
         }
@@ -120,7 +120,7 @@ public class GameBoardTest {
         tile.initialize(getInsect());
         int inconsistentLinks = 0;
         for (int i = 0; i < 6; i++) {
-            if (!tile.equals(tile.getNeigbour(i).getNeigbour(GameBoard.invertDirection(i)))) {
+            if (!tile.equals(tile.getNeighbour(i).getNeighbour(GameBoard.invertDirection(i)))) {
                 inconsistentLinks++;
             }
         }
@@ -139,7 +139,7 @@ public class GameBoardTest {
         tile.initialize(getInsect());
         GameTile[] neighbours = new GameTile[6];
         for (int i = 0; i < 6; i++) {
-            neighbours[i] = tile.getNeigbour(i);
+            neighbours[i] = tile.getNeighbour(i);
         }
         tile.setInitialized(false);
         tile.deleteGameTileFromBoard();
@@ -147,7 +147,7 @@ public class GameBoardTest {
         int wrongreferences = 0;
         int k = 3; //mert az első szomszéd a 3-as irányban rendelkezett a tile-al
         for (int i = 0; i < 6; i++) {
-            if (neighbours[i].getNeigbour(k % 6) != null) {
+            if (neighbours[i].getNeighbour(k % 6) != null) {
                 referenceDeleted = false;
                 wrongreferences++;
             }

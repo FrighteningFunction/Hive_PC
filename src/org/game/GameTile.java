@@ -128,7 +128,7 @@ public class GameTile {
         return coordinate;
     }
 
-    public GameTile getNeigbour(int direction) {
+    public GameTile getNeighbour(int direction) {
         return neighbours[direction];
     }
 
@@ -250,8 +250,8 @@ public class GameTile {
             initialized = false;
             insect = null;
             for (int i = 0; i < 6; i++) {
-                if (!this.getNeigbour(i).isInitialized() && this.getNeigbour(i).isOrphan()) {
-                    this.getNeigbour(i).deleteGameTileFromBoard();
+                if (!this.getNeighbour(i).isInitialized() && this.getNeighbour(i).isOrphan()) {
+                    this.getNeighbour(i).deleteGameTileFromBoard();
                 } else {
                     HiveLogger.getLogger().info("A neighbour was not an orphan while uninitialize, so was not deleted");
                 }

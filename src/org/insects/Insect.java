@@ -25,7 +25,7 @@ public abstract class Insect {
         player = p;
         location = null;
         color = p.color;
-        insectImage=setImage();
+        insectImage = setImage();
     }
 
     public boolean isInitialized() {
@@ -40,24 +40,21 @@ public abstract class Insect {
         return player;
     }
 
-    abstract protected Image setImage();
+    protected abstract Image setImage();
 
-    public Image getImage(){
+    public Image getImage() {
         return insectImage;
     }
 
     public boolean move(GameTile chosenTile) {
         Set<GameTile> availableTiles = pingAvailableTiles();
-        if(gameLogic.wouldHiveBeConnected(location)) {
-            if (availableTiles.contains(chosenTile)) {
-                chosenTile.initialize(this);
-                location.uninitialize();
-                return true;
-            } else {
-                HiveLogger.getLogger().info("The player wanted to step to an incorrect Tile");
-            }
-        }else{
-            HiveLogger.getLogger().info("Player would have disconnected the hive.");
+        if (availableTiles.contains(chosenTile)) {
+            location.uninitialize();
+            chosenTile.initialize(this);
+            location=chosenTile;
+            return true;
+        } else {
+            HiveLogger.getLogger().info("The player wanted to step to an incorrect Tile");
         }
         return false;
     }
@@ -67,15 +64,15 @@ public abstract class Insect {
             HiveLogger.getLogger().fatal("Already initialized insect was to be placed!");
         } else {
             Set<GameTile> availableTiles = gameLogic.pingAvailableTilesForPlacing(this.player);
-            if(availableTiles.contains(tile)){
+            if (availableTiles.contains(tile)) {
                 initialized = true;
                 player.removeGameTile(location);
                 player.removeInsect(this);
                 tile.initialize(this);
-                location=tile;
+                location = tile;
                 HiveLogger.getLogger().info("An insect was sucessfully placed.");
                 return true;
-            }else{
+            } else {
                 HiveLogger.getLogger().info("Player wanted to place an insect to an invalid place");
             }
         }
@@ -92,11 +89,11 @@ public abstract class Insect {
      * @return true ha csúszna, false ha rendben van
      */
     protected boolean isItSliding(GameTile tile, int direction) {
-        GameTile toTheLeft = tile.getNeighbour((direction - 1 + 6) % 6);
+        GameTile toTheLeft = tile.getNeighbour((direction - 1 + 6) % 6); //+6, hogy ne kapjunk mínusz számot
         GameTile toTheRight = tile.getNeighbour((direction + 1) % 6);
 
         //elősször kiértékeljük, hogy nullok-e, nehogy nullpointerexceptiont kapjunk.
-        return toTheLeft != null && toTheRight != null && !(toTheLeft.isInitialized() && toTheRight.isInitialized());
+        return toTheLeft != null && toTheRight != null && toTheLeft.isInitialized() && toTheRight.isInitialized();
     }
 
     /**
@@ -117,14 +114,15 @@ public abstract class Insect {
         } else {
             for (int i = 0; i < 6; ++i) {
                 GameTile to = root.getNeighbour(i);
-                if (to!=null && isItSliding(root, i) && !to.isInitialized() && !to.equals(from)) {
-                    destinations.addAll(pathFinder(destinations, steps++, root.getNeighbour(i), root));
+                if (to != null && !to.isInitialized() && !to.equals(from) && !to.wouldBeOrphan(root) && !isItSliding(root, i)) {
+                    destinations.addAll(pathFinder(destinations, steps+1, root.getNeighbour(i), root));
                 }
             }
         }
         return destinations;
     }
 
+    //todo: valamiért csak 2. klikkelésre jelzi ki a halmazt
     /**
      * A rovar mozgási szabályai szerint visszaadja azon tile-ok listáját, ahová
      * a szabályok szerint léphet.
@@ -133,30 +131,36 @@ public abstract class Insect {
      */
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
-        availableTiles = pathFinder(availableTiles, 0, location, null);
+        if (gameLogic.wouldHiveBeConnected(location)) {
+            availableTiles = pathFinder(availableTiles, 0, location, null);
+        } else {
+            HiveLogger.getLogger().info("Player would have disconnected the hive.");
+        }
 
-        for(GameTile tile : availableTiles){
+        for (GameTile tile : availableTiles) {
             tile.setState(TileStates.PINGED);
         }
+        HiveLogger.getLogger().info("{} insect of player {} pinged the available tiles", this.getClass(), this.player.getColor());
         return availableTiles;
     }
 
     /**
      * Megmondja, hány rovar szomszédja van az adott rovarnak.
+     *
      * @return rovarszomszédok száma.
      */
-    public int getTotalNeighbours(){
+    public int getTotalNeighbours() {
         int num = 0;
-        for(int i=0; i<6; i++){
-            if(location.getNeighbour(i).isInitialized()){
+        for (int i = 0; i < 6; i++) {
+            if (location.getNeighbour(i).isInitialized()) {
                 num++;
             }
         }
         return num;
     }
 
-    public void setLocation(GameTile tile){
-        location=tile;
+    public void setLocation(GameTile tile) {
+        location = tile;
     }
 
 }

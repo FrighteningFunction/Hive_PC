@@ -16,7 +16,7 @@ public class GameBoardTest {
     private GameLogic gameLogic;
 
     private Insect getInsect() {
-        return new Queen(new Player(HiveColor.WHITE, gameLogic), gameLogic);
+        return new Queen(new Player(HiveColor.BLUE, gameLogic), gameLogic);
     }
 
     @Before

@@ -43,7 +43,6 @@ public class GameTileView extends JComponent {
     private static final double TILE_RADIUS = GameTile.getTileRadius();
 
 
-    //todo: itt továbbhaladni a refaktorálással: Valami gond van a koordinátaszámítással vagy itt vagy a JComponens globális koordinátaszámításánál.
     /**
      * Megmutatja, hogy hol található a hatszög középpontja a JComponent koordinátáihoz képest.
      */
@@ -153,7 +152,6 @@ public class GameTileView extends JComponent {
             logger.info("No hexatile was drawn.");
         }
 
-        //todo: megoldani, hogy minden rovar teljesen középen legyen
         //Draw insect image if initialized
         if (initialized && insect != null && insect.getImage() != null) {
             Image resizedImage = resizeImageToFitTile(insect.getImage());

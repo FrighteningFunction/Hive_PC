@@ -55,8 +55,8 @@ public class GameLogic {
     private GameLogic() {
         gameState = GameState.TERMINATED;
         turns = -1;
-        whitePlayer = new Player(HiveColor.WHITE, this);
-        blackPlayer = new Player(HiveColor.BLACK, this);
+        whitePlayer = new Player(HiveColor.BLUE, this);
+        blackPlayer = new Player(HiveColor.RED, this);
         nextPlayer = null;
         board = GameBoard.getInstance();
         winner = null;

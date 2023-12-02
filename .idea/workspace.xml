@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban.">
-      <change afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A letett rovarok kiválaszthatatlansága megoldva. Súlyos pathing problémák léptek fel (insect pathfinder rossz.)&#10;Egyébként a GUi működik.&#10;&#10;todo: a gameboardot görgethetővé és szélesebbé tenni (majd).">
+      <change afterPath="$PROJECT_DIR$/Test/org/insects/QueenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/game/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/game/GameBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/game/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/game/GameLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/insects/InsectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/insects/InsectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Ant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,19 +75,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.HiveMain">
-    <configuration name="GameTileViewProbe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.graphics.GameTileViewProbe" />
-      <module name="Hive_PC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.graphics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HiveMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.graphics.HiveMain" />
       <module name="Hive_PC" />
@@ -104,15 +88,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JustGameTileView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.graphics.JustGameTileView" />
+    <configuration name="InsectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hive_PC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.graphics.*" />
+          <option name="PATTERN" value="org.insects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.insects" />
+      <option name="MAIN_CLASS_NAME" value="org.insects.InsectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.insects" />
+      <option name="MAIN_CLASS_NAME" value="org.insects.QueenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueenTest.testMoveQueen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.insects" />
+      <option name="MAIN_CLASS_NAME" value="org.insects.QueenTest" />
+      <option name="METHOD_NAME" value="testMoveQueen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueenTest.testPingAvailableTiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.insects" />
+      <option name="MAIN_CLASS_NAME" value="org.insects.QueenTest" />
+      <option name="METHOD_NAME" value="testPingAvailableTiles" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,8 +153,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HiveMain" />
-        <item itemvalue="Application.GameTileViewProbe" />
-        <item itemvalue="Application.JustGameTileView" />
+        <item itemvalue="JUnit.QueenTest.testPingAvailableTiles" />
+        <item itemvalue="JUnit.QueenTest" />
+        <item itemvalue="JUnit.QueenTest.testMoveQueen" />
+        <item itemvalue="JUnit.InsectTest" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +170,7 @@
       <updated>1701373938941</updated>
       <workItem from="1701373942155" duration="2571000" />
       <workItem from="1701381740715" duration="5056000" />
+      <workItem from="1701510022445" duration="8681000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -160,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701453187221</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="A letett rovarok kiválaszthatatlansága megoldva. Súlyos pathing problémák léptek fel (insect pathfinder rossz.)&#10;Egyébként a GUi működik.&#10;&#10;todo: a gameboardot görgethetővé és szélesebbé tenni (majd).">
+      <option name="closed" value="true" />
+      <created>1701454923690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701454923690</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +226,8 @@
     <MESSAGE value="new classes for testing gametileview" />
     <MESSAGE value="GameTileViewProbe lefut és működik. A képek még nincsenek teljesen középen (jobb képek kellenek)" />
     <MESSAGE value="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban." />
-    <option name="LAST_COMMIT_MESSAGE" value="A gametileview működik, a rajzolási logika rendben (csoda folytán a képek is középen vannak), valamint a játékban is helyesen betöltődnek. Kritikus inicializálási valamint játéklogikai hibák ki lettek javítva: már néhány lépést lehet tenni.&#10;&#10;További játéklogikai problémák kijavítása folyamatban." />
+    <MESSAGE value="A letett rovarok kiválaszthatatlansága megoldva. Súlyos pathing problémák léptek fel (insect pathfinder rossz.)&#10;Egyébként a GUi működik.&#10;&#10;todo: a gameboardot görgethetővé és szélesebbé tenni (majd)." />
+    <option name="LAST_COMMIT_MESSAGE" value="A letett rovarok kiválaszthatatlansága megoldva. Súlyos pathing problémák léptek fel (insect pathfinder rossz.)&#10;Egyébként a GUi működik.&#10;&#10;todo: a gameboardot görgethetővé és szélesebbé tenni (majd)." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

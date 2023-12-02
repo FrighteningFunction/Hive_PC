@@ -1,8 +1,8 @@
 package org.game;
 
 public enum HiveColor{
-    BLACK("black"),
-    WHITE("white");
+    RED("red"),
+    BLUE("blue");
 
     private final String name;
 

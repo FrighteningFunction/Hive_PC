@@ -310,3 +310,775 @@
 2023-12-01T19:19:24,774 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
 2023-12-01T19:19:33,376 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@406a660e,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
 2023-12-01T19:19:44,693 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@9f07b7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:43:00,656 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T10:43:00,668 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T10:43:00,669 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:43:00,669 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:43:00,671 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T10:43:02,220 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T10:43:02,220 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T10:43:02,222 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T10:43:02,224 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T10:43:05,252 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@42aa2950,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:43:09,212 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3c859a14,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:44:54,424 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T10:44:54,432 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T10:44:54,433 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:44:54,433 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:44:54,434 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T10:44:55,989 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T10:44:55,989 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T10:44:55,990 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T10:44:55,991 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T10:44:58,283 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@7d5695ec,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:45:03,891 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@13bbba18,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:54:31,467 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T10:54:31,474 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T10:54:31,475 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:54:31,475 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:54:31,476 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T10:54:33,097 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T10:54:33,098 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T10:54:33,099 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T10:54:33,101 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T10:54:35,407 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2e6647f1,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:54:37,634 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@182539d6,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T10:59:57,211 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T10:59:57,217 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T10:59:57,218 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:59:57,218 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T10:59:57,220 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T10:59:58,970 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T10:59:58,971 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T10:59:58,972 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T10:59:58,974 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:00:01,383 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@19154bf9,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:00:06,759 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1dc0c1b2,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:12:40,517 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:12:40,524 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:12:40,525 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:12:40,525 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:12:40,526 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:12:42,125 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:12:42,126 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:12:42,126 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:12:42,127 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:12:44,933 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5c744ebe,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:12:47,218 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5382da0,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:13:07,485 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:13:07,491 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:13:07,492 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:13:07,492 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:13:07,494 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:13:54,792 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:13:54,798 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:13:54,799 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:13:54,799 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:13:54,800 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:13:56,139 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:13:56,140 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:13:56,141 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:13:56,142 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:13:58,756 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1ee04187,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:14:00,840 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@68f5a794,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:16:13,434 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:16:13,440 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:16:13,440 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:16:13,441 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:16:13,442 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:16:25,642 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:16:25,648 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:16:25,649 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:16:25,650 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:16:25,651 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:16:26,972 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:16:26,973 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:16:26,974 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:16:26,975 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:16:31,498 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@7477678f,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:16:33,215 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2821671b,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:19:19,142 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:19:19,148 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:19:19,148 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:19:19,149 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:19:19,150 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:19:20,505 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:19:20,505 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:19:20,507 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:19:20,508 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:19:23,978 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4780d00d,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:19:25,936 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@b940735,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:28:17,046 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:28:17,052 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:28:17,052 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:28:17,053 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:28:17,054 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:28:18,466 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:28:18,466 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:28:18,467 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:28:18,468 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:28:22,094 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@641868a9,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:28:25,775 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@7e6e0753,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:29:00,579 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:29:00,586 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:29:00,586 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:29:00,587 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:29:00,588 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:29:01,940 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:29:01,940 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:29:01,941 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:29:01,942 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:29:03,996 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2a540f14,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:29:05,819 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@69258da9,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:31:32,870 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:31:32,876 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:31:32,877 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:31:32,877 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:31:32,878 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:31:34,461 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:31:34,461 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:31:34,462 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:31:34,463 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:31:36,635 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3a772aa5,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:31:38,136 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@381c9f52,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:31:57,340 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:31:57,345 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:31:57,346 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:31:57,346 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:31:57,348 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:31:58,559 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:31:58,560 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:31:58,560 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:31:58,562 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:32:02,427 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@49d008a6,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:32:04,638 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6a85c782,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:33:24,484 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:33:24,490 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:33:24,491 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:33:24,491 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:33:24,493 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:33:26,305 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:33:26,306 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:33:26,306 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:33:26,308 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:33:28,633 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ebaa2e4,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:33:31,652 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@127cccb7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:42:26,107 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:42:26,115 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:42:26,116 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:42:26,116 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:42:26,117 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:42:27,580 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:42:27,581 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:42:27,582 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:42:27,583 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:42:29,909 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@105040fb,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:42:31,577 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4ccfc8e9,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:42:48,303 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:42:48,312 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:42:48,312 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:42:48,313 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:42:48,315 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:42:49,635 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:42:49,635 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:42:49,637 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:42:49,638 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:42:51,774 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@663faeca,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:42:53,916 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6a87162a,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:43:43,185 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:43:43,193 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:43:43,194 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:43:43,195 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:43:43,196 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:43:44,539 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:43:44,539 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:43:44,540 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:43:44,541 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T11:43:46,587 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@41bf28de,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:43:48,095 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@453ced4b,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:43:50,572 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (902,216) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@ba35464,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:43:50,574 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@ba35464,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:43:53,189 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1052,130) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@ba35464,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:43:53,191 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (977,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@ba35464,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:44:53,347 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1012,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@453ced4b,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T11:59:57,675 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T11:59:57,684 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T11:59:57,685 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:59:57,685 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T11:59:57,687 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T11:59:59,413 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T11:59:59,414 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T11:59:59,415 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T11:59:59,417 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:00:01,617 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1eec1223,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:00:31,403 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1d965032,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:00:36,492 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (977,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6cc5197a,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:00:36,494 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (902,216) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6cc5197a,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:00:39,120 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (977,0) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6cc5197a,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:00:39,122 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (977,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6cc5197a,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:01:20,684 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:01:20,691 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:01:20,692 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:01:20,692 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:01:20,694 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:01:22,033 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:01:22,034 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:01:22,035 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:01:22,036 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:01:23,978 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5beca518,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:01:26,104 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@d3243f,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:01:34,983 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2447a3b1,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:01:34,985 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2447a3b1,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:00,438 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:03:00,447 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:03:00,448 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:03:00,448 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:03:00,450 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:03:02,137 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:03:02,138 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:03:02,139 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:03:02,141 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:03:04,333 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1eec1223,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:05,741 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1fe33faf,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:07,130 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:07,132 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:11,079 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (977,0) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:11,081 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (902,43) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:19,866 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (902,216) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:19,868 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (902,130) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:27,384 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1052,43) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:27,385 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1127,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:44,802 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1127,260) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:03:44,803 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1052,303) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@3ddaf098,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:06,712 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:07:06,722 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:07:06,723 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:07:06,723 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:07:06,725 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:07:08,323 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:07:08,324 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:07:08,326 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:07:08,327 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:07:10,922 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@76ebf6fb,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:14,916 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1012,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@16eb1f89,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:21,223 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@224b6c34,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:21,224 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@224b6c34,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:46,009 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:07:46,016 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:07:46,017 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:07:46,018 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:07:46,019 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:07:47,693 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:07:47,693 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:07:47,694 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:07:47,695 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:07:49,878 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@7df478e7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:52,589 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1012,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2fcdf5ff,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:56,122 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6a258284,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:07:56,124 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6a258284,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:08:35,745 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:08:35,754 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:08:35,755 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:08:35,755 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:08:35,757 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:08:37,423 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:08:37,423 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:08:37,425 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:08:37,426 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:08:40,479 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6b8c9163,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:08:45,402 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@7f7404c5,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:08:53,688 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:08:53,695 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:08:53,696 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:08:53,697 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:08:53,698 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:08:55,176 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:08:55,177 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:08:55,178 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:08:55,180 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:08:57,229 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@663faeca,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:08:58,838 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1012,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@7ddb4031,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:09:01,957 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (902,216) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@469673f2,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:09:01,958 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@469673f2,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:09:15,308 [main] INFO  org.game.GraphicLogger <init> - MainMenu created successfully.
+2023-12-02T12:09:15,314 [main] INFO  org.game.GraphicLogger <init> - BoardView was successfully created.
+2023-12-02T12:09:15,315 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:09:15,316 [main] INFO  org.game.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-02T12:09:15,317 [main] INFO  org.game.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-02T12:09:16,897 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for BLACK was created
+2023-12-02T12:09:16,898 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - PlayerPanelController for WHITE was created
+2023-12-02T12:09:16,899 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - BoardController was created successfully.
+2023-12-02T12:09:16,900 [AWT-EventQueue-0] INFO  org.game.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-02T12:09:18,837 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (912,130) in org.graphics.views.PlayerPanelView[,0,694,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5beca518,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:09:21,230 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (1212,130) in org.graphics.views.PlayerPanelView[,0,0,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5ac0720f,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:09:22,463 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,173) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4738f5e6,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:09:22,466 [AWT-EventQueue-0] INFO  org.game.GraphicLogger onModelChange - GameTileView at (827,86) in org.graphics.views.BoardView[,0,347,1904x347,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@4738f5e6,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-02T12:13:16,007 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,007 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,008 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,008 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,008 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,009 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,009 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,009 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,010 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,010 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,010 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,029 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,029 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,030 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,030 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,031 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,031 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,031 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,031 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,032 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,032 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,032 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,035 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,035 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,036 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,037 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,037 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,037 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,037 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,038 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,038 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,040 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,041 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,041 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,041 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,041 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,042 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,043 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,043 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,043 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,044 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,044 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,044 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,046 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,046 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,048 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,049 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,050 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,050 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,066 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,066 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,067 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,067 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,067 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,067 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,068 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,068 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,068 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,068 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,069 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,069 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,069 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,069 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,070 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,070 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,070 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,070 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,070 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,070 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,071 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,071 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,082 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,083 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,083 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,083 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,083 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,084 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,084 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,084 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,084 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,084 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,085 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,085 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,085 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,085 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,086 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,086 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,086 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,086 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,086 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,086 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,087 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,087 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,089 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,089 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,090 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,090 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,090 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,090 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,091 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,091 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,091 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,093 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,093 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,094 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,094 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,094 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,094 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,095 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,096 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,096 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,096 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,108 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,108 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,108 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,108 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,109 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,109 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,109 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,109 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,109 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,110 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,110 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,110 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,110 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,111 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,111 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,111 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,111 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,112 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,112 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,112 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,112 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,112 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,113 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,113 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,113 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,113 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,113 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,113 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,114 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,114 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,114 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,114 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,114 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,125 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,125 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,126 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,126 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,126 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,126 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,126 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,127 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,127 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,127 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,127 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,127 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,127 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,128 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,129 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,130 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,130 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,130 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,130 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,130 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,130 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:13:16,132 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,132 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,133 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,133 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,133 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,133 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,134 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,134 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,134 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,135 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,136 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,136 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,136 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,136 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,136 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,137 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,137 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,137 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,137 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,137 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,137 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:13:16,138 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,139 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,139 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:13:16,140 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,649 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,649 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,650 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,650 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,651 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,651 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,651 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,652 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,652 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,652 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,653 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,670 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,671 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,671 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,671 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,671 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,672 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,672 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,672 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,673 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,673 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,674 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,676 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,677 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,677 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,678 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,678 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,678 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,678 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,679 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,679 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,698 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,698 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,699 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,699 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,699 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,700 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,700 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,700 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,701 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,701 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,701 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,702 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,702 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,702 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,702 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,703 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,703 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,703 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,704 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,704 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,704 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,704 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,717 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,717 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,717 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,718 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,718 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,718 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,718 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,718 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,719 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,719 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,719 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,719 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,719 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,720 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,720 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,720 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,720 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,720 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,721 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,721 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,721 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,721 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,723 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,724 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,725 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,725 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,725 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,726 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,726 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,726 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,726 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,729 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,729 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,730 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,730 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,730 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,730 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,731 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,732 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,733 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,733 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,746 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,747 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,747 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,747 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,747 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,747 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,748 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,748 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,748 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,748 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,748 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,749 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,749 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,749 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,749 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,750 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,750 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,750 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,751 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,751 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,751 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,751 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,751 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,752 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,752 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,752 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,752 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,753 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,753 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,753 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,753 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,754 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,754 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,768 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,768 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,768 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,768 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,768 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,769 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,769 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,769 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,769 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,769 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,769 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,770 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,770 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,770 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,770 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,770 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,770 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,771 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,771 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,771 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,771 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,771 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,772 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,772 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,772 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,772 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,773 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,773 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,773 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,773 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,774 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,774 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,774 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,776 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,776 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,777 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,777 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,777 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,778 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,778 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,778 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,778 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,797 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,797 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,797 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,797 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,797 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,798 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,798 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,798 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,798 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,798 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,799 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,799 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,799 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,799 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,799 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,799 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,800 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,800 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,800 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,800 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,800 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,801 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,801 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,801 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,801 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,801 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,802 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,802 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,802 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,802 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,803 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,803 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,803 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,803 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,803 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,804 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,804 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,804 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,804 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,805 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,805 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,805 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,805 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,805 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,817 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,817 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,817 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,817 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,818 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,818 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,818 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,818 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,818 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,818 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,819 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,820 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,820 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,820 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,821 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,821 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,821 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,822 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,822 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,822 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,822 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,822 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,823 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,823 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,823 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,823 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,823 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,824 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,825 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,825 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,825 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,825 [main] ERROR org.game.GraphicLogger notifyOnAdd - Player did not notify controller on add: null instance
+2023-12-02T12:20:23,827 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,828 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!
+2023-12-02T12:20:23,828 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,828 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,829 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,829 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,829 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,829 [main] ERROR org.game.GraphicLogger notifyOnGameTileAdded - GameBoard did not notify controller: null instance
+2023-12-02T12:20:23,829 [main] ERROR org.game.GraphicLogger notifyListeners - GameTile did not notify listener(s) : no listeners!

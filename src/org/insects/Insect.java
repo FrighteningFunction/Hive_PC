@@ -11,7 +11,8 @@ public abstract class Insect {
     protected int maxstep;
 
     private boolean initialized;
-    private final Player player;
+
+    protected final Player player;
 
     public final HiveColor color;
 
@@ -51,11 +52,10 @@ public abstract class Insect {
         if (availableTiles.contains(chosenTile)) {
             location.uninitialize();
             chosenTile.initialize(this);
-            location=chosenTile;
+            location = chosenTile;
             return true;
-        } else {
-            HiveLogger.getLogger().info("The player wanted to step to an incorrect Tile");
         }
+        HiveLogger.getLogger().info("The player wanted to step to an incorrect Tile");
         return false;
     }
 
@@ -108,21 +108,23 @@ public abstract class Insect {
      * @param from         ahonnan jött
      * @return a gyerekeiből összegyűjtött lehetséges céltile-ok halmaza.
      */
-    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from) {
+    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from, Set<GameTile> visitedTiles) {
+        visitedTiles.add(root);
         if (steps == maxstep) {
             destinations.add(root);
         } else {
             for (int i = 0; i < 6; ++i) {
                 GameTile to = root.getNeighbour(i);
-                if (to != null && !to.isInitialized() && !to.equals(from) && !to.wouldBeOrphan(root) && !isItSliding(root, i)) {
-                    destinations.addAll(pathFinder(destinations, steps+1, root.getNeighbour(i), root));
+                if (to != null && !visitedTiles.contains(to) && !to.isInitialized() && !to.equals(from) && !to.wouldBeOrphan(location) && !isItSliding(root, i)) {
+                    destinations.addAll(pathFinder(destinations, steps + 1, root.getNeighbour(i), root, visitedTiles));
                 }
             }
         }
         return destinations;
     }
 
-    //todo: valamiért csak 2. klikkelésre jelzi ki a halmazt
+    //todo: valamiért bizonyos esetekben nem jelöli ki pirossal az egyes tile-okat, de közben legálisan enged odalépni
+
     /**
      * A rovar mozgási szabályai szerint visszaadja azon tile-ok listáját, ahová
      * a szabályok szerint léphet.
@@ -132,15 +134,17 @@ public abstract class Insect {
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
         if (gameLogic.wouldHiveBeConnected(location)) {
-            availableTiles = pathFinder(availableTiles, 0, location, null);
+            Set<GameTile> visitedTiles = new HashSet<>();
+            visitedTiles.add(location);
+
+            availableTiles = pathFinder(availableTiles, 0, location, null, visitedTiles);
+            for (GameTile tile : availableTiles) {
+                tile.setState(TileStates.PINGED);
+            }
+            HiveLogger.getLogger().info("{} insect of player {} pinged the available tiles", this.getClass(), this.player.getColor());
         } else {
             HiveLogger.getLogger().info("Player would have disconnected the hive.");
         }
-
-        for (GameTile tile : availableTiles) {
-            tile.setState(TileStates.PINGED);
-        }
-        HiveLogger.getLogger().info("{} insect of player {} pinged the available tiles", this.getClass(), this.player.getColor());
         return availableTiles;
     }
 

@@ -1,9 +1,6 @@
 package org.insects;
 
-import org.game.GameBoard;
-import org.game.GameLogic;
-import org.game.GameTile;
-import org.game.Player;
+import org.game.*;
 import org.graphics.ImageLoader;
 
 import java.awt.*;
@@ -34,12 +31,12 @@ public class Grasshopper extends Insect{
     }
 
     @Override
-    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from){
+    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from, Set<GameTile> visitedTiles){
         throw new UnsupportedOperationException();
     }
 
     /**
-     * A rovar mozgási szabályai szerint visszaadja azon tile-ok listáját, ahová
+     * A grasshopper mozgási szabályai szerint visszaadja azon tile-ok listáját, ahová
      * a szabályok szerint léphet.
      *
      * @return a támogatott tile-ok listája.
@@ -47,11 +44,19 @@ public class Grasshopper extends Insect{
     @Override
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
-        for(int i=0; i<6; i++){
-            GameTile neighbour = location.getNeighbour(i);
-            if(neighbour.isInitialized()){
-                availableTiles.addAll(pathFinder(availableTiles, neighbour, GameBoard.invertDirection(i)));
+        if(gameLogic.wouldHiveBeConnected(location)) {
+            for (int i = 0; i < 6; i++) {
+                GameTile neighbour = location.getNeighbour(i);
+                if (neighbour.isInitialized()) {
+                    availableTiles.addAll(pathFinder(availableTiles, neighbour, GameBoard.invertDirection(i)));
+                }
             }
+            for (GameTile tile : availableTiles) {
+                tile.setState(TileStates.PINGED);
+            }
+            HiveLogger.getLogger().info("{} insect of player {} pinged the available tiles", this.getClass(), this.player.getColor());
+        }else{
+            HiveLogger.getLogger().info("Player would have disconnected the hive.");
         }
         return availableTiles;
     }

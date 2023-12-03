@@ -1,9 +1,6 @@
 package org.insects;
 
-import org.game.GameLogic;
-import org.game.GameTile;
-import org.game.HiveLogger;
-import org.game.Player;
+import org.game.*;
 import org.graphics.ImageLoader;
 
 import java.awt.*;
@@ -22,7 +19,7 @@ public class Beetle extends Insect {
 
     @Override
     public boolean move(GameTile chosenTile) {
-        Set<GameTile> availableTiles=pingAvailableTiles();
+        Set<GameTile> availableTiles = pingAvailableTiles();
         if (availableTiles.contains(chosenTile)) {
             if (controlledInsect != null) {
                 location.setInsect(controlledInsect);
@@ -34,24 +31,14 @@ public class Beetle extends Insect {
             if (chosenTile.isInitialized()) {
                 controlledInsect = chosenTile.getInsect();
                 chosenTile.setInsect(this);
-            }else {
+            } else {
                 chosenTile.initialize(this);
             }
+            location = chosenTile;
             return true;
-        } else {
-            HiveLogger.getLogger().info("Beetle : the player wanted to step to an incorrect Tile");
         }
+        HiveLogger.getLogger().info("Beetle : the player wanted to step to an incorrect Tile");
         return false;
-    }
-
-    @Override
-    protected boolean isItSliding(GameTile tile, int direction) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from) {
-        throw new UnsupportedOperationException();
     }
 
     /**
@@ -60,14 +47,31 @@ public class Beetle extends Insect {
      * @param destinations azon tile-ok halmaza, ahová a rovar léphet. Ezt építgetjük.
      * @param steps        eddig ennyit lépett a rovar.
      * @param root         az aktuális kiindulópont.
+     * @param from         ahonnan a pathfinder utoljára jött (itt nem használt)
+     * @param visitedTiles a már meglátogatott tile-ok halmaza
      * @return a gyerekeiből összegyűjtött lehetséges céltile-ok halmaza.
      */
-    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root) {
+    @Override
+    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from, Set<GameTile> visitedTiles) {
+        visitedTiles.add(root);
         if (steps == maxstep) {
             destinations.add(root);
         } else {
-            for (int i = 0; i < 6; ++i) {
-                destinations.addAll(pathFinder(destinations, steps++, root));
+            if (controlledInsect == null) {
+                for (int i = 0; i < 6; ++i) {
+                    GameTile to = root.getNeighbour(i);
+                    if (to != null && !visitedTiles.contains(to) && !to.wouldBeOrphan(location) && !isItSliding(root, i)) {
+                        destinations.addAll(pathFinder(destinations, steps + 1, to, root, visitedTiles));
+                    }
+                }
+            } else {
+                //ha initialized tile-t hagy maga után, bárhova léphet körülötte
+                for (int i = 0; i < 6; ++i) {
+                    GameTile to = root.getNeighbour(i);
+                    if (!visitedTiles.contains(to)) {
+                        destinations.addAll(pathFinder(destinations, steps + 1, to, root, visitedTiles));
+                    }
+                }
             }
         }
         return destinations;
@@ -82,7 +86,18 @@ public class Beetle extends Insect {
     @Override
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
-        availableTiles = pathFinder(availableTiles, 0, location);
+        if (controlledInsect!=null || gameLogic.wouldHiveBeConnected(location)) {
+            Set<GameTile> visitedTiles = new HashSet<>();
+            visitedTiles.add(location);
+
+            availableTiles = pathFinder(availableTiles, 0, location, null, visitedTiles);
+            for (GameTile tile : availableTiles) {
+                tile.setState(TileStates.PINGED);
+            }
+            HiveLogger.getLogger().info("{} insect of player {} pinged the available tiles", this.getClass(), this.player.getColor());
+        } else {
+            HiveLogger.getLogger().info("Player would have disconnected the hive.");
+        }
         return availableTiles;
     }
 

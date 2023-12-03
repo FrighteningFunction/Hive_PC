@@ -232,8 +232,9 @@ public class GameLogic {
         return availableTiles;
     }
 
+    //todo: ha nincs available tile for placing, akkor a másik játékos győzött
     private void checkQueenCondition() {
-        if (!nextPlayer.isQueenDown() && turns == 4) {
+        if (!nextPlayer.isQueenDown() && turns >= 7) {
             Queen queen = nextPlayer.getQueen();
             startTile=queen.getLocation();
             startTile.setState(TileStates.SELECTED);

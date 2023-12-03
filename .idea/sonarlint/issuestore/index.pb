@@ -254,3 +254,5 @@ Q.idea/sonarlint/securityhotspotstore/8/3/8326fcf38acc35c617202cf976f437b891baca
 Q.idea/sonarlint/securityhotspotstore/4/7/4795345ce17feaa2705f78275938062e6c3a6829,f\7\f7ac586044d05fc5ef9ba0e01b6565b7ffced948
 Å
 Q.idea/sonarlint/securityhotspotstore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1,f\b\fbc4deb7bad083a4999ed6def7f178bfed42a87f
+K
+src/org/insects/Spider.java,4\0\4054654ba59dcf6266f18ba81cc248f283152b56

@@ -1,17 +1,15 @@
 package org.insects;
 
-import org.game.GameLogic;
-import org.game.GameTile;
-import org.game.Player;
+import org.game.*;
 import org.graphics.ImageLoader;
 
 import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Ant extends Insect{
+public class Ant extends Insect {
 
-    public Ant(Player p, GameLogic gameLogic){
+    public Ant(Player p, GameLogic gameLogic) {
         super(p, gameLogic);
     }
 
@@ -23,26 +21,39 @@ public class Ant extends Insect{
      * @param from         ahonnan jött
      * @return a gyerekeiből összegyűjtött lehetséges céltile-ok halmaza.
      */
-    protected Set<GameTile> pathFinder(Set<GameTile> destinations, GameTile root, GameTile from) {
-        if(!root.isInitialized()) destinations.add(root); //hogy a kiindulópontot ne adjuk hozzá
+    protected Set<GameTile> pathFinder(Set<GameTile> destinations, GameTile root, GameTile from, Set<GameTile> visitedTiles) {
+        visitedTiles.add(root);
+        if (!root.isInitialized()) destinations.add(root); //hogy a kiindulópontot ne adjuk hozzá
         for (int i = 0; i < 6; ++i) {
             GameTile to = root.getNeighbour(i);
-            if (to!=null && isItSliding(root, i) && !to.isInitialized() && !to.equals(from)) {
-                destinations.addAll(pathFinder(destinations, root.getNeighbour(i), root));
+            if (to != null && !visitedTiles.contains(to) && !to.isInitialized() && !to.equals(from) && !to.wouldBeOrphan(location) && !isItSliding(root, i)) {
+                destinations.addAll(pathFinder(destinations, root.getNeighbour(i), root, visitedTiles));
             }
         }
         return destinations;
     }
 
     @Override
-    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from){
+    protected Set<GameTile> pathFinder(Set<GameTile> destinations, int steps, GameTile root, GameTile from, Set<GameTile> visitedTiles) {
         throw new UnsupportedOperationException();
     }
 
     @Override
     public Set<GameTile> pingAvailableTiles() {
         Set<GameTile> availableTiles = new HashSet<>();
-        availableTiles = pathFinder(availableTiles, location, null);
+
+        if (gameLogic.wouldHiveBeConnected(location)) {
+            Set<GameTile> visitedTiles = new HashSet<>();
+
+
+            availableTiles = pathFinder(availableTiles, location, null, visitedTiles);
+            for (GameTile tile : availableTiles) {
+                tile.setState(TileStates.PINGED);
+                HiveLogger.getLogger().info("{} insect of player {} pinged the available tiles", this.getClass(), this.player.getColor());
+            }
+        } else {
+            HiveLogger.getLogger().info("Player would have disconnected the hive.");
+        }
         return availableTiles;
     }
 

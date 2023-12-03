@@ -35,7 +35,7 @@ public class Player {
      * Inicializálja az adott játékost, így készen áll új játékra.
      * Felér egy resettel.
      */
-    public void initPlayer(){
+    public void initPlayer() {
         insects.add(queen);
 
         insects.add(new Ant(this, gameLogic));
@@ -54,20 +54,20 @@ public class Player {
 
         //jobbról kezdve felváltva balra-jobbra feltöltjük a játékos készletét
         int i = 0;
-        int leftNum=1;
-        int rightNum=1;
+        int leftNum = 1;
+        int rightNum = 1;
         for (Insect insect : insects) {
             GameTile gameTile = new GameTile(insect);
             Coordinate c;
-            if(i==0) {
+            if (i == 0) {
                 //az elsőt középre tesszük le
-                 c = new Coordinate(i * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
-            }else{
+                c = new Coordinate(i * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
+            } else {
                 //balra tesszük
-                if(i%2==0) {
-                    c = new Coordinate(-1*leftNum * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
+                if (i % 2 == 0) {
+                    c = new Coordinate(-1 * leftNum * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
                     leftNum++;
-                }else{
+                } else {
                     //jobbra tesszük
                     c = new Coordinate(rightNum * GameTile.getTileRadius() * 2 + SPACE_BETWEEN_TILES, 0);
                     rightNum++;
@@ -129,7 +129,7 @@ public class Player {
     public void notifyListeners() {
         if (listener != null) {
             listener.onModelChange();
-        }else {
+        } else {
             GraphicLogger.getLogger().error("Player did not notify controller on notifyListeners: null instance");
         }
     }
@@ -137,7 +137,7 @@ public class Player {
     private void notifyOnAdd(GameTile tile) {
         if (listener != null) {
             listener.onGameTileAdded(tile);
-        }else {
+        } else {
             GraphicLogger.getLogger().error("Player did not notify controller on add: null instance");
         }
     }

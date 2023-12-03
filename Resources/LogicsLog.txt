@@ -1,0 +1,1 @@
+2023-12-03T21:21:21,451 [AWT-EventQueue-0] ERROR hive.HiveLogger removeInsect - A nonexistent insect was to be removed from Player

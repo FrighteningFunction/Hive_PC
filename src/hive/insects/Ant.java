@@ -14,6 +14,10 @@ public class Ant extends Insect {
         super(p, gameLogic);
     }
 
+    public String toString(){
+        return "ant";
+    }
+
     /**
      * Az Ant speckó megvalósítása. Akármennyit léphet. A többi szabály ugyanaz.
      *

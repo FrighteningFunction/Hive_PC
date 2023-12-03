@@ -39,7 +39,7 @@ public class SideMenu {
         return sideBar;
     }
 
-    public class sideMenuListener implements ActionListener{
+    private class sideMenuListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();

@@ -4,36 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A fő package átnevezésével kapcsolatos problémák feloldva.">
-      <change afterPath="$PROJECT_DIR$/src/hive/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" afterDir="false" />
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az oldalsó menü hozzáadva és működik.">
+      <change afterPath="$PROJECT_DIR$/Logging/hive/MainAppLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/MainLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hive/HiveGameXMLWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/hive/game/GraphicLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/GraphicLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/hive/game/HiveLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/HiveLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Ant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/insects/Beetle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Beetle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Grasshopper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Spider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,32 +55,33 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\szoko\IdeaProjects\Hive_PC\Resources" />
@@ -132,7 +121,7 @@
       <workItem from="1701373942155" duration="2571000" />
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
-      <workItem from="1701595792734" duration="24386000" />
+      <workItem from="1701595792734" duration="30973000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -222,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701632845902</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Az oldalsó menü hozzáadva és működik.">
+      <option name="closed" value="true" />
+      <created>1701635013211</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701635013211</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +249,8 @@
     <MESSAGE value="A játék már tudja kezelni az átméretezést is." />
     <MESSAGE value="A fő packot, az org-ot átneveztem hive-ra." />
     <MESSAGE value="A fő package átnevezésével kapcsolatos problémák feloldva." />
-    <option name="LAST_COMMIT_MESSAGE" value="A fő package átnevezésével kapcsolatos problémák feloldva." />
+    <MESSAGE value="Az oldalsó menü hozzáadva és működik." />
+    <option name="LAST_COMMIT_MESSAGE" value="Az oldalsó menü hozzáadva és működik." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,7 +259,7 @@
           <condition expression="GameLogic.getInstance().getTurns()&gt;=2." language="JAVA" custom="org.game.GameLogic" />
           <url>file://$PROJECT_DIR$/src/hive/graphics/views/ViewUtil.java</url>
           <line>10</line>
-          <properties class="org.graphics.views.ViewUtil" method="refactorCoordinate">
+          <properties class="hive.graphics.views.ViewUtil" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

@@ -364,3 +364,9 @@ O
 Logging/hive/GraphicLogger.java,2\d\2deb459baea7e7b27b66672d33d0dc9539f2c870
 U
 %src/hive/graphics/views/SideMenu.java,1\6\16722ad6ecccbd2c85c5015f90dbe1e58c31969a
+L
+src/hive/WriteGameState.java,8\3\8344d4a600203db15d8f96c43e9412332db367b7
+O
+src/hive/HiveGameXMLWriter.java,4\2\4281bbc73bc448c0d8de72fc8ac2a818c85ed218
+O
+Logging/hive/MainAppLogger.java,6\e\6e67df27e9177d60c668b6987130f9f72811e29b

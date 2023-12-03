@@ -44,6 +44,8 @@ public abstract class Insect {
 
     protected abstract Image setImage();
 
+    public abstract String toString();
+
     public Image getImage() {
         return insectImage;
     }

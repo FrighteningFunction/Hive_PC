@@ -18,6 +18,10 @@ public class Beetle extends Insect {
         controlledInsect = null;
     }
 
+    public String toString(){
+        return "beetle";
+    }
+
     @Override
     public boolean move(GameTile chosenTile) {
         Set<GameTile> availableTiles = pingAvailableTiles();

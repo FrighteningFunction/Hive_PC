@@ -14,6 +14,10 @@ public class Grasshopper extends Insect{
         super(p, gameLogic);
     }
 
+    public String toString(){
+        return "grasshopper";
+    }
+
     /**
      * A Grasshopper pahtfindere.
      * @param destinations azon tile-ok halmaza, ahová a rovar léphet. Ezt építgetjük.

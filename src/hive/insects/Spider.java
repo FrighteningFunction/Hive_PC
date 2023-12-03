@@ -12,6 +12,10 @@ public class Spider extends Insect{
         maxstep=3;
     }
 
+    public String toString(){
+        return "spider";
+    }
+
     @Override
     protected Image setImage() {
         return ImageLoader.loadImage("./Resources/spider.png");

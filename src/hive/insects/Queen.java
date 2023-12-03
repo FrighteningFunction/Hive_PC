@@ -13,6 +13,10 @@ public class Queen extends Insect{
         maxstep=1;
     }
 
+    public String toString(){
+        return "queen";
+    }
+
     @Override
     protected Image setImage() {
         return ImageLoader.loadImage("./Resources/queen.png");

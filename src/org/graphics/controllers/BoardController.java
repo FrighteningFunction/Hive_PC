@@ -19,6 +19,9 @@ public class BoardController implements ModelListener{
         GraphicLogger.getLogger().info("BoardController was created successfully.");
     }
 
+    public BoardView getBoardView(){
+        return boardView;
+    }
     @Override
     public void onModelChange() {
         throw new UnsupportedOperationException();
@@ -35,6 +38,11 @@ public class BoardController implements ModelListener{
 
     @Override
     public void onGameTileRemoved(GameTile tile) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void onResizeEvent() {
         throw new UnsupportedOperationException();
     }
 }

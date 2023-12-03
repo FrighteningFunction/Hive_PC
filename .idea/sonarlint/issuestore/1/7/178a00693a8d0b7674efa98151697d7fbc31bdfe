@@ -1,5 +1,6 @@
 
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(º®’8ÌÅ¼†Ã1
 M
-java:S1128"0Remove this unused import 'org.game.Coordinate'.(Š‹Âß8Ù¨Î¯Â1
-B
-java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8±áé©Á1
+java:S1948"+Make "listeners" transient or serializable.(¥ƒŸØûÿÿÿÿ8öˆÃ1
+M
+java:S1128"0Remove this unused import 'org.game.Coordinate'.(Š‹Âß8›öˆÃ1

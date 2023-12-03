@@ -45,17 +45,17 @@ public class GameTileView extends JComponent {
 
     private static final double TILE_RADIUS = GameTile.getTileRadius();
 
+    //A komponens abszolút szélessége és magassága
+    private static final int width = (int) (Math.round(2 * TILE_RADIUS)+BORDER_SIZE);
+    private static final int height = (int) Math.round(TILE_HEIGHT)+BORDER_SIZE;
+
 
     /**
      * Megmutatja, hogy hol található a hatszög középpontja a JComponent koordinátáihoz képest.
      */
-    private static final transient Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS, TILE_HEIGHT/2);
+    private static final transient Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS, TILE_HEIGHT / 2);
 
     public GameTileView(Coordinate c) {
-
-        // Calculate the width and height of the hexagon's bounding rectangle
-        int width = (int) (Math.round(2 * TILE_RADIUS)+BORDER_SIZE);
-        int height = (int) Math.round(TILE_HEIGHT+BORDER_SIZE);
         fixedSize = new Dimension(width, height);
 
         // Set the size of the hex tile
@@ -63,7 +63,7 @@ public class GameTileView extends JComponent {
         setMinimumSize(fixedSize);
         setMaximumSize(fixedSize);
 
-        this.c=c;
+        this.c = c;
 
         setBounds((int) c.getX(), (int) c.getY(), width, height);
 
@@ -77,10 +77,7 @@ public class GameTileView extends JComponent {
     /**
      * Konstruktor elsősorban tesztelésre.
      */
-    public GameTileView(){
-        // Calculate the width and height of the hexagon's bounding rectangle
-        int width = (int) (Math.round(2 * TILE_RADIUS));
-        int height = (int) Math.round(TILE_HEIGHT);
+    public GameTileView() {
         fixedSize = new Dimension(width, height);
 
         // Set the size of the hex tile
@@ -98,12 +95,12 @@ public class GameTileView extends JComponent {
 
     //todo: játék elkészültével ezeket a színeket következetesen beállítani
     public void setColor(HiveColor color) {
-        if(color == HiveColor.RED){
+        if (color == HiveColor.RED) {
             this.color = Color.LIGHT_GRAY;
-        }else if(color == HiveColor.BLUE){
+        } else if (color == HiveColor.BLUE) {
             this.color = Color.CYAN;
-        }else{
-            this.color=Color.GREEN;
+        } else {
+            this.color = Color.GREEN;
             logger.error("Invalid color was set for GameTileView at ({}, {})", c.getX(), c.getY());
         }
     }
@@ -114,10 +111,15 @@ public class GameTileView extends JComponent {
 
     public void setC(Coordinate c) {
         this.c = c;
+        setBounds((int) c.getX(), (int) c.getY(), width, height);
     }
 
     public void setInsect(Insect insect) {
         this.insect = insect;
+    }
+
+    public static int getBorderSize() {
+        return BORDER_SIZE;
     }
 
     @Override
@@ -179,10 +181,10 @@ public class GameTileView extends JComponent {
     private void drawHexagonBorder(Graphics2D g2d, Color borderColor, boolean isOuter) {
         double borderSize;
 
-        if(isOuter) {
+        if (isOuter) {
             borderSize = TILE_RADIUS + BORDER_SIZE;
-        }else{
-            borderSize=TILE_RADIUS;
+        } else {
+            borderSize = TILE_RADIUS;
         }
         g2d.setColor(borderColor);
 

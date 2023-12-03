@@ -12,16 +12,17 @@ import java.awt.event.MouseListener;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.graphics.views.TileView;
 import org.graphics.views.ViewUtil;
 
-public class GameTileController<T extends JComponent> implements ModelListener {
-    private Logger logger = LogManager.getLogger();
+public class GameTileController<T extends JComponent & TileView> implements ModelListener {
+    private final Logger logger = LogManager.getLogger();
 
-    private GameTileView gameTileView;
+    private final GameTileView gameTileView;
 
-    private T container;
+    private final GameTile tile;
 
-    private GameTile tile;
+    private final T container;
 
 
     public GameTileController(GameTile tile, T container) {
@@ -35,9 +36,12 @@ public class GameTileController<T extends JComponent> implements ModelListener {
         container.add(gameTileView);
         tile.addListener(this);
 
+        container.addListener(this);
+
         setUpGameTileView();
 
         gameTileView.addClickListener(new ClickListener());
+
         logger.info("GameTileController successfully created.");
     }
 
@@ -46,10 +50,14 @@ public class GameTileController<T extends JComponent> implements ModelListener {
         gameTileView.setState(tile.getState());
         gameTileView.setC(ViewUtil.refactorCoordinate(tile.getCoordinate(), container));
         gameTileView.setInsect(tile.getInsect());
-        if(tile.isInitialized()) {
+
+        if (tile.isInitialized()) {
             gameTileView.setColor(tile.getInsect().color);
         }
+
         gameTileView.repaint();
+        container.revalidate();
+        container.repaint();
     }
 
     public GameTileView getGameTileView() {
@@ -79,6 +87,11 @@ public class GameTileController<T extends JComponent> implements ModelListener {
     @Override
     public void onGameTileRemoved(GameTile tile) {
         throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void onResizeEvent() {
+        setUpGameTileView();
     }
 
     class ClickListener implements MouseListener {

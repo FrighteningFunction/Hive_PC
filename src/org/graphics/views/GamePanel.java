@@ -2,6 +2,8 @@ package org.graphics.views;
 
 import org.game.GraphicLogger;
 import org.game.Player;
+import org.graphics.controllers.ModelListener;
+import org.graphics.controllers.ResizeListener;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,8 +14,9 @@ public class GamePanel extends JPanel {
 
     private BoardView boardView;
 
+    //todo: a panelek átfaktorálása a gombok számára
     public GamePanel() {
-        this.setLayout(new GridLayout(3, 1));
+        this.setLayout(new BorderLayout());
         boardView = new BoardView();
         whitePlayerPanelView = new PlayerPanelView();
         blackPlayerPanelView = new PlayerPanelView();
@@ -22,9 +25,9 @@ public class GamePanel extends JPanel {
         whitePlayerPanelView.setBorder(BorderFactory.createLineBorder(Color.red));
         boardView.setBorder(BorderFactory.createLineBorder(Color.red));
 
-        this.add(blackPlayerPanelView);
-        this.add(boardView);
-        this.add(whitePlayerPanelView);
+        this.add(blackPlayerPanelView, BorderLayout.NORTH);
+        this.add(boardView, BorderLayout.CENTER);
+        this.add(whitePlayerPanelView, BorderLayout.SOUTH);
 
         setVisible(true);
         GraphicLogger.getLogger().info("GamePanel was created successfully.");

@@ -261,6 +261,7 @@ public class GameLogic {
         }
     }
 
+    //todo: lehessen selection-t visszavonni
     public void clickedTile(GameTile tile) {
 
         Player actor = nextPlayer;

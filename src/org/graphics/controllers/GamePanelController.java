@@ -37,4 +37,9 @@ public class GamePanelController implements ModelListener{
     public void onGameTileRemoved(GameTile tile) {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public void onResizeEvent() {
+        throw new UnsupportedOperationException();
+    }
 }

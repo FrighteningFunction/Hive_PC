@@ -6,14 +6,14 @@ import org.game.Player;
 import org.graphics.views.GameTileView;
 import org.graphics.views.PlayerPanelView;
 
-public class PlayerPanelController implements ModelListener{
+public class PlayerPanelController implements ModelListener {
     private Player p;
 
     private PlayerPanelView playerPanelView;
 
-    public PlayerPanelController(PlayerPanelView playerPanelView, Player p){
-        this.p=p;
-        this.playerPanelView=playerPanelView;
+    public PlayerPanelController(PlayerPanelView playerPanelView, Player p) {
+        this.p = p;
+        this.playerPanelView = playerPanelView;
         p.addListener(this);
 
         GraphicLogger.getLogger().info("PlayerPanelController for {} was created", p.getColor());
@@ -25,7 +25,7 @@ public class PlayerPanelController implements ModelListener{
     }
 
     @Override
-    public void onGameTileAdded(GameTile tile){
+    public void onGameTileAdded(GameTile tile) {
         new GameTileController<>(tile, playerPanelView);
 
         playerPanelView.revalidate();
@@ -34,6 +34,11 @@ public class PlayerPanelController implements ModelListener{
 
     @Override
     public void onGameTileRemoved(GameTile tile) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void onResizeEvent() {
         throw new UnsupportedOperationException();
     }
 }

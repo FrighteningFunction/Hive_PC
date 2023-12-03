@@ -2,7 +2,6 @@ package hive.game;
 
 import hive.graphics.controllers.ModelListener;
 import hive.insects.*;
-import org.insects.*;
 import hive.insects.Queen;
 
 import java.util.ArrayList;

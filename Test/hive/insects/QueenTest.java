@@ -4,7 +4,6 @@ import hive.game.Coordinate;
 import hive.game.GameLogic;
 import hive.game.GameTile;
 import hive.game.Player;
-import org.game.*;
 import org.junit.Before;
 import org.junit.Test;
 

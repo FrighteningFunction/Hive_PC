@@ -4,7 +4,6 @@ import hive.game.Coordinate;
 import hive.game.GameTile;
 import hive.game.HiveColor;
 import hive.game.TileStates;
-import org.game.*;
 import hive.insects.Insect;
 
 import javax.swing.*;

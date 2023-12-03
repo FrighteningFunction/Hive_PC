@@ -2,7 +2,6 @@ package hive.insects;
 
 import hive.game.*;
 import hive.graphics.ImageLoader;
-import org.game.*;
 
 import java.awt.*;
 import java.util.HashSet;

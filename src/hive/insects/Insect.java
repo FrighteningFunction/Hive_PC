@@ -1,7 +1,6 @@
 package hive.insects;
 
 import hive.game.*;
-import org.game.*;
 
 import java.awt.*;
 import java.util.HashSet;

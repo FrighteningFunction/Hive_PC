@@ -4,32 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Már jó a játék-vége feltétel ellenőrzése is, felugrik a figyelmeztető-ablak, valamint az újjáték-kezdés is működik.">
-      <change afterPath="$PROJECT_DIR$/src/org/graphics/controllers/ResizeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/graphics/views/TileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/093b4acae5352ebfbe0de62cf1d858154a26aa85" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/093b4acae5352ebfbe0de62cf1d858154a26aa85" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/178a00693a8d0b7674efa98151697d7fbc31bdfe" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/178a00693a8d0b7674efa98151697d7fbc31bdfe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2ef6c608dcba24a37c589f92e46a33edb98c0f60" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2ef6c608dcba24a37c589f92e46a33edb98c0f60" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72b1e12499df9d3a0db7318632fe45340d6fa2fc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72b1e12499df9d3a0db7318632fe45340d6fa2fc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae98e90ad595988626a59dd8b7fee838beee86d9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae98e90ad595988626a59dd8b7fee838beee86d9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A játék már tudja kezelni az átméretezést is.">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14d3c98e086c19c093a9e29bdf0e83fff878aa8d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14d3c98e086c19c093a9e29bdf0e83fff878aa8d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/org/game/GraphicLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/game/GraphicLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/org/game/HiveLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/game/HiveLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GamePanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/ModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/ModelListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/PlayerPanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/game/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/game/GameBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/game/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/game/GameLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/GameTileViewProbe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/JustGameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/TestJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/insects/InsectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/insects/InsectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/org/insects/QueenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/insects/QueenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/DoubleTileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/DoubleTileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/HiveColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/HiveColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/TileStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/TileStates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/HiveMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/ModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ModelListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/ResizeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/TileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/TileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/ViewUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Ant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Beetle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Beetle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Grasshopper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/insects/Spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Spider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -191,7 +207,7 @@
       <workItem from="1701373942155" duration="2571000" />
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
-      <workItem from="1701595792734" duration="21040000" />
+      <workItem from="1701595792734" duration="22398000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -257,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701611420134</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="A játék már tudja kezelni az átméretezést is.">
+      <option name="closed" value="true" />
+      <created>1701630593420</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701630593420</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,14 +308,15 @@
     <MESSAGE value="A súlyos hiba (mely a kötelező királynő-letétel funkcióból fakadt) kijavítva.&#10;&#10;Anth pathfindere még mindig nem jó, folyamatban a megoldása." />
     <MESSAGE value="Az összes rovar működik. A játék-vége feltétel nincs megfelelően ellenőrizve. (megoldás folyamatban.)" />
     <MESSAGE value="Már jó a játék-vége feltétel ellenőrzése is, felugrik a figyelmeztető-ablak, valamint az újjáték-kezdés is működik." />
-    <option name="LAST_COMMIT_MESSAGE" value="Már jó a játék-vége feltétel ellenőrzése is, felugrik a figyelmeztető-ablak, valamint az újjáték-kezdés is működik." />
+    <MESSAGE value="A játék már tudja kezelni az átméretezést is." />
+    <option name="LAST_COMMIT_MESSAGE" value="A játék már tudja kezelni az átméretezést is." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <condition expression="GameLogic.getInstance().getTurns()&gt;=2." language="JAVA" custom="org.game.GameLogic" />
-          <url>file://$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java</url>
+          <url>file://$PROJECT_DIR$/src/hive/graphics/views/ViewUtil.java</url>
           <line>10</line>
           <properties class="org.graphics.views.ViewUtil" method="refactorCoordinate">
             <option name="EMULATED" value="true" />

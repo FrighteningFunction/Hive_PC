@@ -235,8 +235,9 @@ public class GameLogic {
     private void checkQueenCondition() {
         if (!nextPlayer.isQueenDown() && turns == 4) {
             Queen queen = nextPlayer.getQueen();
-            queen.getLocation().setState(TileStates.SELECTED);
-            pingAvailableTilesForPlacing(nextPlayer);
+            startTile=queen.getLocation();
+            startTile.setState(TileStates.SELECTED);
+            pingedTiles.addAll(pingAvailableTilesForPlacing(nextPlayer));
 
             selectionState = SelectionState.PLACESELECT;
             HiveLogger.getLogger().debug("{} player has to place its queen now!", nextPlayer.getColor());
@@ -273,6 +274,7 @@ public class GameLogic {
                     //ha a kiválaszott rovart nem tettük még le
                     selectionState = SelectionState.PLACESELECT;
                     pingedTiles.addAll(pingAvailableTilesForPlacing(actor));
+                    HiveLogger.getLogger().info("for {} player the available tiles for placing were pinged", actor.color);
                 }
                 if(startTile!=null){
                     startTile.setState(TileStates.UNSELECTED);

@@ -1,8 +1,6 @@
 package org.graphics.views;
 
-import org.game.Coordinate;
-import org.game.GameTile;
-import org.game.TileStates;
+import org.game.*;
 import org.insects.Insect;
 
 import javax.swing.*;
@@ -20,9 +18,14 @@ import static java.lang.Math.cos;
 public class GameTileView extends JComponent {
     private final transient Logger logger = LogManager.getLogger();
 
-    private transient TileStates state = TileStates.UNSELECTED;
+    private transient TileStates state = null;
 
     private boolean initialized = false;
+
+    /**
+     * A tile kiszínezéséhez kell. Mindenképpen be kell állítani.
+     */
+    private Color color = null;
 
     /**
      * A JComponent abszolút koordinátája a konténerben.
@@ -93,6 +96,18 @@ public class GameTileView extends JComponent {
         this.state = state;
     }
 
+    //todo: játék elkészültével ezeket a színeket következetesen beállítani
+    public void setColor(HiveColor color) {
+        if(color == HiveColor.RED){
+            this.color = Color.LIGHT_GRAY;
+        }else if(color == HiveColor.BLUE){
+            this.color = Color.CYAN;
+        }else{
+            this.color=Color.GREEN;
+            logger.error("Invalid color was set for GameTileView at ({}, {})", c.getX(), c.getY());
+        }
+    }
+
     public void setInitialized(boolean initialized) {
         this.initialized = initialized;
     }
@@ -113,9 +128,9 @@ public class GameTileView extends JComponent {
 
         // Draw the main hexagon if the tile is initialized
         if (initialized) {
-            drawHexagonBorder(g2d, Color.BLACK, false);
+            drawHexagon(g2d, color);
             hexagonDrawn = true;
-            logger.info("A black hexagon was drawn.");
+            logger.info("A {} hexagon was drawn.", color);
         }
 
         // Draw border or full hexagon based on state
@@ -123,20 +138,20 @@ public class GameTileView extends JComponent {
             case SELECTED:
                 if (initialized) {
                     drawHexagonBorder(g2d, Color.GREEN, true);
-                    logger.info("A green border was drawn.");
+                    logger.info("A green outer border was drawn.");
                 } else {
                     drawHexagonBorder(g2d, Color.GREEN, false);
-                    logger.info("A full green hexagon was drawn.");
+                    logger.info("A green inner border was drawn.");
                 }
                 hexagonDrawn = true;
                 break;
             case PINGED:
                 if (initialized) {
                     drawHexagonBorder(g2d, Color.RED, true);
-                    logger.info("A red border was drawn.");
+                    logger.info("A red outer border was drawn.");
                 } else {
                     drawHexagonBorder(g2d, Color.RED, false);
-                    logger.info("A full red hexagon was drawn.");
+                    logger.info("A red inner border was drawn.");
                 }
                 hexagonDrawn = true;
                 break;

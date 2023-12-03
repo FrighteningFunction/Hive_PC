@@ -46,6 +46,9 @@ public class GameTileController<T extends JComponent> implements ModelListener {
         gameTileView.setState(tile.getState());
         gameTileView.setC(ViewUtil.refactorCoordinate(tile.getCoordinate(), container));
         gameTileView.setInsect(tile.getInsect());
+        if(tile.isInitialized()) {
+            gameTileView.setColor(tile.getInsect().color);
+        }
         gameTileView.repaint();
     }
 

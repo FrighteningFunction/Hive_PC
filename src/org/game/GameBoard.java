@@ -155,10 +155,13 @@ public class GameBoard {
      * Felér egy új játék kezdésével.
      */
     public void clear() {
-        //A GameTile-ok megmaradnak: de mivel a fő alkalmazásból
-        //egy referencia sem él, már garbage-ok lesznek (csak cyclic reference-ek vannak)
-        boardMap.clear();
-        HiveLogger.getLogger().debug("Board was cleared.");
+        Iterator<GameTile> iterator = boardMap.values().iterator();
+        while (iterator.hasNext()) {
+            GameTile tile = iterator.next();
+            iterator.remove(); // Safely remove the tile from the map
+            tile.setState(TileStates.TERMINATED);
+        }
+        HiveLogger.getLogger().info("Board was cleared.");
     }
 
     /**

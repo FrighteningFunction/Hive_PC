@@ -6,19 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az összes rovar működik. A játék-vége feltétel nincs megfelelően ellenőrizve. (megoldás folyamatban.)">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c45" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c45" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b38ef2499cb18bc3c864eda818050df7259a4180" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b38ef2499cb18bc3c864eda818050df7259a4180" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hive_PC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hive_PC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/GameTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Ant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Beetle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Beetle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/insects/Insect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/graphics/controllers/GamePanelController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +177,7 @@
       <workItem from="1701373942155" duration="2571000" />
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
-      <workItem from="1701595792734" duration="9246000" />
+      <workItem from="1701595792734" duration="10934000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -229,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701597162679</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Az összes rovar működik. A játék-vége feltétel nincs megfelelően ellenőrizve. (megoldás folyamatban.)">
+      <option name="closed" value="true" />
+      <created>1701609405504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701609405504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +269,7 @@
         <line-breakpoint type="java-line">
           <condition expression="this.turns&gt;=3" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/org/game/GameLogic.java</url>
-          <line>261</line>
+          <line>265</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

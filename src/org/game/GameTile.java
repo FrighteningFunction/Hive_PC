@@ -109,7 +109,7 @@ public class GameTile {
 
     /**
      * Kitöröl a játékból egy tile-t.
-     * Kizárólag inicializálatlan (ak. üres) tile-ok törölhetők ki. Egyébként fatális veszély lép fel.
+     * Kizárólag inicializálatlan (ak. üres) tile-ok törölhetők ki a játék közben. Egyébként fatális veszély lép fel.
      * Az összes rá mutató szomszéd-linket is kitörli.
      */
     public void deleteGameTileFromBoard() {

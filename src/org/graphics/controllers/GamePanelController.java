@@ -14,6 +14,7 @@ public class GamePanelController implements ModelListener{
     public GamePanelController(GameLogic gameLogic, GamePanel gamePanel) {
         this.gameLogic = gameLogic;
         this.gamePanel = gamePanel;
+        gameLogic.addListener(this);
 
         GraphicLogger.getLogger().info("GamePanelController created successfully.");
     }
@@ -21,6 +22,7 @@ public class GamePanelController implements ModelListener{
     public void onModelChange() {
         if (gameLogic.getGameState() == GameLogic.GameState.TERMINATED) {
             gamePanel.spawnVictoryDialog(gameLogic.getWinner());
+            GraphicLogger.getLogger().info("VicoryDialog spawned.");
 
             HiveMain.getCardLayout().show(HiveMain.getMainPanel(), "Menu");
         }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-    private final Queen queen;
+    private Queen queen = null;
 
     private final GameLogic gameLogic;
 
@@ -27,7 +27,6 @@ public class Player {
         this.color = color;
         this.gameLogic = gameLogic;
 
-        queen = new Queen(this, gameLogic);
         HiveLogger.getLogger().info("{} Player created successfully", color);
     }
 
@@ -36,6 +35,9 @@ public class Player {
      * Felér egy resettel.
      */
     public void initPlayer() {
+        queen = new Queen(this, gameLogic);
+        insects.clear();
+
         insects.add(queen);
 
         insects.add(new Ant(this, gameLogic));

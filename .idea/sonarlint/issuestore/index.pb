@@ -256,3 +256,11 @@ Q.idea/sonarlint/securityhotspotstore/4/7/4795345ce17feaa2705f78275938062e6c3a68
 Q.idea/sonarlint/securityhotspotstore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1,f\b\fbc4deb7bad083a4999ed6def7f178bfed42a87f
 K
 src/org/insects/Spider.java,4\0\4054654ba59dcf6266f18ba81cc248f283152b56
+]
+-.idea/libraries/apache_logging_log4j_core.xml,1\e\1eaaeb08b1d9bc04e44b7941195e60ea04d15220
+e
+5src/org/graphics/controllers/GamePanelController.java,5\7\5765af404f0539f8b1a867b6da6f65d0488aaafd
+U
+%src/org/graphics/views/GamePanel.java,a\e\ae98e90ad595988626a59dd8b7fee838beee86d9
+K
+src/org/game/GameBoard.java,8\e\8ee14e16e862d9d7f0220c988af10e24918b4819

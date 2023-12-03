@@ -82,7 +82,6 @@ public class GameLogic {
      * Figyelem: a tábla nem üres: egyetlen tile hozzáadódik!
      */
     public void newGame() {
-        gameState = GameState.RUNNING;
         turns = 1;
         whitePlayer.initPlayer();
         blackPlayer.initPlayer();
@@ -91,6 +90,8 @@ public class GameLogic {
         board.clear();
         new GameTile(board, new Coordinate(0, 0));
         winner = null;
+
+        gameState = GameState.RUNNING;
         HiveLogger.getLogger().info("GameLogic: New Game was started successfully.\n" +
                 "############################################");
     }
@@ -102,7 +103,6 @@ public class GameLogic {
      *
      */
     public void newGameForTesting(){
-        gameState = GameState.RUNNING;
         turns = 1;
         whitePlayer.initPlayer();
         blackPlayer.initPlayer();
@@ -110,6 +110,8 @@ public class GameLogic {
         nextPlayer = whitePlayer;
         board.clear();
         winner = null;
+
+        gameState = GameState.RUNNING;
     }
 
     public int getTurns() {
@@ -247,11 +249,13 @@ public class GameLogic {
 
     private void checkEndGameCondition() {
         if (whitePlayer.getQueen().isInitialized()&&whitePlayer.getNeighboursOfQueen() == 6) {
-            HiveLogger.getLogger().debug("The black Player won!");
+            HiveLogger.getLogger().info("The black Player won!");
+            winner=blackPlayer;
             gameState = GameState.TERMINATED;
             notifyListeners();
         } else if (blackPlayer.getQueen().isInitialized()&&blackPlayer.getNeighboursOfQueen() == 6) {
-            HiveLogger.getLogger().debug("The white Player won!");
+            HiveLogger.getLogger().info("The white Player won!");
+            winner=whitePlayer;
             gameState = GameState.TERMINATED;
             notifyListeners();
         }

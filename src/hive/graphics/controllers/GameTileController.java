@@ -1,6 +1,6 @@
 package hive.graphics.controllers;
 
-import hive.game.GraphicLogger;
+import hive.GraphicLogger;
 import hive.game.TileStates;
 import hive.graphics.views.GameTileView;
 import hive.graphics.views.TileView;

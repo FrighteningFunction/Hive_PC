@@ -3,8 +3,8 @@ package hive.graphics.controllers;
 import hive.graphics.views.GamePanel;
 import hive.game.GameLogic;
 import hive.game.GameTile;
-import hive.game.GraphicLogger;
-import hive.graphics.HiveMain;
+import hive.GraphicLogger;
+import hive.HiveMain;
 
 public class GamePanelController implements ModelListener{
     GameLogic gameLogic;

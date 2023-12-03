@@ -2,7 +2,7 @@ package hive.graphics.controllers;
 
 import hive.game.GameBoard;
 import hive.game.GameTile;
-import hive.game.GraphicLogger;
+import hive.GraphicLogger;
 import hive.graphics.views.BoardView;
 
 public class BoardController implements ModelListener{

@@ -1,6 +1,6 @@
 package hive.graphics.views;
 
-import hive.game.GraphicLogger;
+import hive.GraphicLogger;
 import hive.graphics.controllers.ModelListener;
 import hive.graphics.controllers.ResizeListener;
 

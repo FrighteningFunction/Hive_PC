@@ -1,6 +1,6 @@
 package hive.graphics;
 
-import hive.game.GraphicLogger;
+import hive.GraphicLogger;
 
 import javax.imageio.ImageIO;
 import java.awt.Image;

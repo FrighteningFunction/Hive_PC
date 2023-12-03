@@ -1,11 +1,7 @@
 package hive.graphics.views;
 
-import hive.graphics.controllers.GamePanelController;
-import hive.game.GameLogic;
-import hive.game.GraphicLogger;
-import hive.graphics.HiveMain;
-import hive.graphics.controllers.BoardController;
-import hive.graphics.controllers.PlayerPanelController;
+import hive.Commands;
+import hive.GraphicLogger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -43,11 +39,11 @@ public class MainMenu extends JPanel {
     }
 
     class MenuButtonsPressed implements ActionListener {
-        public void actionPerformed(ActionEvent e){
+        public void actionPerformed(ActionEvent e) {
             String c = e.getActionCommand();
-            switch (c){
+            switch (c) {
                 case "newGame":
-                    startNewGame();
+                    Commands.startNewGame();
                     break;
                 case "exit":
                     exit(0);
@@ -58,19 +54,5 @@ public class MainMenu extends JPanel {
                     break;
             }
         }
-    }
-
-    //todo: nem kellene másképp összekötni őket? Vagy a kontrollereket tényleg hozzuk létre itt így?
-    public void startNewGame(){
-        GameLogic gameLogic = GameLogic.getInstance();
-        GamePanel gamePanel = HiveMain.getGamePanel();
-        new PlayerPanelController(gamePanel.getBlackPlayerPanelView(), gameLogic.getBlackPlayer());
-        new PlayerPanelController(gamePanel.getWhitePlayerPanelView(), gameLogic.getWhitePlayer());
-        new BoardController(gamePanel.getBoardView(), gameLogic.getBoard());
-        new GamePanelController(gameLogic, gamePanel);
-
-        gameLogic.newGame();
-
-        HiveMain.getCardLayout().show(HiveMain.getMainPanel(), "Game");
     }
 }

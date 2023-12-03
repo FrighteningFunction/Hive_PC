@@ -1,6 +1,6 @@
 package hive.graphics.controllers;
 
-import hive.game.GraphicLogger;
+import hive.GraphicLogger;
 
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;

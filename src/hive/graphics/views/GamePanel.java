@@ -1,6 +1,6 @@
 package hive.graphics.views;
 
-import hive.game.GraphicLogger;
+import hive.GraphicLogger;
 import hive.game.Player;
 
 import javax.swing.*;

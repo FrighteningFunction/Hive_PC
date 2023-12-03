@@ -1,5 +1,6 @@
 package hive.game;
 
+import hive.GraphicLogger;
 import hive.graphics.controllers.ModelListener;
 import hive.insects.Insect;
 

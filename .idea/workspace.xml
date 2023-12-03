@@ -4,48 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A játék már tudja kezelni az átméretezést is.">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14d3c98e086c19c093a9e29bdf0e83fff878aa8d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14d3c98e086c19c093a9e29bdf0e83fff878aa8d" afterDir="false" />
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A fő package átnevezésével kapcsolatos problémák feloldva.">
+      <change afterPath="$PROJECT_DIR$/src/hive/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/org/game/GraphicLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/game/GraphicLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging/org/game/HiveLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/game/HiveLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/hive/game/GraphicLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/GraphicLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/hive/game/HiveLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/HiveLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/game/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/game/GameBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/game/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/game/GameLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/GameTileViewProbe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/JustGameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/graphics/TestJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/TestJPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/insects/InsectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/insects/InsectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/org/insects/QueenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/insects/QueenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/DoubleTileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/DoubleTileException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/HiveColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/HiveColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/game/TileStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/TileStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/HiveMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/ModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ModelListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/controllers/ResizeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/TileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/TileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/graphics/views/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/ViewUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Ant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Beetle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Beetle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Grasshopper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/insects/Spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Spider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Ant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Beetle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Beetle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Grasshopper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Grasshopper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,79 +97,20 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\szoko\IdeaProjects\Hive_PC\Resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hive" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.HiveMain">
+  <component name="RunManager">
     <configuration name="HiveMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.graphics.HiveMain" />
+      <option name="MAIN_CLASS_NAME" value="hive.HiveMain" />
       <module name="Hive_PC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.graphics.*" />
+          <option name="PATTERN" value="hive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InsectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hive_PC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.insects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.insects" />
-      <option name="MAIN_CLASS_NAME" value="org.insects.InsectTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hive_PC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.insects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.insects" />
-      <option name="MAIN_CLASS_NAME" value="org.insects.QueenTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueenTest.testMoveQueen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hive_PC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.insects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.insects" />
-      <option name="MAIN_CLASS_NAME" value="org.insects.QueenTest" />
-      <option name="METHOD_NAME" value="testMoveQueen" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueenTest.testPingAvailableTiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hive_PC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.insects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.insects" />
-      <option name="MAIN_CLASS_NAME" value="org.insects.QueenTest" />
-      <option name="METHOD_NAME" value="testPingAvailableTiles" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,10 +118,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HiveMain" />
-        <item itemvalue="JUnit.QueenTest.testPingAvailableTiles" />
-        <item itemvalue="JUnit.QueenTest" />
-        <item itemvalue="JUnit.QueenTest.testMoveQueen" />
-        <item itemvalue="JUnit.InsectTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +132,7 @@
       <workItem from="1701373942155" duration="2571000" />
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
-      <workItem from="1701595792734" duration="22398000" />
+      <workItem from="1701595792734" duration="24386000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -281,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701630593420</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="A fő packot, az org-ot átneveztem hive-ra.">
+      <option name="closed" value="true" />
+      <created>1701632721502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701632721502</updated>
+    </task>
+    <task id="LOCAL-00011" summary="A fő package átnevezésével kapcsolatos problémák feloldva.">
+      <option name="closed" value="true" />
+      <created>1701632845902</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701632845902</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +250,9 @@
     <MESSAGE value="Az összes rovar működik. A játék-vége feltétel nincs megfelelően ellenőrizve. (megoldás folyamatban.)" />
     <MESSAGE value="Már jó a játék-vége feltétel ellenőrzése is, felugrik a figyelmeztető-ablak, valamint az újjáték-kezdés is működik." />
     <MESSAGE value="A játék már tudja kezelni az átméretezést is." />
-    <option name="LAST_COMMIT_MESSAGE" value="A játék már tudja kezelni az átméretezést is." />
+    <MESSAGE value="A fő packot, az org-ot átneveztem hive-ra." />
+    <MESSAGE value="A fő package átnevezésével kapcsolatos problémák feloldva." />
+    <option name="LAST_COMMIT_MESSAGE" value="A fő package átnevezésével kapcsolatos problémák feloldva." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

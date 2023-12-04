@@ -41,7 +41,7 @@ public class GameLogic {
 
     private Player nextPlayer;
 
-    private final  Set<GameTile> pingedTiles = new HashSet<>();
+    private final Set<GameTile> pingedTiles = new HashSet<>();
 
     private Player winner;
 
@@ -97,7 +97,7 @@ public class GameLogic {
      * hogy ez nem állítja át a játék állapotát TERMINATED-ről,
      * valamint ez reseteli a játékosokat.
      */
-    public void clearGame(){
+    public void clearGame() {
         turns = 1;
         orangePlayer.resetPlayer();
         bluePlayer.resetPlayer();
@@ -111,9 +111,8 @@ public class GameLogic {
      * Tesztelési célokra létrehozott NewGame.
      * Ugyanaz, mint a NewGame, csak itt az első anonim tile az origóban
      * nincs lerakva automatikusan.
-     *
      */
-    public void newGameForTesting(){
+    public void newGameForTesting() {
         clearGame();
         gameState = GameState.RUNNING;
     }
@@ -126,7 +125,7 @@ public class GameLogic {
         return nextPlayer;
     }
 
-    public void setNextPlayer(Player p){
+    public void setNextPlayer(Player p) {
         this.nextPlayer = p;
     }
 
@@ -227,7 +226,7 @@ public class GameLogic {
                 boolean noOpponentNeighbour = true;
                 for (int i = 0; i < 6; i++) {
                     GameTile neighbour = tile.getNeighbour(i);
-                    if (neighbour!=null && neighbour.isInitialized() && !neighbour.getInsect().getPlayer().equals(p)) {
+                    if (neighbour != null && neighbour.isInitialized() && !neighbour.getInsect().getPlayer().equals(p)) {
                         noOpponentNeighbour = false;
                         break;
                     }
@@ -239,7 +238,7 @@ public class GameLogic {
         }
 
         //átállítjuk a kiválasztott Tile-ok állapotát PINGED-re
-        for(GameTile tile : availableTiles){
+        for (GameTile tile : availableTiles) {
             tile.setState(TileStates.PINGED);
         }
 
@@ -250,95 +249,134 @@ public class GameLogic {
     private void checkQueenCondition() {
         if (!nextPlayer.isQueenDown() && turns >= 7) {
             Queen queen = nextPlayer.getQueen();
-            startTile=queen.getLocation();
+            startTile = queen.getLocation();
             startTile.setState(TileStates.SELECTED);
             pingedTiles.addAll(pingAvailableTilesForPlacing(nextPlayer));
+
+            if(pingedTiles.isEmpty()){
+                //hisz annak az ellenfele lesz a győztes, aki nem tudta letenni a királynőjét
+                Player p = nextPlayer.equals(orangePlayer) ? bluePlayer : orangePlayer;
+                endGame(p);
+            }
 
             selectionState = SelectionState.PLACESELECT;
             HiveLogger.getLogger().debug("{} player has to place its queen now!", nextPlayer.getColor());
         }
     }
 
-    private void checkEndGameCondition() {
-        if (orangePlayer.getQueen().isInitialized()&& orangePlayer.getNeighboursOfQueen() == 6) {
+    private void endGame(Player winner){
+        if (winner.equals(bluePlayer)) {
             HiveLogger.getLogger().info("The black Player won!");
-            winner= bluePlayer;
+            this.winner = bluePlayer;
             gameState = GameState.TERMINATED;
             notifyListeners();
-        } else if (bluePlayer.getQueen().isInitialized()&& bluePlayer.getNeighboursOfQueen() == 6) {
+        } else if (winner.equals(orangePlayer)) {
             HiveLogger.getLogger().info("The white Player won!");
-            winner= orangePlayer;
+            this.winner = orangePlayer;
             gameState = GameState.TERMINATED;
             notifyListeners();
         }
+
     }
+
+    private void checkEndGameCondition() {
+        if (orangePlayer.getQueen().isInitialized() && orangePlayer.getNeighboursOfQueen() == 6) {
+            endGame(bluePlayer);
+        } else if (bluePlayer.getQueen().isInitialized() && bluePlayer.getNeighboursOfQueen() == 6) {
+            endGame(orangePlayer);
+        }
+    }
+
+    private void startSelectSettings(GameTile tile, Player actor) {
+        //ha inicializált tile-ra kattintunk, és a sajátunkra
+        if (tile.isInitialized() && actor.equals(tile.getInsect().getPlayer())) {
+
+            //ha a kiválasztott rovart letettük már
+            if (tile.getInsect().isInitialized()) {
+                selectionState = SelectionState.MOVESELECT;
+                pingedTiles.addAll(tile.getInsect().pingAvailableTiles());
+            } else {
+                //ha a kiválaszott rovart nem tettük még le
+                selectionState = SelectionState.PLACESELECT;
+                pingedTiles.addAll(pingAvailableTilesForPlacing(actor));
+                HiveLogger.getLogger().info("for {} player the available tiles for placing were pinged", actor.color);
+            }
+
+
+            if (startTile != null) {
+                startTile.setState(TileStates.UNSELECTED);
+            }
+            startTile = tile;
+
+            tile.setState(TileStates.SELECTED);
+        } else {
+            //semmi
+        }
+    }
+
+    private void secondSelectSettings(GameTile tile, Player actor){
+        boolean success = performActionBasedOnSelectionState(tile);
+
+        if (success) {
+            resetSelection();
+            incrementTurns();
+            checkGameConditions();
+        } else if (shouldResetSelection(tile)) {
+            resetSelection();
+            startSelectSettings(tile, actor);
+        }
+    }
+
+    private boolean performActionBasedOnSelectionState(GameTile tile) {
+        if (selectionState == SelectionState.MOVESELECT) {
+            return startTile.getInsect().move(tile);
+        } else {
+            return startTile.getInsect().place(tile);
+        }
+    }
+
+    private void resetSelection() {
+        startTile.setState(TileStates.UNSELECTED);
+        for (GameTile g : pingedTiles) {
+            g.setState(TileStates.UNSELECTED);
+        }
+        pingedTiles.clear();
+        selectionState = SelectionState.STARTSELECT;
+    }
+
+    private void checkGameConditions() {
+        checkEndGameCondition();
+        checkQueenCondition();
+    }
+
+    private boolean shouldResetSelection(GameTile tile) {
+        return (selectionState == SelectionState.MOVESELECT || selectionState == SelectionState.PLACESELECT)
+                && tile.isInitialized();
+    }
+
 
     //todo: lehessen selection-t visszavonni
     public void clickedTile(GameTile tile) {
 
         Player actor = nextPlayer;
 
-        //ha először kattintunk
         if (selectionState == SelectionState.STARTSELECT) {
 
-            //ha inicializált tile-ra kattintunk, és a sajátunkra
-            if (tile.isInitialized() && actor.equals(tile.getInsect().getPlayer())) {
-
-                //ha a kiválasztott rovart letettük már
-                if (tile.getInsect().isInitialized()) {
-                    selectionState = SelectionState.MOVESELECT;
-                    pingedTiles.addAll(tile.getInsect().pingAvailableTiles());
-                } else {
-                    //ha a kiválaszott rovart nem tettük még le
-                    selectionState = SelectionState.PLACESELECT;
-                    pingedTiles.addAll(pingAvailableTilesForPlacing(actor));
-                    HiveLogger.getLogger().info("for {} player the available tiles for placing were pinged", actor.color);
-                }
-                if(startTile!=null){
-                    startTile.setState(TileStates.UNSELECTED);
-                }
-                startTile=tile;
-
-                tile.setState(TileStates.SELECTED);
-            } else {
-                //semmi
-            }
+            startSelectSettings(tile, actor);
 
         } else {
-            //ha másodszor kattintunk
-
-            boolean success;
-            if (selectionState == SelectionState.MOVESELECT) {
-                success = startTile.getInsect().move(tile);
-            } else {
-                success = startTile.getInsect().place(tile);
-            }
-
-
-            if (success) {
-                startTile.setState(TileStates.UNSELECTED);
-                for (GameTile g : pingedTiles) {
-                    g.setState(TileStates.UNSELECTED);
-                }
-                pingedTiles.clear();
-                selectionState = SelectionState.STARTSELECT;
-
-                incrementTurns();
-
-                checkEndGameCondition();
-                checkQueenCondition();
-            }
+            secondSelectSettings(tile, actor);
         }
     }
 
-    public void addListener(ModelListener listener){
-        this.listener=listener;
+    public void addListener(ModelListener listener) {
+        this.listener = listener;
     }
 
     public void notifyListeners() {
         if (listener != null) {
             listener.onModelChange();
-        }else{
+        } else {
             GraphicLogger.getLogger().error("GameLogic: could not notify controller: null instance.");
         }
     }

@@ -4,95 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az xml output funkció működik. Xml beolvasás következik.">
-      <change afterPath="$PROJECT_DIR$/src/hive/HiveGameXMLReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/093b4acae5352ebfbe0de62cf1d858154a26aa85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14c92d1d982e0a7f07d56d2df2bfb1e9efd09a54" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14d3c98e086c19c093a9e29bdf0e83fff878aa8d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/178a00693a8d0b7674efa98151697d7fbc31bdfe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2ef6c608dcba24a37c589f92e46a33edb98c0f60" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3ea2d905a9d7f976fd2860900a287e3240f5bd16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3edcaabfc78d972124161048bc139a969917df3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4795345ce17feaa2705f78275938062e6c3a6829" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/5765af404f0539f8b1a867b6da6f65d0488aaafd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59e709a5dab7a8ca8dbd7c8d26c69594d9c11065" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62e2f2d8be9682e866a65d2478bdd4df1f02bfd0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6ac360ebd27a6c87c06dfc0513c0d8347dea8465" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72b1e12499df9d3a0db7318632fe45340d6fa2fc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7cd0f2a0755fe098ff170faa064eb25e0e5351ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82a6c80b2c5369919f3452dd22999f468b875fb1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/8326fcf38acc35c617202cf976f437b891baca6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/916bf3dca21881516752217e3bfa6e58728081cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96b11194752c7d7d0699a5bf6974433564dd51b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b7fe6fd88bec4b0f58a28bf89c249956e5e25e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae98e90ad595988626a59dd8b7fee838beee86d9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b38ef2499cb18bc3c864eda818050df7259a4180" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b7170ba20d2f94c9383c57d313a40a41e982464b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c628a99bd91d9bb10f4543bbaa8326f3c4f58d4b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7d38c76af99a01841246c2b5c1b57ff41aab1dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c87663adc2fdeb8ab30a971ca6e0c69068a4572a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e34b1869ff1eafef103e1dc35ba4a6aa4368eb84" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7e394678d3250b2b11c78c13c6a1f04e1802270" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9d1926cc7b6c10e3d0187cef04e376148e391b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/079d5203dcce4e3bf55fb1b28687c4861f270c7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/07cf1d474d9be1dab321055bb906bb1ece7c6c45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/9/093b4acae5352ebfbe0de62cf1d858154a26aa85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/4/14c92d1d982e0a7f07d56d2df2bfb1e9efd09a54" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/4/14d3c98e086c19c093a9e29bdf0e83fff878aa8d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/7/178a00693a8d0b7674efa98151697d7fbc31bdfe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2ef6c608dcba24a37c589f92e46a33edb98c0f60" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3ea2d905a9d7f976fd2860900a287e3240f5bd16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3edcaabfc78d972124161048bc139a969917df3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/4795345ce17feaa2705f78275938062e6c3a6829" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/5765af404f0539f8b1a867b6da6f65d0488aaafd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/9/59e709a5dab7a8ca8dbd7c8d26c69594d9c11065" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/2/62e2f2d8be9682e866a65d2478bdd4df1f02bfd0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/a/6ac360ebd27a6c87c06dfc0513c0d8347dea8465" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/2/72b1e12499df9d3a0db7318632fe45340d6fa2fc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/c/7cd0f2a0755fe098ff170faa064eb25e0e5351ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/2/82a6c80b2c5369919f3452dd22999f468b875fb1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/3/8326fcf38acc35c617202cf976f437b891baca6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/916bf3dca21881516752217e3bfa6e58728081cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/6/96b11194752c7d7d0699a5bf6974433564dd51b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/b/9b7fe6fd88bec4b0f58a28bf89c249956e5e25e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/ae98e90ad595988626a59dd8b7fee838beee86d9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/3/b38ef2499cb18bc3c864eda818050df7259a4180" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b7170ba20d2f94c9383c57d313a40a41e982464b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/6/c628a99bd91d9bb10f4543bbaa8326f3c4f58d4b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/7/c7d38c76af99a01841246c2b5c1b57ff41aab1dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/8/c87663adc2fdeb8ab30a971ca6e0c69068a4572a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e34b1869ff1eafef103e1dc35ba4a6aa4368eb84" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f7e394678d3250b2b11c78c13c6a1f04e1802270" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f9d1926cc7b6c10e3d0187cef04e376148e391b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/MainLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/MainLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/hive/game/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/game/GameLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/hive/graphics/GameTileViewProbe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/GameTileViewProbe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/hive/graphics/JustGameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/graphics/JustGameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/hive/insects/InsectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/insects/InsectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/hive/insects/QueenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/hive/insects/QueenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/HiveGameXMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveGameXMLWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/HiveColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/HiveColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GameTileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +109,7 @@
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
       <workItem from="1701595792734" duration="37255000" />
-      <workItem from="1701680537288" duration="9179000" />
+      <workItem from="1701680537288" duration="11859000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -299,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701641418496</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva.">
+      <option name="closed" value="true" />
+      <created>1701690057414</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701690057414</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +255,8 @@
     <MESSAGE value="A fő package átnevezésével kapcsolatos problémák feloldva." />
     <MESSAGE value="Az oldalsó menü hozzáadva és működik." />
     <MESSAGE value="Az xml output funkció működik. Xml beolvasás következik." />
-    <option name="LAST_COMMIT_MESSAGE" value="Az xml output funkció működik. Xml beolvasás következik." />
+    <MESSAGE value="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva." />
+    <option name="LAST_COMMIT_MESSAGE" value="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -24,8 +24,6 @@ public class GameLogic {
     public enum GameState {
         RUNNING,
 
-        SAVEABLE,
-
         TERMINATED
     }
 
@@ -37,9 +35,9 @@ public class GameLogic {
 
     private int turns;
 
-    private final Player whitePlayer;
+    private final Player orangePlayer;
 
-    private final Player blackPlayer;
+    private final Player bluePlayer;
 
     private Player nextPlayer;
 
@@ -57,8 +55,8 @@ public class GameLogic {
     private GameLogic() {
         gameState = GameState.TERMINATED;
         turns = -1;
-        whitePlayer = new Player(HiveColor.BLUE, this);
-        blackPlayer = new Player(HiveColor.RED, this);
+        orangePlayer = new Player(HiveColor.ORANGE, this);
+        bluePlayer = new Player(HiveColor.BLUE, this);
         nextPlayer = null;
         board = GameBoard.getInstance();
         winner = null;
@@ -84,18 +82,29 @@ public class GameLogic {
      * Figyelem: a tábla nem üres: egyetlen tile hozzáadódik!
      */
     public void newGame() {
-        turns = 1;
-        whitePlayer.initPlayer();
-        blackPlayer.initPlayer();
-
-        nextPlayer = whitePlayer;
-        board.clear();
+        clearGame();
         new GameTile(board, new Coordinate(0, 0));
-        winner = null;
-
+        bluePlayer.initPlayer();
+        orangePlayer.initPlayer();
         gameState = GameState.RUNNING;
         HiveLogger.getLogger().info("GameLogic: New Game was started successfully.\n" +
                 "############################################");
+    }
+
+    /**
+     * Reseteli a játékot.
+     * A különbség a newGame és a newGameForTesting és eközött az,
+     * hogy ez nem állítja át a játék állapotát TERMINATED-ről,
+     * valamint ez reseteli a játékosokat.
+     */
+    public void clearGame(){
+        turns = 1;
+        orangePlayer.resetPlayer();
+        bluePlayer.resetPlayer();
+        nextPlayer = orangePlayer;
+        board.clear();
+        winner = null;
+        HiveLogger.getLogger().info("GameLogic: Game properties were reset successfully.");
     }
 
     /**
@@ -105,14 +114,7 @@ public class GameLogic {
      *
      */
     public void newGameForTesting(){
-        turns = 1;
-        whitePlayer.initPlayer();
-        blackPlayer.initPlayer();
-
-        nextPlayer = whitePlayer;
-        board.clear();
-        winner = null;
-
+        clearGame();
         gameState = GameState.RUNNING;
     }
 
@@ -120,12 +122,20 @@ public class GameLogic {
         return turns;
     }
 
+    public Player getNextPlayer() {
+        return nextPlayer;
+    }
+
+    public void setNextPlayer(Player p){
+        this.nextPlayer = p;
+    }
+
     public Player getWinner() {
         return winner;
     }
 
     public void setTurns(int val) {
-        HiveLogger.getLogger().info("GameLogic setTurns called!");
+        HiveLogger.getLogger().debug("GameLogic setTurns called!");
         turns = val;
     }
 
@@ -139,19 +149,19 @@ public class GameLogic {
 
     public void incrementTurns() {
         turns++;
-        if (nextPlayer == whitePlayer) {
-            nextPlayer = blackPlayer;
+        if (nextPlayer == orangePlayer) {
+            nextPlayer = bluePlayer;
         } else {
-            nextPlayer = whitePlayer;
+            nextPlayer = orangePlayer;
         }
     }
 
-    public Player getWhitePlayer() {
-        return whitePlayer;
+    public Player getOrangePlayer() {
+        return orangePlayer;
     }
 
-    public Player getBlackPlayer() {
-        return blackPlayer;
+    public Player getBluePlayer() {
+        return bluePlayer;
     }
 
     public GameBoard getBoard() {
@@ -250,14 +260,14 @@ public class GameLogic {
     }
 
     private void checkEndGameCondition() {
-        if (whitePlayer.getQueen().isInitialized()&&whitePlayer.getNeighboursOfQueen() == 6) {
+        if (orangePlayer.getQueen().isInitialized()&& orangePlayer.getNeighboursOfQueen() == 6) {
             HiveLogger.getLogger().info("The black Player won!");
-            winner=blackPlayer;
+            winner= bluePlayer;
             gameState = GameState.TERMINATED;
             notifyListeners();
-        } else if (blackPlayer.getQueen().isInitialized()&&blackPlayer.getNeighboursOfQueen() == 6) {
+        } else if (bluePlayer.getQueen().isInitialized()&& bluePlayer.getNeighboursOfQueen() == 6) {
             HiveLogger.getLogger().info("The white Player won!");
-            winner=whitePlayer;
+            winner= orangePlayer;
             gameState = GameState.TERMINATED;
             notifyListeners();
         }

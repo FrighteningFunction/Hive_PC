@@ -35,7 +35,7 @@ public class InsectTest {
         gameLogic = GameLogic.getInstance();
         gameLogic.newGameForTesting();
         gameLogic.setTurns(2);
-        whiteQueen=new Queen(gameLogic.getWhitePlayer(), gameLogic);
+        whiteQueen=new Queen(gameLogic.getOrangePlayer(), gameLogic);
 
         origoTile = new GameTile(board, new Coordinate(0,0));
         whiteQueen.place(origoTile);
@@ -44,9 +44,9 @@ public class InsectTest {
 
     @Test
     public void insectPlaceTest(){
-        Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
+        Insect grasshopper = new Grasshopper(gameLogic.getBluePlayer(), gameLogic);
         Set<GameTile> expected = new HashSet<>(board.getUnInitializedTileSet());
-        assertEquals("Incorrect gametiles pinged available for placing", expected, gameLogic.pingAvailableTilesForPlacing(gameLogic.getBlackPlayer()));
+        assertEquals("Incorrect gametiles pinged available for placing", expected, gameLogic.pingAvailableTilesForPlacing(gameLogic.getBluePlayer()));
 
         GameTile chosenTile = origoTile.getNeighbour(3);
         grasshopper.place(chosenTile);
@@ -55,7 +55,7 @@ public class InsectTest {
 
     @Test
     public void InsectMoveTest1(){
-        Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
+        Insect grasshopper = new Grasshopper(gameLogic.getBluePlayer(), gameLogic);
         grasshopper.place(starterTile);
         Set<GameTile> expected = new HashSet<>();
         expected.add(origoTile.getNeighbour(0));
@@ -70,7 +70,7 @@ public class InsectTest {
 
     @Test
     public void InsectMoveTest2(){
-        Insect grasshopper = new Grasshopper(gameLogic.getBlackPlayer(), gameLogic);
+        Insect grasshopper = new Grasshopper(gameLogic.getBluePlayer(), gameLogic);
         grasshopper.place(starterTile);
 
         GameTile chosenTile = origoTile.getNeighbour(2);

@@ -15,6 +15,8 @@ public class MainMenu extends JPanel {
 
     private transient JButton exit = new JButton ("exit");
 
+    private transient JButton loadGame = new JButton("Load Game");
+
     private transient MenuButtonsPressed menuListener = new MenuButtonsPressed();
 
     JPanel mainPanel = new JPanel();
@@ -26,14 +28,18 @@ public class MainMenu extends JPanel {
         newGame.setAlignmentX(Component.CENTER_ALIGNMENT);
         exit.setActionCommand("exit");
         exit.setAlignmentX(Component.CENTER_ALIGNMENT);
+        loadGame.setAlignmentX(Component.CENTER_ALIGNMENT);
+        loadGame.setActionCommand("loadGame");
 
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 
         mainPanel.add(newGame);
         mainPanel.add(exit);
+        mainPanel.add(loadGame);
 
         newGame.addActionListener(menuListener);
         exit.addActionListener(menuListener);
+        loadGame.addActionListener(menuListener);
 
         GraphicLogger.getLogger().info("MainMenu created successfully.");
     }
@@ -48,9 +54,11 @@ public class MainMenu extends JPanel {
                 case "exit":
                     exit(0);
                     break;
+                case "loadGame":
+                    Commands.loadGame();
+                    break;
                 default:
-                    GraphicLogger.getLogger().fatal("Unknown MainMenu Command issued!");
-                    exit(1);
+                    GraphicLogger.getLogger().error("Unknown MainMenu Command issued!");
                     break;
             }
         }

@@ -95,10 +95,9 @@ public class GameTileView extends JComponent {
         this.state = state;
     }
 
-    //todo: játék elkészültével ezeket a színeket következetesen beállítani
     public void setColor(HiveColor color) {
-        if (color == HiveColor.RED) {
-            this.color = Color.LIGHT_GRAY;
+        if (color == HiveColor.ORANGE) {
+            this.color = Color.ORANGE;
         } else if (color == HiveColor.BLUE) {
             this.color = Color.CYAN;
         } else {

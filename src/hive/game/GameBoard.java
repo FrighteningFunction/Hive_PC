@@ -151,6 +151,10 @@ public class GameBoard {
         return boardMap.containsKey(c);
     }
 
+    public GameTile getTile(Coordinate c){
+        return boardMap.get(c);
+    }
+
     /**
      * Válogatás nélkül kitöröl minden tile-t.
      * Felér egy új játék kezdésével.

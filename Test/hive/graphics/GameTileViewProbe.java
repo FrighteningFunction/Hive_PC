@@ -35,7 +35,7 @@ public class GameTileViewProbe {
 
         frame.add(mainPanel);
 
-        Insect testInsect = new Ant(gameLogic.getBlackPlayer(), gameLogic);
+        Insect testInsect = new Ant(gameLogic.getBluePlayer(), gameLogic);
 
         GameTile gameTile = new GameTile(testInsect);
 

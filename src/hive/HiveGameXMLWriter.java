@@ -50,31 +50,32 @@ public class HiveGameXMLWriter {
             }
             handler.endElement("", "", "Board");
 
-            // Write the white player
+            // Write the orange player
             atts.clear();
-            handler.startElement("", "", "whitePlayer", atts);
-            for (Insect insect : gameLogic.getBlackPlayer().getInsects()) {
+            handler.startElement("", "", "orangePlayer", atts);
+            for (Insect insect : gameLogic.getBluePlayer().getInsects()) {
                 atts.clear();
                 atts.addAttribute("", "", "type", "CDATA", insect.toString());
                 handler.startElement("", "", "insect", atts);
                 handler.endElement("", "", "insect");
             }
-            handler.endElement("", "", "whitePlayer");
+            handler.endElement("", "", "orangePlayer");
 
-            // Write the black player
+            // Write the blue player
             atts.clear();
-            handler.startElement("", "", "blackPlayer", atts);
-            for (Insect insect : gameLogic.getBlackPlayer().getInsects()) {
+            handler.startElement("", "", "bluePlayer", atts);
+            for (Insect insect : gameLogic.getBluePlayer().getInsects()) {
                 atts.clear();
                 atts.addAttribute("", "", "type", "CDATA", insect.toString());
                 handler.startElement("", "", "insect", atts);
                 handler.endElement("", "", "insect");
             }
-            handler.endElement("", "", "blackPlayer");
+            handler.endElement("", "", "bluePlayer");
 
             //Write the GameLogic
             atts.clear();
             atts.addAttribute("", "", "turns", "CDATA", String.valueOf(gameLogic.getTurns()));
+            atts.addAttribute("", "", "nextPlayer", "CDATA", String.valueOf(gameLogic.getNextPlayer().color));
             handler.startElement("", "", "GameLogic", atts);
             handler.endElement("", "", "GameLogic");
 

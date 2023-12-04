@@ -34,9 +34,7 @@ public class HiveMain {
         mainPanel.add(mainMenu, "Menu");
         mainPanel.add(gamePanel, "Game");
 
-
-        // Switching panels
-        // cardLayout.show(mainPanel, "Game"); to show the game panel
+        mainCardLayout.show(mainPanel, "Menu");
         SideMenu sideBar = new SideMenu();
         frame.setJMenuBar(sideBar.getMenuBar());
 

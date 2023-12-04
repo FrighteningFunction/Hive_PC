@@ -233,7 +233,7 @@ public class GameTile {
                 y2 = y1 + HEIGHT * sin(DIR);
                 break;
             default:
-                logger.fatal("Fatal: invalid direction got at coordinate calculation");
+                logger.fatal("Invalid direction got at coordinate calculation");
                 exit(1);
         }
         return new Coordinate(x2, y2);
@@ -245,8 +245,7 @@ public class GameTile {
      */
     public void initialize(Insect insect) {
         if (initialized) {
-            logger.fatal("GameTile already initialized.");
-            exit(1);
+            logger.fatal("GameTile already initialized was to be initialized!");
         } else {
             initialized = true;
             this.insect = insect;

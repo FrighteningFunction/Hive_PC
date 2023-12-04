@@ -1,7 +1,7 @@
 package hive.game;
 
 public enum HiveColor{
-    RED("red"),
+    ORANGE("orange"),
     BLUE("blue");
 
     private final String name;

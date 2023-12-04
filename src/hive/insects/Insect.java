@@ -34,6 +34,10 @@ public abstract class Insect {
         return initialized;
     }
 
+    public void setInitialized(boolean val){
+        initialized=val;
+    }
+
     public GameTile getLocation() {
         return location;
     }

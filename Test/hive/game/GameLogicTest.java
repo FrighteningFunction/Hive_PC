@@ -26,13 +26,13 @@ public class GameLogicTest {
         gameLogic = GameLogic.getInstance();
         gameLogic.newGameForTesting();
         origoTile = new GameTile(board, new Coordinate(0,0));
-        queen = new Queen(gameLogic.getBlackPlayer(), gameLogic);
+        queen = new Queen(gameLogic.getBluePlayer(), gameLogic);
         queen.place(origoTile);
     }
 
     @Test
     public void initializedTileSetTest(){
-        Insect grasshopper = new Grasshopper(gameLogic.getWhitePlayer(), gameLogic);
+        Insect grasshopper = new Grasshopper(gameLogic.getOrangePlayer(), gameLogic);
         grasshopper.place(origoTile.getNeighbour(0));
         Set<GameTile> expected = new HashSet<>();
         expected.add(origoTile);
@@ -51,10 +51,10 @@ public class GameLogicTest {
 
     @Test
     public void hiveConnectionTest(){
-        Insect grasshopper1 = new Grasshopper(gameLogic.getWhitePlayer(), gameLogic);
+        Insect grasshopper1 = new Grasshopper(gameLogic.getOrangePlayer(), gameLogic);
         GameTile grasshopper1Tile = origoTile.getNeighbour(0);
         grasshopper1.place(grasshopper1Tile);
-        Insect grasshopper2 = new Grasshopper(gameLogic.getWhitePlayer(), gameLogic);
+        Insect grasshopper2 = new Grasshopper(gameLogic.getOrangePlayer(), gameLogic);
 
         GameTile grasshopper2Tile = origoTile.getNeighbour(3);
         grasshopper2.place(grasshopper2Tile);

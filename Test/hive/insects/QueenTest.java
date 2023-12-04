@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
 public class QueenTest {
     private GameLogic gameLogic=GameLogic.getInstance();
     private GameTile origoTile;
-    private Player whitePlayer= gameLogic.getWhitePlayer();
+    private Player whitePlayer= gameLogic.getOrangePlayer();
 
-    private Player blackPlayer= gameLogic.getWhitePlayer();
+    private Player blackPlayer= gameLogic.getOrangePlayer();
 
     private Queen whiteQueen=new Queen(whitePlayer, gameLogic);
 

@@ -1,67 +1,11 @@
 
-X
-(Test/org/graphics/GameTileViewProbe.java,1\4\14c92d1d982e0a7f07d56d2df2bfb1e9efd09a54
-P
- Test/org/game/GameLogicTest.java,c\6\c628a99bd91d9bb10f4543bbaa8326f3c4f58d4b
-U
-%src/org/graphics/views/BoardView.java,2\e\2ef6c608dcba24a37c589f92e46a33edb98c0f60
-J
-src/org/insects/Queen.java,8\3\8326fcf38acc35c617202cf976f437b891baca6c
-J
-src/org/game/GameTile.java,8\2\82a6c80b2c5369919f3452dd22999f468b875fb1
-H
-src/org/game/Player.java,3\e\3edcaabfc78d972124161048bc139a969917df3d
-a
-1src/org/graphics/controllers/BoardController.java,7\2\72b1e12499df9d3a0db7318632fe45340d6fa2fc
-d
-4src/org/graphics/controllers/GameTileController.java,7\c\7cd0f2a0755fe098ff170faa064eb25e0e5351ae
-g
-7src/org/graphics/controllers/PlayerPanelController.java,0\9\093b4acae5352ebfbe0de62cf1d858154a26aa85
-X
-(src/org/graphics/views/GameTileView.java,1\4\14d3c98e086c19c093a9e29bdf0e83fff878aa8d
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-L
-src/org/game/Coordinate.java,f\9\f9d1926cc7b6c10e3d0187cef04e376148e391b9
-T
-$src/org/graphics/views/ViewUtil.java,c\7\c7d38c76af99a01841246c2b5c1b57ff41aab1dd
-T
-$src/org/graphics/views/MainMenu.java,b\7\b7170ba20d2f94c9383c57d313a40a41e982464b
-N
-src/org/graphics/HiveMain.java,4\7\4795345ce17feaa2705f78275938062e6c3a6829
 K
 Resources/log4j2.properties,1\5\15f38300f9bb119beefc9d1a059eb2f0fa8e724f
-[
-+src/org/graphics/views/PlayerPanelView.java,1\7\178a00693a8d0b7674efa98151697d7fbc31bdfe
-K
-src/org/game/GameLogic.java,0\7\079d5203dcce4e3bf55fb1b28687c4861f270c7a
-K
-src/org/insects/Insect.java,0\7\07cf1d474d9be1dab321055bb906bb1ece7c6c45
-S
-#Logging/org/game/GraphicLogger.java,e\3\e34b1869ff1eafef103e1dc35ba4a6aa4368eb84
-P
- Logging/org/game/HiveLogger.java,9\6\96b11194752c7d7d0699a5bf6974433564dd51b7
-K
-src/org/game/HiveColor.java,6\7\6773e8eb09d3b3d2417e3bde8d36a730a8cbab0c
 ;
 Hive_PC.iml,b\5\b56928c11ac56b56d806e8f665b5a07692d14d4f
-W
-'Test/org/graphics/JustGameTileView.java,5\9\59e709a5dab7a8ca8dbd7c8d26c69594d9c11065
-P
- src/org/insects/Grasshopper.java,9\b\9b7fe6fd88bec4b0f58a28bf89c249956e5e25e6
-P
- Test/org/insects/InsectTest.java,6\a\6ac360ebd27a6c87c06dfc0513c0d8347dea8465
-P
- Test/org/game/GameBoardTest.java,b\e\be9af4054bd3902ae3b82ac8eda07313f76368e1
-H
-src/org/insects/Ant.java,f\7\f7e394678d3250b2b11c78c13c6a1f04e1802270
-K
-src/org/insects/Beetle.java,b\3\b38ef2499cb18bc3c864eda818050df7259a4180
-O
-Test/org/insects/queentest.java,c\8\c87663adc2fdeb8ab30a971ca6e0c69068a4572a
-O
-Test/org/insects/QueenTest.java,9\1\916bf3dca21881516752217e3bfa6e58728081cf
 Å
 Q.idea/sonarlint/securityhotspotstore/3/e/3edcaabfc78d972124161048bc139a969917df3d,8\4\84d1e43253f4daecfa139069d6e46f72b62a7be3
 w
@@ -254,28 +198,8 @@ Q.idea/sonarlint/securityhotspotstore/8/3/8326fcf38acc35c617202cf976f437b891baca
 Q.idea/sonarlint/securityhotspotstore/4/7/4795345ce17feaa2705f78275938062e6c3a6829,f\7\f7ac586044d05fc5ef9ba0e01b6565b7ffced948
 Å
 Q.idea/sonarlint/securityhotspotstore/b/e/be9af4054bd3902ae3b82ac8eda07313f76368e1,f\b\fbc4deb7bad083a4999ed6def7f178bfed42a87f
-K
-src/org/insects/Spider.java,4\0\4054654ba59dcf6266f18ba81cc248f283152b56
 ]
 -.idea/libraries/apache_logging_log4j_core.xml,1\e\1eaaeb08b1d9bc04e44b7941195e60ea04d15220
-e
-5src/org/graphics/controllers/GamePanelController.java,5\7\5765af404f0539f8b1a867b6da6f65d0488aaafd
-U
-%src/org/graphics/views/GamePanel.java,a\e\ae98e90ad595988626a59dd8b7fee838beee86d9
-K
-src/org/game/GameBoard.java,8\e\8ee14e16e862d9d7f0220c988af10e24918b4819
-_
-/src/org/graphics/controllers/ModelListener.java,6\2\62e2f2d8be9682e866a65d2478bdd4df1f02bfd0
-`
-0src/org/graphics/controllers/ResizeListener.java,8\a\8a08f48be8466dd14c4077375ca1b48c1f745aaf
-T
-$src/org/graphics/views/TileView.java,7\8\786b68ba3895f1fbe131c977dbde7e5b89eb69a1
-Q
-!Test/org/graphics/TestJPanel.java,b\b\bbd86754b9a699d07bc75bae76d3d4058db74c03
-Q
-!src/org/graphics/ImageLoader.java,3\e\3ea2d905a9d7f976fd2860900a287e3240f5bd16
-H
-src/org/AppCommands.java,d\5\d5332b76c9e3f2484603b68d4333ffddce702643
 L
 src/hive/insects/Spider.java,8\4\847a7d648287aeb80d02a20944ca50e33de4544b
 I
@@ -286,18 +210,12 @@ L
 src/hive/insects/Insect.java,b\9\b9d83a2c8fa272c304efd79c2b4932e698dbb418
 L
 src/hive/insects/Beetle.java,0\c\0cbc67eb611d306c568ac1f0369d0312fa1ac596
-T
-$Logging/hive/game/GraphicLogger.java,a\0\a09130887e21874ffb314876e61b0460262feb23
 I
 src/hive/game/Player.java,4\6\46d278aa5a16c03d91be2968472c8ddd9871758b
 L
 src/hive/game/GameBoard.java,c\1\c194376be06739baf56513baf1836c1854212e7a
 Y
 )Test/hive/graphics/GameTileViewProbe.java,2\3\23a1016305510651d25a26fd88a0f3900e897947
-Q
-!Logging/hive/game/HiveLogger.java,e\c\ec65e8345a2bc6e431b3755f547cb040c0de3ea0
-O
-src/hive/graphics/HiveMain.java,f\0\f06520be33f20599d7acb3e64e5c1248ec781c97
 R
 "src/hive/graphics/ImageLoader.java,1\0\1052642c168a52f9c66ba231ccf91766c1a4cf55
 U
@@ -332,8 +250,6 @@ Y
 )src/hive/graphics/views/GameTileView.java,4\b\4bbc31424bb376acf3ba679c123b05f010c40cac
 U
 %src/hive/graphics/views/MainMenu.java,2\0\20012a1e6ce94c8e843bb36495304a2210f60dce
-I
-src/hive/AppCommands.java,6\f\6fb4da175042c8f4913d0552fc8c2af362285a06
 Q
 !Test/hive/insects/InsectTest.java,0\c\0c74a724dffbf37073133d56ad90c2f567ed2454
 X
@@ -364,9 +280,9 @@ L
 Logging/hive/HiveLogger.java,4\8\489ae7dba47447f50a32c90aff23de51cba7325c
 U
 %src/hive/graphics/views/SideMenu.java,1\6\16722ad6ecccbd2c85c5015f90dbe1e58c31969a
-L
-src/hive/WriteGameState.java,8\3\8344d4a600203db15d8f96c43e9412332db367b7
 O
 src/hive/HiveGameXMLWriter.java,4\2\4281bbc73bc448c0d8de72fc8ac2a818c85ed218
 O
 Logging/hive/MainAppLogger.java,6\e\6e67df27e9177d60c668b6987130f9f72811e29b
+O
+src/hive/HiveGameXMLReader.java,1\a\1a1577c4e6a604961cfb7a7fc8926e6f86d6dbf1

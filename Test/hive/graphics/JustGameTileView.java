@@ -22,7 +22,7 @@ public class JustGameTileView {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
 
-        Insect testInsect = new Queen(gameLogic.getBlackPlayer(), gameLogic);
+        Insect testInsect = new Queen(gameLogic.getBluePlayer(), gameLogic);
 
         GameTileView gameTileView = new GameTileView();
         gameTileView.setInsect(testInsect);

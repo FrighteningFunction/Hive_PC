@@ -7,6 +7,7 @@ import hive.insects.*;
 import hive.insects.Queen;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Player {
@@ -32,6 +33,31 @@ public class Player {
     }
 
     /**
+     * Reseteli a játékost:
+     * kitörli az összes fennmaradó rovarát és ahhoz kapcsolódó
+     * őrzőTile-okat.
+     * Valamint a királynőjét is kitörli.
+     */
+    public void resetPlayer() {
+        Iterator<GameTile> tileIterator = insectHolders.iterator();
+        while (tileIterator.hasNext()) {
+            GameTile tile = tileIterator.next();
+            tile.setState(TileStates.TERMINATED);
+            tileIterator.remove();
+        }
+
+        // Iterating over insects
+        Iterator<Insect> insectIterator = insects.iterator();
+        while (insectIterator.hasNext()) {
+            insectIterator.next();
+            insectIterator.remove();
+        }
+
+        queen = null;
+    }
+
+
+    /**
      * Inicializálja az adott játékost, így készen áll új játékra.
      * Felér egy resettel.
      */
@@ -55,6 +81,12 @@ public class Player {
         insects.add(new Spider(this, gameLogic));
         insects.add(new Spider(this, gameLogic));
 
+        initializePlaceHolders();
+
+        HiveLogger.getLogger().info("{} Player initialized successfully", color);
+    }
+
+    public void initializePlaceHolders() {
         //jobbról kezdve felváltva balra-jobbra feltöltjük a játékos készletét
         int i = 0;
         int leftNum = 1;
@@ -82,8 +114,6 @@ public class Player {
 
             notifyOnAdd(gameTile);
         }
-
-        HiveLogger.getLogger().info("{} Player initialized successfully", color);
     }
 
     public void removeGameTile(GameTile tile) {
@@ -98,6 +128,8 @@ public class Player {
     public void removeInsect(Insect insect) {
         if (!insects.remove(insect)) {
             HiveLogger.getLogger().error("A nonexistent insect was to be removed from Player");
+        } else {
+            HiveLogger.getLogger().info("An insect was sucessfully removed from player.");
         }
     }
 
@@ -111,6 +143,10 @@ public class Player {
 
     public Queen getQueen() {
         return queen;
+    }
+
+    public void setQueen(Queen queen) {
+        this.queen = queen;
     }
 
     public HiveColor getColor() {

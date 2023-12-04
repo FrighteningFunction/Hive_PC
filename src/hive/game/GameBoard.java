@@ -16,7 +16,7 @@ public class GameBoard {
     private GameBoard() {
     }
 
-    private HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
+    private final HashMap<Coordinate, GameTile> boardMap = new HashMap<>();
 
     /**
      * Visszaadja az egyetlen létező GameBoard példányt.
@@ -48,15 +48,6 @@ public class GameBoard {
      */
     public int getSize() {
         return boardMap.size();
-    }
-
-    /**
-     * Visszaadja válogatás nélkül az összes GameTile-t egy halmazként.
-     *
-     * @return a Tile-ok halmaza.
-     */
-    public Set<GameTile> getTileSet() {
-        return new HashSet<>(boardMap.values());
     }
 
     /**

@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 public class GameTile {
 
     private final Logger logger = LogManager.getLogger();
-    private List<ModelListener> listeners = new ArrayList<>();
+    private final List<ModelListener> listeners = new ArrayList<>();
 
     private TileStates state;
 
@@ -30,9 +30,6 @@ public class GameTile {
     private static final double DIR = PI / 6;
 
     private boolean initialized;
-
-    //todo: ezt megnézni
-    private final boolean isPlaceHolder;
 
     private GameBoard board;
 
@@ -56,7 +53,6 @@ public class GameTile {
      */
     public GameTile(GameBoard b, Coordinate c) {
         initialized = false;
-        isPlaceHolder = false;
         insect = null;
         state = TileStates.UNSELECTED;
         this.board = b;
@@ -79,7 +75,6 @@ public class GameTile {
      */
     public GameTile(Insect insect) {
         neighbours = null;
-        isPlaceHolder = true;
         initialized = true;
         state = TileStates.UNSELECTED;
         coordinate = null;

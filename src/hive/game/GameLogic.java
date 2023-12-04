@@ -245,7 +245,7 @@ public class GameLogic {
         return availableTiles;
     }
 
-    //todo: ha nincs available tile for placing, akkor a másik játékos győzött
+
     private void checkQueenCondition() {
         if (!nextPlayer.isQueenDown() && turns >= 7) {
             Queen queen = nextPlayer.getQueen();
@@ -309,9 +309,9 @@ public class GameLogic {
             startTile = tile;
 
             tile.setState(TileStates.SELECTED);
-        } else {
-            //semmi
         }
+
+        //egyébként nem csinálunk semmit
     }
 
     private void secondSelectSettings(GameTile tile, Player actor){
@@ -354,8 +354,6 @@ public class GameLogic {
                 && tile.isInitialized();
     }
 
-
-    //todo: lehessen selection-t visszavonni
     public void clickedTile(GameTile tile) {
 
         Player actor = nextPlayer;

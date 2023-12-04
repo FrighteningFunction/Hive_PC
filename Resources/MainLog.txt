@@ -109,3 +109,7 @@
 ###########################
 2023-12-04T12:38:50,092 [AWT-EventQueue-0] INFO  hive.MainAppLogger loadGame - Game loaded successfully.
 ###########################
+2023-12-04T14:57:22,648 [AWT-EventQueue-0] INFO  hive.MainAppLogger saveGame - Output to XML successful.
+2023-12-04T14:57:43,725 [AWT-EventQueue-0] INFO  hive.MainAppLogger saveGame - Output to XML successful.
+2023-12-04T14:58:04,420 [AWT-EventQueue-0] INFO  hive.MainAppLogger loadGame - Game loaded successfully.
+###########################

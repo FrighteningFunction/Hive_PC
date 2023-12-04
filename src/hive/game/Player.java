@@ -161,18 +161,6 @@ public class Player {
         return insects;
     }
 
-    public List<GameTile> getInsectHolders() {
-        return insectHolders;
-    }
-
-    public void notifyListeners() {
-        if (listener != null) {
-            listener.onModelChange();
-        } else {
-            GraphicLogger.getLogger().error("Player did not notify controller on notifyListeners: null instance");
-        }
-    }
-
     private void notifyOnAdd(GameTile tile) {
         if (listener != null) {
             listener.onGameTileAdded(tile);

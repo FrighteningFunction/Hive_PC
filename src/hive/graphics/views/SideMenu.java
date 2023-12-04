@@ -2,17 +2,14 @@ package hive.graphics.views;
 
 import hive.Commands;
 import hive.GraphicLogger;
-import hive.HiveMain;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SideMenu {
-    CardLayout mainCardLayout = HiveMain.getCardLayout();
 
-    JMenuBar sideBar;
+    private final JMenuBar sideBar;
 
     public SideMenu(){
         sideBar = new JMenuBar();
@@ -26,20 +23,20 @@ public class SideMenu {
 
         menu.add(newGame);
         newGame.setActionCommand("newGame");
-        newGame.addActionListener(new sideMenuListener());
+        newGame.addActionListener(new SideMenuListener());
         menu.add(saveGame);
         saveGame.setActionCommand("saveGame");
-        saveGame.addActionListener(new sideMenuListener());
+        saveGame.addActionListener(new SideMenuListener());
         menu.add(loadGame);
         loadGame.setActionCommand("loadGame");
-        loadGame.addActionListener(new sideMenuListener());
+        loadGame.addActionListener(new SideMenuListener());
     }
 
     public JMenuBar getMenuBar(){
         return sideBar;
     }
 
-    private class sideMenuListener implements ActionListener{
+    private static class SideMenuListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();

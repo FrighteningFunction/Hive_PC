@@ -7,7 +7,6 @@ import hive.game.TileStates;
 import hive.insects.Insect;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.MouseListener;
 import java.awt.geom.Path2D;
@@ -38,8 +37,7 @@ public class GameTileView extends JComponent {
 
     //Konstansok
 
-    private Dimension fixedSize;
-    private static final int BORDER_SIZE = 3;
+    private final Dimension fixedSize;
 
     private static final float BORDER_WIDTH = 2.0f;
 
@@ -48,17 +46,17 @@ public class GameTileView extends JComponent {
     private static final double TILE_RADIUS = GameTile.getTileRadius();
 
     //A komponens abszolút szélessége és magassága
-    private static final int width = (int) (Math.round(2 * TILE_RADIUS)+BORDER_SIZE);
-    private static final int height = (int) Math.round(TILE_HEIGHT)+BORDER_SIZE;
+    private static final int COMP_WIDTH = (int) (Math.round(2 * TILE_RADIUS)+BORDER_WIDTH)+1;
+    private static final int COMP_HEIGHT = (int) Math.round(TILE_HEIGHT+BORDER_WIDTH)+1;
 
 
     /**
      * Megmutatja, hogy hol található a hatszög középpontja a JComponent koordinátáihoz képest.
      */
-    private static final transient Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS, TILE_HEIGHT / 2);
+    private static final Coordinate INNER_ORIGO = new Coordinate(TILE_RADIUS, TILE_HEIGHT / 2);
 
     public GameTileView(Coordinate c) {
-        fixedSize = new Dimension(width, height);
+        fixedSize = new Dimension(COMP_WIDTH, COMP_HEIGHT);
 
         // Set the size of the hex tile
         setPreferredSize(fixedSize);
@@ -67,10 +65,7 @@ public class GameTileView extends JComponent {
 
         this.c = c;
 
-        setBounds((int) c.getX(), (int) c.getY(), width, height);
-
-        Border redBorder = BorderFactory.createLineBorder(Color.PINK, 2);
-        this.setBorder(redBorder);
+        setBounds((int) c.getX(), (int) c.getY(), COMP_WIDTH, COMP_HEIGHT);
 
         setVisible(true);
         logger.info("GameTileView at coordinate x: {} y: {} was created.", c.getX(), c.getY());
@@ -80,14 +75,14 @@ public class GameTileView extends JComponent {
      * Konstruktor elsősorban tesztelésre.
      */
     public GameTileView() {
-        fixedSize = new Dimension(width, height);
+        fixedSize = new Dimension(COMP_WIDTH, COMP_HEIGHT);
 
         // Set the size of the hex tile
         setPreferredSize(fixedSize);
         setMinimumSize(fixedSize);
         setMaximumSize(fixedSize);
 
-        setBounds((int) c.getX(), (int) c.getY(), width, height);
+        setBounds((int) c.getX(), (int) c.getY(), COMP_WIDTH, COMP_HEIGHT);
         logger.warn("The GameTileView's constructor intended for testing was called!");
     }
 
@@ -112,15 +107,15 @@ public class GameTileView extends JComponent {
 
     public void setC(Coordinate c) {
         this.c = c;
-        setBounds((int) c.getX(), (int) c.getY(), width, height);
+        setBounds((int) c.getX(), (int) c.getY(), COMP_WIDTH, COMP_HEIGHT);
     }
 
     public void setInsect(Insect insect) {
         this.insect = insect;
     }
 
-    public static int getBorderSize() {
-        return BORDER_SIZE;
+    public static int getBorderWidth() {
+        return Math.round(BORDER_WIDTH);
     }
 
     @Override
@@ -183,7 +178,7 @@ public class GameTileView extends JComponent {
         double borderSize;
 
         if (isOuter) {
-            borderSize = TILE_RADIUS + BORDER_SIZE;
+            borderSize = TILE_RADIUS + BORDER_WIDTH;
         } else {
             borderSize = TILE_RADIUS;
         }

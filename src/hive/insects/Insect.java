@@ -130,8 +130,6 @@ public abstract class Insect {
         return destinations;
     }
 
-    //todo: valamiért bizonyos esetekben nem jelöli ki pirossal az egyes tile-okat, de közben legálisan enged odalépni
-
     /**
      * A rovar mozgási szabályai szerint visszaadja azon tile-ok listáját, ahová
      * a szabályok szerint léphet.

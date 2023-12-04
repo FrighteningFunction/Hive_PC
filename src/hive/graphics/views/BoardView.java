@@ -9,16 +9,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BoardView extends JPanel implements TileView{
-    private static final String name = "BoardView";
+    private static final String NAME = "BoardView";
 
-    private List<ModelListener> listeners = new ArrayList<>();
+    private final List<ModelListener> listeners = new ArrayList<>();
 
     public BoardView() {
         this.setLayout(null);
         setVisible(true);
         GraphicLogger.getLogger().info("BoardView was successfully created.");
 
-        this.addComponentListener(new ResizeListener(listeners, name));
+        this.addComponentListener(new ResizeListener(listeners, NAME));
     }
 
     public void addListener(ModelListener listener){

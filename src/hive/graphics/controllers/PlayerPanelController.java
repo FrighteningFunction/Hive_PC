@@ -6,12 +6,10 @@ import hive.game.GameTile;
 import hive.graphics.views.PlayerPanelView;
 
 public class PlayerPanelController implements ModelListener {
-    private Player p;
 
-    private PlayerPanelView playerPanelView;
+    private final PlayerPanelView playerPanelView;
 
     public PlayerPanelController(PlayerPanelView playerPanelView, Player p) {
-        this.p = p;
         this.playerPanelView = playerPanelView;
         p.addListener(this);
 
@@ -29,11 +27,6 @@ public class PlayerPanelController implements ModelListener {
 
         playerPanelView.revalidate();
         playerPanelView.repaint();
-    }
-
-    @Override
-    public void onGameTileRemoved(GameTile tile) {
-        throw new UnsupportedOperationException();
     }
 
     @Override

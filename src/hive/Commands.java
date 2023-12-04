@@ -31,8 +31,6 @@ public class Commands {
         mainCardLayout.show(HiveMain.getMainPanel(), "Game");
     }
 
-    //todo: implementálás
-
     public static void loadGame() {
 
 
@@ -59,10 +57,6 @@ public class Commands {
                 new GamePanelController(gameLogic, gamePanel);
 
                 HiveGameXMLReader.readGameState(filePath);
-
-                //Ezt azért adjuk hozzá, mert a readGameState csak inicializált tile-okat "jegyez" meg,
-                //vagyis ha új játékot mentene el, akkor nem lesz középen egy inicializálatlan tile sem.
-                //new GameTile(gameLogic.getBoard(), new Coordinate(0, 0));
 
                 gameLogic.setGameState(GameLogic.GameState.RUNNING);
                 gameLogic.getOrangePlayer().initializePlaceHolders();

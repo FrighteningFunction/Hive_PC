@@ -7,7 +7,5 @@ public interface ModelListener {
 
     void onGameTileAdded(GameTile tile);
 
-    void onGameTileRemoved(GameTile tile);
-
     void onResizeEvent();
 }

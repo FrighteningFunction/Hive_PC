@@ -7,21 +7,16 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GamePanel extends JPanel {
-    private PlayerPanelView whitePlayerPanelView;
-    private PlayerPanelView blackPlayerPanelView;
+    private final PlayerPanelView whitePlayerPanelView;
+    private final PlayerPanelView blackPlayerPanelView;
 
-    private BoardView boardView;
+    private final BoardView boardView;
 
-    //todo: a panelek átfaktorálása a gombok számára
     public GamePanel() {
         this.setLayout(new BorderLayout());
         boardView = new BoardView();
         whitePlayerPanelView = new PlayerPanelView();
         blackPlayerPanelView = new PlayerPanelView();
-
-        blackPlayerPanelView.setBorder(BorderFactory.createLineBorder(Color.red));
-        whitePlayerPanelView.setBorder(BorderFactory.createLineBorder(Color.red));
-        boardView.setBorder(BorderFactory.createLineBorder(Color.red));
 
         this.add(blackPlayerPanelView, BorderLayout.NORTH);
         this.add(boardView, BorderLayout.CENTER);

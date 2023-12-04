@@ -7,9 +7,9 @@ import java.awt.event.ComponentEvent;
 import java.util.List;
 
 public class ResizeListener extends ComponentAdapter {
-    List<ModelListener> listeners = null;
+    private final List<ModelListener> listeners;
 
-    String containerName = null;
+    private final String containerName;
 
     public ResizeListener(List<ModelListener> listeners, String containerName) {
         this.listeners = listeners;
@@ -24,7 +24,7 @@ public class ResizeListener extends ComponentAdapter {
             for (ModelListener listener : listeners) {
                 listener.onResizeEvent();
             }
-            GraphicLogger.getLogger().info("Listeners for resizeevents of {} got notified properly.", containerName);
+            GraphicLogger.getLogger().info("Listeners for resize-events of {} got notified properly.", containerName);
         }
     }
 }

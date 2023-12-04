@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva.">
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/MainLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/MainLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/HiveGameXMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveGameXMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/HiveColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/HiveColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/ModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ModelListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/GameTileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GameTileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +129,7 @@
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
       <workItem from="1701595792734" duration="37255000" />
-      <workItem from="1701680537288" duration="11859000" />
+      <workItem from="1701680537288" duration="14883000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -223,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701690057414</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni.">
+      <option name="closed" value="true" />
+      <created>1701692558908</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701692558908</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +284,8 @@
     <MESSAGE value="Az oldalsó menü hozzáadva és működik." />
     <MESSAGE value="Az xml output funkció működik. Xml beolvasás következik." />
     <MESSAGE value="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva." />
-    <option name="LAST_COMMIT_MESSAGE" value="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva." />
+    <MESSAGE value="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni." />
+    <option name="LAST_COMMIT_MESSAGE" value="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

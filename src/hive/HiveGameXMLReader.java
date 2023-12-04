@@ -10,6 +10,8 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 
 public class HiveGameXMLReader {
+    private HiveGameXMLReader(){}
+
     static GameLogic gameLogic = GameLogic.getInstance();
 
     static GameBoard gameBoard = gameLogic.getBoard();
@@ -30,12 +32,12 @@ public class HiveGameXMLReader {
 
     private static class GameContentHandler extends DefaultHandler {
         @Override
-        public void startDocument() throws SAXException {
+        public void startDocument() {
             //Nem szükséges
         }
 
         @Override
-        public void endDocument() throws SAXException {
+        public void endDocument(){
             // Nem szükséges
         }
 
@@ -156,7 +158,7 @@ public class HiveGameXMLReader {
         }
 
         @Override
-        public void endElement(String uri, String localName, String qName) throws SAXException {
+        public void endElement(String uri, String localName, String qName){
             // Nem szükséges
         }
     }

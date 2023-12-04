@@ -7,9 +7,9 @@ import hive.GraphicLogger;
 import hive.HiveMain;
 
 public class GamePanelController implements ModelListener{
-    GameLogic gameLogic;
+    private final GameLogic gameLogic;
 
-    GamePanel gamePanel;
+    private final GamePanel gamePanel;
 
     public GamePanelController(GameLogic gameLogic, GamePanel gamePanel) {
         this.gameLogic = gameLogic;
@@ -30,11 +30,6 @@ public class GamePanelController implements ModelListener{
 
     @Override
     public void onGameTileAdded(GameTile tile) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void onGameTileRemoved(GameTile tile) {
         throw new UnsupportedOperationException();
     }
 

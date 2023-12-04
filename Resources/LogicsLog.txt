@@ -1095,3 +1095,344 @@
 2023-12-04T13:21:00,975 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
 2023-12-04T13:21:00,975 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
 ############################################
+2023-12-04T14:45:33,511 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T14:45:33,574 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T14:45:33,594 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T14:45:33,602 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T14:45:35,988 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T14:45:37,038 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T14:45:37,038 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:45:37,038 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:45:37,623 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T14:45:38,431 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T14:45:38,431 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:45:38,431 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:45:39,312 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T14:45:39,961 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T14:45:39,961 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:45:39,961 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:45:40,499 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T14:45:41,078 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T14:45:41,078 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:45:41,094 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:41,718 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,897 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:42,904 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T14:45:46,529 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - Player would have disconnected the hive.
+2023-12-04T14:45:48,714 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - Player would have disconnected the hive.
+2023-12-04T14:45:48,714 [AWT-EventQueue-0] INFO  hive.HiveLogger move - The player wanted to step to an incorrect Tile
+2023-12-04T14:45:48,730 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T14:45:51,205 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T14:45:51,205 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:45:51,205 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T14:57:11,782 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T14:57:11,810 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T14:57:11,810 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T14:57:22,648 [AWT-EventQueue-0] ERROR hive.HiveLogger getInitializedTileSet - A getInitializedTileSet() nem talált egyetlen inicializált Tile-t sem!
+2023-12-04T14:57:43,724 [AWT-EventQueue-0] ERROR hive.HiveLogger getInitializedTileSet - A getInitializedTileSet() nem talált egyetlen inicializált Tile-t sem!
+2023-12-04T14:58:04,281 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T14:58:04,282 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T14:58:04,283 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T14:58:04,283 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T14:58:08,606 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T14:58:10,025 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T14:58:10,025 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:58:10,041 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:58:59,988 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T14:58:59,988 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T14:58:59,990 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T14:58:59,990 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T14:59:00,049 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T14:59:00,081 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T14:59:00,081 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T14:59:01,190 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T14:59:02,240 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T14:59:02,240 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:59:02,246 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T14:59:03,079 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T14:59:03,912 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T14:59:03,912 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T14:59:03,912 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:03:59,634 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:03:59,634 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:03:59,636 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:03:59,636 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:03:59,696 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:03:59,727 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:03:59,727 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:04:02,354 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:04:03,294 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:04:03,294 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:04:03,294 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:04:03,880 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:04:04,697 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:04:04,697 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:04:04,697 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:04:06,722 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:04:07,307 [AWT-EventQueue-0] INFO  hive.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-04T15:04:07,307 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:04:08,179 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:04:08,179 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:04:08,179 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:04:11,353 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:04:12,389 [AWT-EventQueue-0] INFO  hive.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-04T15:04:12,391 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:04:14,060 [AWT-EventQueue-0] INFO  hive.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-04T15:04:14,076 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:04:14,925 [AWT-EventQueue-0] INFO  hive.HiveLogger place - Player wanted to place an insect to an invalid place
+2023-12-04T15:04:14,925 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:04:16,313 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:04:16,313 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:04:16,313 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:17,616 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:04:20,808 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Grasshopper insect of player BLUE pinged the available tiles
+2023-12-04T15:04:22,011 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Grasshopper insect of player BLUE pinged the available tiles
+2023-12-04T15:12:19,631 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:12:19,639 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:12:19,641 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:12:19,641 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:12:19,702 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:12:19,722 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:12:19,722 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:12:59,174 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:12:59,204 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:12:59,204 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:13:18,476 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:13:18,539 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:13:18,559 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:13:18,559 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:13:22,789 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:13:26,267 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:13:26,267 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:13:26,267 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:16:48,809 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:16:48,829 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:16:48,829 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:16:50,498 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:16:55,449 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:16:55,449 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:16:55,465 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:16:56,835 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:16:59,290 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:16:59,290 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:16:59,290 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:17:00,863 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:17:07,427 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:17:07,427 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:17:07,427 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:17:08,846 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:17:36,757 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:17:36,777 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:17:36,777 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:17:37,777 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:17:38,903 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:17:38,918 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:17:38,918 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:17:39,867 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:17:41,355 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:17:41,355 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:17:41,355 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:17:44,563 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:17:45,481 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:17:45,481 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:17:45,481 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:17:46,537 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:17:49,761 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:17:49,761 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:17:49,761 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:17:51,265 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:17:54,489 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:17:54,489 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:17:54,489 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:19:41,357 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:19:41,377 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:19:41,377 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:19:44,735 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:19:47,257 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:19:47,257 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:19:47,272 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:19:48,464 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:22:55,309 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:22:55,309 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:22:55,311 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:22:55,311 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:22:55,372 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:22:55,392 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:22:55,392 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:22:56,485 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:22:58,004 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:22:58,004 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:22:58,004 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:22:58,775 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:22:59,978 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:22:59,978 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:22:59,978 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:23:01,614 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:23:03,178 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:23:03,178 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:23:03,194 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:23:06,422 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:23:07,720 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:23:07,720 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:23:07,735 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:23:09,825 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:24:15,018 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - ORANGE Player created successfully
+2023-12-04T15:24:15,018 [AWT-EventQueue-0] INFO  hive.HiveLogger <init> - BLUE Player created successfully
+2023-12-04T15:24:15,026 [AWT-EventQueue-0] INFO  hive.HiveLogger clear - Board was cleared.
+2023-12-04T15:24:15,026 [AWT-EventQueue-0] INFO  hive.HiveLogger clearGame - GameLogic: Game properties were reset successfully.
+2023-12-04T15:24:15,079 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - BLUE Player initialized successfully
+2023-12-04T15:24:15,109 [AWT-EventQueue-0] INFO  hive.HiveLogger initPlayer - ORANGE Player initialized successfully
+2023-12-04T15:24:15,109 [AWT-EventQueue-0] INFO  hive.HiveLogger newGame - GameLogic: New Game was started successfully.
+############################################
+2023-12-04T15:24:16,092 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:24:20,408 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:24:20,408 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:24:20,424 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:24:21,236 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:24:24,124 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:24:24,124 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:24:24,131 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:24:26,267 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:24:27,185 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:24:27,185 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:24:27,185 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:24:28,018 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Queen insect of player BLUE pinged the available tiles
+2023-12-04T15:24:32,098 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Queen insect of player BLUE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:33,016 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player ORANGE pinged the available tiles
+2023-12-04T15:24:38,900 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - Player would have disconnected the hive.
+2023-12-04T15:24:44,846 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - Player would have disconnected the hive.
+2023-12-04T15:24:44,846 [AWT-EventQueue-0] INFO  hive.HiveLogger move - The player wanted to step to an incorrect Tile
+2023-12-04T15:24:47,870 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for BLUE player the available tiles for placing were pinged
+2023-12-04T15:24:50,129 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from BLUE was successfully deleted.
+2023-12-04T15:24:50,129 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:24:50,129 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:24:52,304 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:24:53,237 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:24:53,237 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:24:53,237 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:24:54,308 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.HiveLogger pingAvailableTiles - class hive.insects.Ant insect of player BLUE pinged the available tiles
+2023-12-04T15:25:06,515 [AWT-EventQueue-0] INFO  hive.HiveLogger startSelectSettings - for ORANGE player the available tiles for placing were pinged
+2023-12-04T15:25:08,142 [AWT-EventQueue-0] INFO  hive.HiveLogger removeGameTile - placeholder tile from ORANGE was successfully deleted.
+2023-12-04T15:25:08,142 [AWT-EventQueue-0] INFO  hive.HiveLogger removeInsect - An insect was sucessfully removed from player.
+2023-12-04T15:25:08,142 [AWT-EventQueue-0] INFO  hive.HiveLogger place - An insect was sucessfully placed.

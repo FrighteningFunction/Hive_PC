@@ -1946,3 +1946,284 @@
 2023-12-04T13:21:00,935 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,363) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6460b7f7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
 2023-12-04T13:21:00,935 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (835,406) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6460b7f7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
 2023-12-04T13:21:00,935 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (760,450) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@6460b7f7,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:32,303 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T14:45:32,303 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T14:45:32,319 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:45:32,319 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:45:32,325 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T14:45:32,669 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:45:32,704 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:45:32,704 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:45:32,704 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:45:32,704 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T14:45:33,513 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T14:45:35,170 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T14:45:35,170 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T14:45:35,170 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of BoardView got notified properly.
+2023-12-04T14:45:37,038 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1adf0aeb,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:45:38,431 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2d71bc40,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:45:39,961 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1adf0aeb,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:45:41,078 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2d71bc40,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,363) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@24450ecd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,450) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@24450ecd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:42,350 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (985,493) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@24450ecd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (985,147) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@24450ecd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:43,799 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,190) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@24450ecd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:43,806 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,277) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@24450ecd,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T14:45:51,205 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1120,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1adf0aeb,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:57:09,990 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T14:57:09,997 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T14:57:10,013 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:57:10,013 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:57:10,013 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T14:57:10,374 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:10,409 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:10,409 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:10,409 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:10,409 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T14:57:11,721 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T14:57:13,737 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T14:57:13,737 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T14:57:13,737 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of BoardView got notified properly.
+2023-12-04T14:57:55,008 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T14:57:55,034 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T14:57:55,034 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:57:55,034 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:57:55,034 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T14:57:55,393 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:55,423 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:55,423 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:55,423 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:57:55,423 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T14:58:04,285 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T14:58:04,285 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T14:58:04,287 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T14:58:04,288 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T14:58:06,184 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T14:58:06,184 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T14:58:06,184 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of BoardView got notified properly.
+2023-12-04T14:58:10,025 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2213afbd,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:58:19,454 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T14:58:19,472 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T14:58:19,472 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:58:19,472 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:58:19,472 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T14:58:19,826 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:19,844 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:19,844 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:19,844 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:19,844 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T14:58:58,586 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T14:58:58,586 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T14:58:58,586 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:58:58,586 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T14:58:58,601 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T14:58:58,944 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:58,976 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:58,976 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:58,976 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T14:58:58,976 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T14:58:59,990 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T14:58:59,990 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T14:58:59,990 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T14:58:59,990 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T14:59:02,240 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (912,1) in hive.graphics.views.PlayerPanelView[,0,928,1904x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@624ccd39,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T14:59:03,912 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (912,1) in hive.graphics.views.PlayerPanelView[,0,0,1904x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@68266f33,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T15:03:58,010 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:03:58,025 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:03:58,025 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:03:58,025 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:03:58,025 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:03:58,411 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:03:58,435 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:03:58,435 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:03:58,435 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:03:58,435 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:03:59,636 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:03:59,636 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:03:59,636 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:03:59,636 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:04:01,304 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T15:04:01,304 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of PlayerPanelView got notified properly.
+2023-12-04T15:04:01,304 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resizeevents of BoardView got notified properly.
+2023-12-04T15:04:03,294 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5014699c,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T15:04:04,697 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@33f85a2a,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T15:04:08,179 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@5014699c,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T15:04:16,313 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1320,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@33f85a2a,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,363) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@67ff1e30,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,450) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@67ff1e30,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:04:19,930 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (985,493) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@67ff1e30,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:04:22,011 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (985,147) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@67ff1e30,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:04:22,011 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,190) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@67ff1e30,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:04:22,011 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,277) in hive.graphics.views.BoardView[,0,90,1920x814,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@67ff1e30,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:12:16,563 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:12:16,563 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:12:16,579 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:12:16,579 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:12:16,579 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:12:16,933 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:16,964 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:16,964 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:16,964 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:16,964 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:12:18,777 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:18,777 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:18,777 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:12:19,639 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:12:19,639 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:12:19,641 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:12:19,641 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:12:56,631 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:12:56,631 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:12:56,631 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:12:56,631 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:12:56,631 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:12:56,985 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:57,019 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:57,019 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:57,019 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:57,019 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:12:58,149 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:58,157 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:12:58,157 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:12:59,113 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:13:15,375 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:13:15,391 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:13:15,391 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:13:15,391 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:13:15,391 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:13:15,782 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:13:15,801 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:13:15,801 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:13:15,801 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:13:15,801 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:13:17,633 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:13:17,633 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:13:17,633 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:13:18,478 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:13:26,267 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,904,1920x90,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1133,height=90],minimumSize=java.awt.Dimension[width=1133,height=90],preferredSize=java.awt.Dimension[width=1133,height=90]] was removed successfully.
+2023-12-04T15:16:45,400 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:16:45,415 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:16:45,415 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:16:45,415 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:16:45,415 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:16:45,788 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:16:45,820 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:16:45,820 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:16:45,820 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:16:45,820 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:16:47,923 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:16:47,923 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:16:47,923 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:16:48,748 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:16:55,449 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,2) in hive.graphics.views.PlayerPanelView[,0,903,1920x91,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1144,height=91],minimumSize=java.awt.Dimension[width=1144,height=91],preferredSize=java.awt.Dimension[width=1144,height=91]] was removed successfully.
+2023-12-04T15:16:59,290 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,2) in hive.graphics.views.PlayerPanelView[,0,0,1920x91,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1144,height=91],minimumSize=java.awt.Dimension[width=1144,height=91],preferredSize=java.awt.Dimension[width=1144,height=91]] was removed successfully.
+2023-12-04T15:17:07,427 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,2) in hive.graphics.views.PlayerPanelView[,0,903,1920x91,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1144,height=91],minimumSize=java.awt.Dimension[width=1144,height=91],preferredSize=java.awt.Dimension[width=1144,height=91]] was removed successfully.
+2023-12-04T15:17:33,305 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:17:33,305 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:17:33,305 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:17:33,305 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:17:33,305 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:17:33,663 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:17:33,693 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:17:33,693 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:17:33,693 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:17:33,693 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:17:35,802 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:17:35,802 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:17:35,802 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:17:36,696 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:17:38,903 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:17:41,355 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:17:45,481 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:17:49,761 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:17:54,489 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1120,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:19:39,825 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:19:39,825 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:19:39,847 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:19:39,847 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:19:39,847 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:19:40,199 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:19:40,235 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:19:40,235 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:19:40,235 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:19:40,235 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:19:41,296 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:19:43,362 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resize-events of PlayerPanelView got notified properly.
+2023-12-04T15:19:43,362 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resize-events of PlayerPanelView got notified properly.
+2023-12-04T15:19:43,362 [AWT-EventQueue-0] INFO  hive.GraphicLogger componentResized - Listeners for resize-events of BoardView got notified properly.
+2023-12-04T15:19:47,257 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,2) in hive.graphics.views.PlayerPanelView[,0,903,1920x91,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1144,height=91],minimumSize=java.awt.Dimension[width=1144,height=91],preferredSize=java.awt.Dimension[width=1144,height=91]] was removed successfully.
+2023-12-04T15:22:52,836 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:22:52,836 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:22:52,858 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:22:52,858 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:22:52,858 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:22:53,202 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:22:53,236 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:22:53,236 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:22:53,236 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:22:53,236 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:22:54,520 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:22:54,520 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:22:54,520 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:22:55,311 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:22:55,311 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:22:55,311 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:22:55,311 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:22:58,004 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:22:59,978 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:23:03,178 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:23:07,720 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:24:12,131 [main] INFO  hive.GraphicLogger <init> - MainMenu created successfully.
+2023-12-04T15:24:12,146 [main] INFO  hive.GraphicLogger <init> - BoardView was successfully created.
+2023-12-04T15:24:12,146 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:24:12,146 [main] INFO  hive.GraphicLogger <init> - PlayerPanelView created successfully.
+2023-12-04T15:24:12,146 [main] INFO  hive.GraphicLogger <init> - GamePanel was created successfully.
+2023-12-04T15:24:12,502 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:24:12,534 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:24:12,534 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:24:12,534 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:24:12,534 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:24:14,246 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:24:14,246 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of PlayerPanelView got fired but found 0 listeners!
+2023-12-04T15:24:14,246 [AWT-EventQueue-0] ERROR hive.GraphicLogger componentResized - ResizeListener of BoardView got fired but found 0 listeners!
+2023-12-04T15:24:15,018 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for BLUE was created
+2023-12-04T15:24:15,018 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - PlayerPanelController for ORANGE was created
+2023-12-04T15:24:15,026 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - BoardController was created successfully.
+2023-12-04T15:24:15,026 [AWT-EventQueue-0] INFO  hive.GraphicLogger <init> - GamePanelController created successfully.
+2023-12-04T15:24:20,408 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:24:24,124 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (920,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:24:27,185 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:24:32,098 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (985,494) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:24:32,098 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (910,537) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:24:32,098 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (835,494) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (985,234) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,278) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:24:37,111 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1060,364) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:24:50,129 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1020,1) in hive.graphics.views.PlayerPanelView[,0,0,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:24:53,237 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1120,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (910,537) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (835,581) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:25:05,366 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (760,537) in hive.graphics.views.BoardView[,0,89,1920x816,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=] was removed successfully.
+2023-12-04T15:25:08,142 [AWT-EventQueue-0] INFO  hive.GraphicLogger onModelChange - GameTileView at (1220,1) in hive.graphics.views.PlayerPanelView[,0,905,1920x89,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=java.awt.Dimension[width=1122,height=89],minimumSize=java.awt.Dimension[width=1122,height=89],preferredSize=java.awt.Dimension[width=1122,height=89]] was removed successfully.

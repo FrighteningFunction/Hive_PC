@@ -6,13 +6,10 @@ import hive.GraphicLogger;
 import hive.graphics.views.BoardView;
 
 public class BoardController implements ModelListener{
-    private BoardView boardView;
-
-    private GameBoard board;
+    private final BoardView boardView;
 
     public BoardController(BoardView boardView, GameBoard board){
         this.boardView=boardView;
-        this.board=board;
         board.addListener(this);
         GraphicLogger.getLogger().info("BoardController was created successfully.");
     }
@@ -32,11 +29,6 @@ public class BoardController implements ModelListener{
 
         boardView.revalidate();
         boardView.repaint();
-    }
-
-    @Override
-    public void onGameTileRemoved(GameTile tile) {
-        throw new UnsupportedOperationException();
     }
 
     @Override

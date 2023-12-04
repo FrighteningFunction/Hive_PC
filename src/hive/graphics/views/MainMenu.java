@@ -11,13 +11,13 @@ import java.awt.event.ActionListener;
 import static java.lang.System.exit;
 
 public class MainMenu extends JPanel {
-    private transient JButton newGame = new JButton("New game");
+    private final transient JButton newGame = new JButton("New game");
 
-    private transient JButton exit = new JButton ("exit");
+    private final transient JButton exit = new JButton ("exit");
 
-    private transient JButton loadGame = new JButton("Load Game");
+    private final transient JButton loadGame = new JButton("Load Game");
 
-    private transient MenuButtonsPressed menuListener = new MenuButtonsPressed();
+    private final transient MenuButtonsPressed menuListener = new MenuButtonsPressed();
 
     JPanel mainPanel = new JPanel();
 
@@ -44,7 +44,7 @@ public class MainMenu extends JPanel {
         GraphicLogger.getLogger().info("MainMenu created successfully.");
     }
 
-    class MenuButtonsPressed implements ActionListener {
+    static class MenuButtonsPressed implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             String c = e.getActionCommand();
             switch (c) {

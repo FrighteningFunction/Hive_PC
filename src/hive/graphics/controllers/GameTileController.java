@@ -60,10 +60,6 @@ public class GameTileController<T extends JComponent & TileView> implements Mode
         container.repaint();
     }
 
-    public GameTileView getGameTileView() {
-        return gameTileView;
-    }
-
     @Override
     public void onModelChange() {
         if (tile.getState() == TileStates.TERMINATED) {
@@ -81,11 +77,6 @@ public class GameTileController<T extends JComponent & TileView> implements Mode
 
     @Override
     public void onGameTileAdded(GameTile tile) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void onGameTileRemoved(GameTile tile) {
         throw new UnsupportedOperationException();
     }
 

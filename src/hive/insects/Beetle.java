@@ -10,6 +10,9 @@ import java.util.Set;
 
 public class Beetle extends Insect {
 
+    /**
+     * Az a rovar, amit a Beetle maga alá temetett mozgása során.
+     */
     private Insect controlledInsect;
 
     public Beetle(Player p, GameLogic gameLogic) {
@@ -22,6 +25,14 @@ public class Beetle extends Insect {
         return "beetle";
     }
 
+    /**
+     * A Beetle különleges mozgásának megvalósítása.
+     * Kezeli a controlledInsect átállítgatását.
+     *
+     * @param chosenTile a tile, ahová a rovar mozogna.
+     * @return true, ha oda léphetett,
+     * false, ha nem.
+     */
     @Override
     public boolean move(GameTile chosenTile) {
         Set<GameTile> availableTiles = pingAvailableTiles();

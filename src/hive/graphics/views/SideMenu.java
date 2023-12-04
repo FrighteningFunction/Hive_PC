@@ -7,6 +7,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * A frame oldalsó részén lenyitható menü.
+ */
 public class SideMenu {
 
     private final JMenuBar sideBar;

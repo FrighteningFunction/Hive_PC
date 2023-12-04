@@ -7,6 +7,9 @@ import hive.graphics.views.SideMenu;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Ez az osztály felelős a fő panelek létrehozásáért, valamint az applikáció futtatásáért.
+ */
 public class HiveMain {
     static CardLayout mainCardLayout = new CardLayout();
 

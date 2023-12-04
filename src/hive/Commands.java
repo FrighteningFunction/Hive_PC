@@ -12,6 +12,9 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Az applikáció fő parancsait megvalósító osztály.
+ */
 public class Commands {
     private static final CardLayout mainCardLayout = HiveMain.getCardLayout();
 

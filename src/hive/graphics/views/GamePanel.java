@@ -6,6 +6,9 @@ import hive.game.Player;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Magát a játék UI-ját összefogó container.
+ */
 public class GamePanel extends JPanel {
     private final PlayerPanelView whitePlayerPanelView;
     private final PlayerPanelView blackPlayerPanelView;

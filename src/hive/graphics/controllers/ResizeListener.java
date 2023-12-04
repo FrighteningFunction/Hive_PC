@@ -6,6 +6,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.util.List;
 
+/**
+ * Ez a listener kezeli, hogy újraméretezés esetén minden érintett értesítve legyen.
+ */
 public class ResizeListener extends ComponentAdapter {
     private final List<ModelListener> listeners;
 

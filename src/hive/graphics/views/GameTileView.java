@@ -16,6 +16,9 @@ import org.apache.logging.log4j.Logger;
 
 import static java.lang.Math.cos;
 
+/**
+ * A játék mezőit megjelenítő, primitív rajzolási logikával ellátott view.
+ */
 public class GameTileView extends JComponent {
     private final transient Logger logger = LogManager.getLogger();
 
@@ -46,8 +49,8 @@ public class GameTileView extends JComponent {
     private static final double TILE_RADIUS = GameTile.getTileRadius();
 
     //A komponens abszolút szélessége és magassága
-    private static final int COMP_WIDTH = (int) (Math.round(2 * TILE_RADIUS)+BORDER_WIDTH)+1;
-    private static final int COMP_HEIGHT = (int) Math.round(TILE_HEIGHT+BORDER_WIDTH)+1;
+    private static final int COMP_WIDTH = (int) (Math.round(2 * TILE_RADIUS)+BORDER_WIDTH);
+    private static final int COMP_HEIGHT = (int) Math.round(TILE_HEIGHT+BORDER_WIDTH);
 
 
     /**
@@ -90,6 +93,10 @@ public class GameTileView extends JComponent {
         this.state = state;
     }
 
+    /**
+     * Beállítja a színt a játékosnak megfelelően.
+     * @param color a tulajdonos színe.
+     */
     public void setColor(HiveColor color) {
         if (color == HiveColor.ORANGE) {
             this.color = Color.ORANGE;
@@ -165,7 +172,7 @@ public class GameTileView extends JComponent {
             logger.info("No hexatile was drawn.");
         }
 
-        //Draw insect image if initialized
+        //Kirajzoljuk a rovart, ha szükséges.
         if (initialized && insect != null && insect.getImage() != null) {
             Image resizedImage = resizeImageToFitTile(insect.getImage());
             Coordinate imgCord = getCenteredImageCoordinate(resizedImage);
@@ -208,51 +215,52 @@ public class GameTileView extends JComponent {
         return path;
     }
 
+    /**
+     * Átméretezi a kapott képet, hogy elférjen a tile-ban.
+     * @param originalImage az átméretezendő kép.
+     * @return az átméretezett kép.
+     */
     private Image resizeImageToFitTile(Image originalImage) {
         int maxSize = (int) (TILE_HEIGHT);
 
         int originalWidth = originalImage.getWidth(this);
         int originalHeight = originalImage.getHeight(this);
 
-        // Maintain aspect ratio
+        // Fenntartjuk az arányt
         double aspectRatio = (double) originalWidth / originalHeight;
         int newWidth;
         int newHeight;
 
         if (originalWidth > originalHeight) {
-            // Width is the limiting dimension
+            // A szélesség a gátoló tényező
             newWidth = maxSize;
             newHeight = (int) (newWidth / aspectRatio);
         } else {
-            // Height is the limiting dimension
+            // A magasság a gátoló tényező
             newHeight = maxSize;
             newWidth = (int) (newHeight * aspectRatio);
         }
 
-        // Resize the image
         return originalImage.getScaledInstance(newWidth, newHeight, Image.SCALE_SMOOTH);
     }
 
     /**
-     * Calculates the top-left coordinate at which the image should be drawn to be centered.
+     * Kiszámolja azt a bal felső koordinátát, ahol a képet rajzolni kell, hogy középen legyen.
      *
-     * @param image The image to be centered.
-     * @return The coordinate at which to start drawing the image.
+     * @param image A középre helyezendő kép.
+     * @return A koordináta, ahol a rajzolást kezdjük.
      */
     public Coordinate getCenteredImageCoordinate(Image image) {
-        // Get the width and height of the image
         int imageWidth = image.getWidth(this);
         int imageHeight = image.getHeight(this);
 
-        // Get the width and height of the component
         int componentWidth = this.getWidth();
         int componentHeight = this.getHeight();
 
-        // Calculate the top-left x and y coordinates to start drawing the image
+        // Kiszámolju a bal felső x-y koordinátákat
         int x = (componentWidth - imageWidth) / 2;
         int y = (componentHeight - imageHeight) / 2;
 
-        // Return the calculated coordinates
         return new Coordinate(x, y);
     }
 

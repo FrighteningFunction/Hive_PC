@@ -11,6 +11,9 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+/**
+ * A játékos rendelkezésére álló, letehtető rovarokat tároló konténer.
+ */
 public class PlayerPanelView extends JPanel implements TileView{
     private static final String NAME = "PlayerPanelView";
 

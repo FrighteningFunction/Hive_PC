@@ -9,6 +9,9 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 
+/**
+ * A játék XML-ből történő betöltését intéző osztály.
+ */
 public class HiveGameXMLReader {
     private HiveGameXMLReader(){}
 

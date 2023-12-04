@@ -13,6 +13,14 @@ import static java.lang.System.exit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * A játék összes mezőjét megtestesítő osztály.
+ * Ez kezeli a tábla hexatile-logika szerinti bejárhatóságát.
+ * A tile-ok referenciákkal összekötött hálózata egy bejárható gráfot alkot.
+ * <p></p>
+ * A geometria helyességéért a GameBoard felelős (a koordináta-kulcsokkal),
+ * de a koordinátákat szám szerint szintén ez az osztály számolja.
+ */
 public class GameTile {
 
     private final Logger logger = LogManager.getLogger();
@@ -22,23 +30,39 @@ public class GameTile {
 
     private static final double TILE_RADIUS = 50;
 
-    //the height of the tile
+    /**
+     * the height of the tile
+     */
     private static final double HEIGHT = 2 * sqrt(pow(TILE_RADIUS, 2) - pow(TILE_RADIUS, 2) / 4);
 
-    //the degree of the directions of the neighbouring hexatiles
-    //in degrees
+    /**
+     * A szomszédos hexatile-ok foka.
+     */
     private static final double DIR = PI / 6;
 
+    /**
+     * Megadja, hogy egy hexatile inicializált állapotban van-e.
+     * <p></p>
+     * Egy GameTile akkor és csak akkor inicializált, ha található benne rovar.
+     * Ha egy GameTile inicializált a játéktáblán, akkor minden szomszédja létezik.
+     * A le nem tett rovarok számára fenntartott tile-ok mind inicializáltak, de nincs szomszédjuk (árvák).
+     */
     private boolean initialized;
 
     private GameBoard board;
 
+    /**
+     * A rovar, ami a GameTile-ban van.
+     */
     private Insect insect;
 
     public void setCoordinate(Coordinate coordinate) {
         this.coordinate = coordinate;
     }
 
+    /**
+     * A tile játékbéli koordinátája.
+     */
     private Coordinate coordinate;
     private GameTile[] neighbours = new GameTile[6];
 
@@ -196,6 +220,12 @@ public class GameTile {
         return true;
     }
 
+    /**
+     * Kiszámolja, hogy a megadott irányban fellelhető szomszédjának
+     * mi lenne a koordinátája.
+     * @param direction a szomszéd iránya.
+     * @return a megadott szomszéd koordinátája.
+     */
     public Coordinate getCoordinateOfNeighbourAt(int direction) {
         double x1 = coordinate.getX();
         double y1 = coordinate.getY();

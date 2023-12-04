@@ -8,6 +8,10 @@ import java.util.*;
 
 import static java.lang.System.exit;
 
+/**
+ * A játék tábláját megjelenítő singleton osztály.
+ * A Tile-ok tárolására egy HashMap-et alkalmaz.
+ */
 public class GameBoard {
     private static GameBoard instance;
 
@@ -32,6 +36,11 @@ public class GameBoard {
         return instance;
     }
 
+    /**
+     * Felvesz egy új GameTilet.
+     * @param tile a felveendő tile
+     * @throws DoubleTileException ha már létezik ilyen tile
+     */
     public void addGameTile(GameTile tile) throws DoubleTileException {
         if (boardMap.containsKey(tile.getCoordinate())) {
             throw new DoubleTileException();
@@ -42,9 +51,9 @@ public class GameBoard {
     }
 
     /**
-     * The total amount of tiles on the board.
+     * Az összes tile a játéktáblán.
      *
-     * @return the amount of tiles on the board.
+     * @return a táblán fellelhető tile-ok száma.
      */
     public int getSize() {
         return boardMap.size();
@@ -126,6 +135,10 @@ public class GameBoard {
         return chosenOne;
     }
 
+    /**
+     * Eltávolít egy tile-t a tábláról.
+     * @param tile az eltávolítandó tile.
+     */
     public void removeGameTile(GameTile tile) {
         if (boardMap.containsKey(tile.getCoordinate())) {
             boardMap.remove(tile.getCoordinate());

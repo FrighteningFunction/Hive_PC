@@ -7,6 +7,9 @@ import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * A képbetöltést egyszerűsítő util osztály.
+ */
 public class ImageLoader {
     private ImageLoader(){}
 

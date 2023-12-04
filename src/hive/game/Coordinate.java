@@ -2,10 +2,22 @@ package hive.game;
 
 import static java.lang.Math.*;
 
+/**
+ * A játékban a játékbéli valamint a pixel-koordináták összetartásáért felelős osztály.
+ */
 public class Coordinate {
     private final double x;
     private final double y;
+
+    /**
+     * A "négyzetrács"-ot definiáló x érték. Ekkora távolságra lehetnek egymástól  hexatile-ok
+     * a játék elrendezése szerint.
+     */
     private static final double XGRID = GameTile.getHexaTileHeight() * cos(GameTile.getDir());
+
+    /**
+     * A rácsot definiáló x érték. Ekkora távolságra lehetnek egymástól a hexatile-ok.
+     */
     private static final double YGRID = GameTile.getHexaTileHeight() * sin(GameTile.getDir());
 
     public Coordinate(double x, double y) {
@@ -29,6 +41,11 @@ public class Coordinate {
         return YGRID;
     }
 
+    /**
+     * Overrided equals metódus. Két koordináta egyenlő, ha mindkettőjük számára ugyanaz a rácspont van a legközelebb.
+     * @param obj összehasonlítandó Coordinate
+     * @return igaz ha egyenlőek, hamis ha nem
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

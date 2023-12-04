@@ -10,19 +10,37 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * A Hive játékosait megtestesítő osztály.
+ * Tartalmazza a még lehetető rovarait.
+ */
 public class Player {
+    /**
+     * A játékoshoz tartozó királynő.
+     */
     private Queen queen = null;
 
     private final GameLogic gameLogic;
 
     public final HiveColor color;
 
+    /**
+     * A játékos még letehető rovarainak listája.
+     */
     private final List<Insect> insects = new ArrayList<>();
 
+    /**
+     * A játékos még le nem tett rovarai számára fenntartott GameTile-ok listája.
+     */
     private final List<GameTile> insectHolders = new ArrayList<>();
 
     private ModelListener listener;
 
+    /**
+     * Grafikai renderelés során van elsősorban jelentősége.
+     * Megadja, hogy a koordináta számításnál mekkora helyet hagyjon
+     * a tile-ok között.
+     */
     private static final double SPACE_BETWEEN_TILES = 10;
 
     Player(HiveColor color, GameLogic gameLogic) {
@@ -86,8 +104,10 @@ public class Player {
         HiveLogger.getLogger().info("{} Player initialized successfully", color);
     }
 
+    /**
+     * Jobbról kezdve felváltva balra-jobbra feltölti a játékos készletét.
+     */
     public void initializePlaceHolders() {
-        //jobbról kezdve felváltva balra-jobbra feltöltjük a játékos készletét
         int i = 0;
         int leftNum = 1;
         int rightNum = 1;
@@ -116,6 +136,10 @@ public class Player {
         }
     }
 
+    /**
+     * Kitöröl egyetlen tile-t a rovarőrzők közül.
+     * @param tile az eltávolítandó tile.
+     */
     public void removeGameTile(GameTile tile) {
         if (insectHolders.remove(tile)) {
             tile.setState(TileStates.TERMINATED); //ezzel a GameTileController automatikusan kitörli majd
@@ -125,6 +149,10 @@ public class Player {
         }
     }
 
+    /**
+     * Kitöröl egy meghatározott rovart a játékos készletéből.
+     * @param insect a kitörlendő insect.
+     */
     public void removeInsect(Insect insect) {
         if (!insects.remove(insect)) {
             HiveLogger.getLogger().error("A nonexistent insect was to be removed from Player");

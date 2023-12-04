@@ -8,6 +8,9 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A játéktáblát megjelenítő, null-layout-os UI.
+ */
 public class BoardView extends JPanel implements TileView{
     private static final String NAME = "BoardView";
 

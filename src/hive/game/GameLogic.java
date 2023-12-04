@@ -8,11 +8,20 @@ import hive.insects.Queen;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * A Hive játéklogikájáért felelős osztály.
+ * Az Insect osztály is kezel alapvető ellenőrzéseket (pl. az útkeresés az ő feladata),
+ * de a globális helyességet ez az osztály kezeli.
+ * Singleton osztály.
+ */
 public class GameLogic {
     private static GameLogic instance = null;
 
     private ModelListener listener;
 
+    /**
+     * A tile kiválasztás állapotait rögzítő enum.
+     */
     enum SelectionState {
         STARTSELECT,
 
@@ -21,6 +30,9 @@ public class GameLogic {
         PLACESELECT,
     }
 
+    /**
+     * A játék állapotait rögzítő enum.
+     */
     public enum GameState {
         RUNNING,
 
@@ -78,8 +90,7 @@ public class GameLogic {
 
     /**
      * Inicializálja a játékot, minden attribútumát előkészíti.
-     * Ez felér egy resettel.
-     * Figyelem: a tábla nem üres: egyetlen tile hozzáadódik!
+     * Figyelem: a tábla nem üres: egyetlen inicializálatlan tile hozzáadódik!
      */
     public void newGame() {
         clearGame();
@@ -215,6 +226,12 @@ public class GameLogic {
         return newState.equals(reachables);
     }
 
+    /**
+     * Visszaadja azon inicializálatlan tile-ok halmazát, amelyekre a játékos a rovart
+     * a szabályok szerint leteheti.
+     * @param p az aktuális játékos
+     * @return a lehetséges tile-ok halmaza
+     */
     public Set<GameTile> pingAvailableTilesForPlacing(Player p) {
         Set<GameTile> unInitializedTiles = board.getUnInitializedTileSet();
         Set<GameTile> availableTiles = new HashSet<>();
@@ -245,7 +262,11 @@ public class GameLogic {
         return availableTiles;
     }
 
-
+    /**
+     * Ellenőrzi, hogy a következő játékosnak le kell-e már tennie a királynőjét.
+     * Ha igen, akkor kényszeríti erre a lépésre, ha pedig lehetetlen letenni a királynőt,
+     * akkor az ellenfele győzött.
+     */
     private void checkQueenCondition() {
         if (!nextPlayer.isQueenDown() && turns >= 7) {
             Queen queen = nextPlayer.getQueen();
@@ -264,6 +285,10 @@ public class GameLogic {
         }
     }
 
+    /**
+     * Elindítja a játékvége-láncolatot.
+     * @param winner a győztes játékos
+     */
     private void endGame(Player winner){
         if (winner.equals(bluePlayer)) {
             HiveLogger.getLogger().info("The black Player won!");
@@ -279,6 +304,9 @@ public class GameLogic {
 
     }
 
+    /**
+     * Ellenőrzi, hogy valamelyik játékos királynője be lett-e már kerítve.
+     */
     private void checkEndGameCondition() {
         if (orangePlayer.getQueen().isInitialized() && orangePlayer.getNeighboursOfQueen() == 6) {
             endGame(bluePlayer);
@@ -287,6 +315,11 @@ public class GameLogic {
         }
     }
 
+    /**
+     * Az első kattintás esetén végrehajtja az állapotgép utasításait.
+     * @param tile a tile, amire a játékos kattintott
+     * @param actor a kattintó játékos
+     */
     private void startSelectSettings(GameTile tile, Player actor) {
         //ha inicializált tile-ra kattintunk, és a sajátunkra
         if (tile.isInitialized() && actor.equals(tile.getInsect().getPlayer())) {
@@ -314,6 +347,11 @@ public class GameLogic {
         //egyébként nem csinálunk semmit
     }
 
+    /**
+     * A második kattintás során végrehajtandó állapotgépet kezeli.
+     * @param tile a kiválasztott tile
+     * @param actor a kattintó játékos
+     */
     private void secondSelectSettings(GameTile tile, Player actor){
         boolean success = performActionBasedOnSelectionState(tile);
 
@@ -327,6 +365,12 @@ public class GameLogic {
         }
     }
 
+    /**
+     * A második kattintás során megnézi, hogy most egy rovar mozgatásáról,
+     * vagy elhelyezéséről van szó, és eszerint regisztrálja az akció sikerességét.
+     * @param tile a kiválasztott tile
+     * @return sikeres volt-e az akció.
+     */
     private boolean performActionBasedOnSelectionState(GameTile tile) {
         if (selectionState == SelectionState.MOVESELECT) {
             return startTile.getInsect().move(tile);
@@ -335,6 +379,10 @@ public class GameLogic {
         }
     }
 
+    /**
+     * Visszaállítja a kattintás miatt kijelölt tile-okat
+     * eredeti állapotukba.
+     */
     private void resetSelection() {
         startTile.setState(TileStates.UNSELECTED);
         for (GameTile g : pingedTiles) {
@@ -344,16 +392,33 @@ public class GameLogic {
         selectionState = SelectionState.STARTSELECT;
     }
 
+    /**
+     * Ellenőriz 2 fontos játékfeltételt:
+     * a királynőt letették-e;
+     * a királynőt bekerítették-e.
+     */
     private void checkGameConditions() {
         checkEndGameCondition();
         checkQueenCondition();
     }
 
+    /**
+     * Második kattintásnál releváns.
+     * Megnézi, hogy a második kattintás egy releváns rovarra történt-e,
+     * ekkor az állapotgép úgy értelmezi, hogy a kattintó meggondolta magát,
+     * és egy másik rovarral szeretne inkább lépni.
+     * @param tile a kiválasztott tile
+     * @return resetelendőek-e a tile-ok "meggondolás" miatt
+     */
     private boolean shouldResetSelection(GameTile tile) {
         return (selectionState == SelectionState.MOVESELECT || selectionState == SelectionState.PLACESELECT)
                 && tile.isInitialized();
     }
 
+    /**
+     * Végrehajtja a kattintáshoz kötődő állapotgépet.
+     * @param tile a tile, amire az egyik játékos kattintott.
+     */
     public void clickedTile(GameTile tile) {
 
         Player actor = nextPlayer;

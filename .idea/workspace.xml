@@ -4,23 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni.">
+    <list default="true" id="e7906a90-4b1a-49e6-bf45-8d1653aca0cb" name="Changes" comment="A program helyesen működik, apróbb módosítások a kód tisztasága érdekében.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GraphicsLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LogicsLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/MainLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/MainLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/hive/GraphicLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/GraphicLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/hive/HiveLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/HiveLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging/hive/MainAppLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/hive/MainAppLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GraphicsLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/LogicsLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/MainLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/Commands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/HiveGameXMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveGameXMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/HiveGameXMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveGameXMLWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/HiveMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/HiveMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/DoubleTileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/DoubleTileException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/GameTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/GameTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/HiveColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/HiveColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/game/TileStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/game/TileStates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/ImageLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GamePanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/GameTileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/ModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ModelListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/PlayerPanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/controllers/ResizeListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/BoardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/GamePanel.java" afterDir="false" />
@@ -28,6 +37,9 @@
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/PlayerPanelView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/SideMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/TileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/TileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/graphics/views/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/graphics/views/ViewUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hive/insects/Beetle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Beetle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hive/insects/Insect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hive/insects/Insect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +109,7 @@
       <recent name="hive" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HiveMain">
     <configuration name="HiveMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hive.HiveMain" />
       <module name="Hive_PC" />
@@ -111,8 +123,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hive.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hive.game" />
+      <option name="MAIN_CLASS_NAME" value="hive.game.GameBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hive.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hive.game" />
+      <option name="MAIN_CLASS_NAME" value="hive.game.GameLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hive.insects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hive.insects" />
+      <option name="MAIN_CLASS_NAME" value="hive.insects.InsectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hive_PC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hive.insects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hive.insects" />
+      <option name="MAIN_CLASS_NAME" value="hive.insects.QueenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QueenTest" />
+        <item itemvalue="JUnit.InsectTest" />
+        <item itemvalue="JUnit.GameLogicTest" />
+        <item itemvalue="JUnit.GameBoardTest" />
         <item itemvalue="Application.HiveMain" />
       </list>
     </recent_temporary>
@@ -129,7 +205,7 @@
       <workItem from="1701381740715" duration="5056000" />
       <workItem from="1701510022445" duration="15004000" />
       <workItem from="1701595792734" duration="37255000" />
-      <workItem from="1701680537288" duration="14883000" />
+      <workItem from="1701680537288" duration="19836000" />
     </task>
     <task id="LOCAL-00001" summary="new classes for testing gametileview">
       <option name="closed" value="true" />
@@ -251,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701692558908</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="A program helyesen működik, apróbb módosítások a kód tisztasága érdekében.">
+      <option name="closed" value="true" />
+      <created>1701699963658</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701699963658</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +369,8 @@
     <MESSAGE value="Az xml output funkció működik. Xml beolvasás következik." />
     <MESSAGE value="Az xml input - játék betöltése funkció jól működik. A játékosszínek helyesen refaktorálva." />
     <MESSAGE value="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni." />
-    <option name="LAST_COMMIT_MESSAGE" value="Az egész program helyesen működik. A kiválasztást már vissza is lehet vonni." />
+    <MESSAGE value="A program helyesen működik, apróbb módosítások a kód tisztasága érdekében." />
+    <option name="LAST_COMMIT_MESSAGE" value="A program helyesen működik, apróbb módosítások a kód tisztasága érdekében." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -15,6 +15,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import hive.graphics.views.ViewUtil;
 
+/**
+ * Az UI-t és modellt összekötő leglényegesebb kontroller.
+ * Ez kezeli nem csak az információközvetítés a tile-ok és a tileview-ok között,
+ * hanem ez kezeli a gametileview-ot tároló konténerek frissítését is, és azért is ez felelős,
+ * hogy a megsemmisült tile-ok kikerüljenek a felelős konténerből.
+ * <p></p>
+ * A konténerek maguk egyedül ezen osztály példányainak létrehozásáért felelősek.
+ * @param <T> JComponent-et és TileView-ot öröklő osztályok lehetnek átadva konténerként egyedül
+ */
 public class GameTileController<T extends JComponent & TileView> implements ModelListener {
     private final Logger logger = LogManager.getLogger();
 
@@ -22,6 +31,9 @@ public class GameTileController<T extends JComponent & TileView> implements Mode
 
     private final GameTile tile;
 
+    /**
+     * A GameTileView-t tároló konténer.
+     */
     private final T container;
 
 
@@ -45,6 +57,10 @@ public class GameTileController<T extends JComponent & TileView> implements Mode
         logger.info("GameTileController successfully created.");
     }
 
+    /**
+     * Lekérdezi a GameTile modell összes attribútumát, és átpasszolja azt a
+     * view-nak.
+     */
     private void setUpGameTileView() {
         gameTileView.setInitialized(tile.isInitialized());
         gameTileView.setState(tile.getState());

@@ -5,6 +5,10 @@ import hive.game.GameTile;
 
 import javax.swing.*;
 
+/**
+ * A játékmodellben működő egyszerősített, átlátható koordnátarendszer és a
+ * pixelkoordináták közötti átváltást segítő util osztály.
+ */
 public class ViewUtil {
     private ViewUtil(){}
 

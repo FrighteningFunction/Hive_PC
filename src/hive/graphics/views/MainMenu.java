@@ -10,6 +10,10 @@ import java.awt.event.ActionListener;
 
 import static java.lang.System.exit;
 
+/**
+ * Az applikáció elején, valamint befejezett játék végén megjelenő főmenü.
+ * Ugyanezek a funkciók elérhetők játék közben is az oldalsó sávon.
+ */
 public class MainMenu extends JPanel {
     private final transient JButton newGame = new JButton("New game");
 

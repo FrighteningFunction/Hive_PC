@@ -13,10 +13,6 @@ public class BoardController implements ModelListener{
         board.addListener(this);
         GraphicLogger.getLogger().info("BoardController was created successfully.");
     }
-
-    public BoardView getBoardView(){
-        return boardView;
-    }
     @Override
     public void onModelChange() {
         throw new UnsupportedOperationException();

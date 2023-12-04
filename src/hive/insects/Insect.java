@@ -7,8 +7,16 @@ import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Az összes rovar ősosztálya. Implementálja azt a felülelet,
+ * amit minden rovarnak használnia kell.
+ */
 public abstract class Insect {
     protected GameLogic gameLogic;
+
+    /**
+     * Az a lépésszám, amit a rovar maximálisan léphet.
+     */
     protected int maxstep;
 
     private boolean initialized;
@@ -54,6 +62,12 @@ public abstract class Insect {
         return insectImage;
     }
 
+    /**
+     * A rovar mozgását teszi lehetővé.
+     * @param chosenTile a tile, ahová a rovar mozogna.
+     * @return true, ha mozgás sikeres volt
+     * false, ha nem.
+     */
     public boolean move(GameTile chosenTile) {
         Set<GameTile> availableTiles = pingAvailableTiles();
         if (availableTiles.contains(chosenTile)) {
@@ -66,6 +80,12 @@ public abstract class Insect {
         return false;
     }
 
+    /**
+     * A rovar letételét teszi lehetővé.
+     * @param tile a tile, ahová a rovart le kellene tenni
+     * @return true, ha a tile elérhető volt
+     * false, ha a szabályok szerint nem.
+     */
     public boolean place(GameTile tile) {
         if (initialized) {
             HiveLogger.getLogger().fatal("Already initialized insect was to be placed!");
